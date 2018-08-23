@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="resource/lib-flexible-master/build/flexible.js"></script> 
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="resource/css/specialDefault.css">
+	<link type="text/css" rel="stylesheet" href="resource/css/consult.css">
+	<link type="text/css" rel="stylesheet" href="resource/css/swiper.min.css">
+    <title>专题模板页</title>
+	<style>
+		.notStartIcon{position:absolute;top:0;right:0.2rem;width:1.12rem;height:0.866667rem;
+		background:url(resource/images/icon/notStart.png) no-repeat center center;background-size:100% 100%;}
+		.notBeginIcon{position:absolute;bottom:0.3rem;right:0.2rem;width:1.5rem;height:0.6rem;
+		background:url(resource/images/icon/noBegin.png) no-repeat center center;background-size:100% 100%;}
+		.smallIcon{width:1rem;height:0.4rem;bottom:0.1rem;}	
+		.specialPrice{margin-top:0.15rem;}
+		.specialPrice span{color:#999999;font-size:12px;}
+		[data-dpr="2"] .specialPrice span{font-size:24px;}
+		[data-dpr="3"] .specialPrice span{font-size:36px;}			
+		.specialPrice span em{color:#ff2a00;margin-right:0.1rem;}
+		.specialPrice span i{font-size:20px;}
+		[data-dpr="2"] .specialPrice span i{font-size:40px;}
+		[data-dpr="3"] .specialPrice span i{font-size:60px;}			
+	</style>    
+    <style>
+		.SdefaultBox{padding:.4rem .3rem 0 .3rem}
+		.specialBox ul li a:first-child{padding-left:0;padding-right:.15rem}
+		.specialBox ul li a{display:table-cell;width:50%;box-sizing:border-box;padding-left:.15rem;vertical-align:top}
+		.hotSwiper{background:#ff3e4c;width: 100%;z-index: 999;}
+		.hotSwiper ul{display:block;height:1.2rem;}
+		.hotSwiper ul li{width:auto;text-align:center;display:inline-block;padding-top:0.25rem;margin:0 0.1rem;}
+		.hotSwiper ul li a{float:left;display:inline-block;font-size:.28rem;color:#fff;padding:0 .33rem;height:0.7rem;line-height:0.7rem;border-radius:.4rem;font-size:15px}
+		[data-dpr="2"] .hotSwiper ul li a{font-size:30px}
+		[data-dpr="3"] .hotSwiper ul li a{font-size:45px}
+		.hotSwiper ul li.cur a{color:#ff3e4c;background:#fff}
+		.hotSwiper .arrBot{position:absolute;display:block;width:.8rem;height:1.2rem;background:url(resource/images/special/20180108/arrBot.png) no-repeat center center #ff3e4c;background-size:0.26rem 0.14rem;right:0;top:0;z-index: 9999;}
+		.hotSwiper .arrBot.up{transform:rotate(180deg)}
+		.popOuter{position:absolute;width:100%;z-index:999;top:100%;left:0;display:none}
+		.poptags{width:100%;background:rgba(221,223,225,.95)}
+		.poptags a{display:block;float:left;width:33.33%;text-align:center;padding:.24rem 0;color:#000;font-size:13px}
+		[data-dpr="2"] .poptags a{font-size:26px}
+		[data-dpr="3"] .poptags a{font-size:39px}
+		.poptags a.cur{color:#ff3e4c}
+    </style>
+</head>
+<body>
+	<div class="banner">
+	<img src="resource/images/special/20180108/banner.png">
+	</div>
+	<div class="page_tab_outer">
+		<!--swiper begin-->
+		<div class="hotSwiper" id="page_Tab_title" style="overflow-x:hidden;">
+		   <div style="overflow-x:scroll;padding-right:0.8rem;">
+				<ul style="width:5000px;">
+	    				<li class="cur"><a href="javascript:;">青海湖</a></li>
+	    				<li><a href="javascript:;">厦门</a></li>
+	                    <li><a href="javascript:;">青海湖</a></li>
+	                    <!--
+	                    <li><a href="javascript:;">青海湖</a></li>
+	                    <li><a href="javascript:;">青海湖</a></li>
+	                    <li><a href="javascript:;">青海湖</a></li>
+	                    <li><a href="javascript:;">青海湖</a></li>
+	    				<li><a href="javascript:;">青海湖</a></li>
+	    				-->
+			    </ul>
+            </div>		    
+		    <i class="arrBot"></i>
+		    <div class="popOuter">
+		    	<div class="poptags">
+    				<a href="javascript:;" class="cur">青海湖</a>
+    				<a href="javascript:;">厦门</a>
+    				<a href="javascript:;">青海湖</a>
+    				<div style="clear:both;"></div>
+				</div>
+		    </div> 				                  
+		</div>	
+		<!--swiper end-->
+		<div class="page-width">
+			<div class="page_tabs" id="page_Tab_cell0">
+				<div class="banner">
+				<img src="resource/images/special/20180108/title.png">
+				</div>	
+				<div class="SdefaultBox">
+					<div class="BigSpecial">
+						<div class="BigPic">
+							<img src="resource/images/special/pic.png">
+							<div class="conlayer">
+								<p><span>团期：04-25  04-27</span></p>
+								<p></p>
+							</div>
+							<div class="sLayer sLayerL"><span>苏州出发</span></div>
+							<div class="sellOut BigIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/>
+							</div>
+							<div class="notStartIcon"></div>
+							<div class="notBeginIcon"></div>
+						</div>
+						<div class="SpecialCon">
+							<div class="SpecialTop">
+								<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+								<p style="display:none;">门市价<span>￥<i>32599</i></span>起</p>
+								<p class="TwoPrice"><span>门市价：￥3999起</span><span>结算价：<em class="linethrough">￥3999起</em></span></p>
+								<div class="specialPrice">
+									<img src="resource/images/icon/tmIcon.png">
+									<span><em>￥<i>1888</i></em>起</span>
+								</div>					
+								<div class="hasTags">
+									<p class="tagsIcon"><span>总优惠￥200</span><span>赚￥200</span><em class="quan">券300</em></p>
+								</div>
+								<p class="endPrice">最终结算<span>￥<i>32599</i></span>起</p>
+							</div>
+							<div class="SpecialBott">
+								<p>纯玩无购物，国行直飞国行直飞纯玩无购物，国行直飞国行直飞纯玩无购物，国行直飞国行直飞</p>
+								<p>纯玩无购物，国行直飞国行直飞</p>
+							</div>
+						</div>
+					</div>
+					<div class="specialBox">
+						<ul>
+							<li class="clearfix">
+								<a href="javascript:;">
+									<div class="smallBox">
+										<div class="SpicBox">
+											<img class="SmallPic" src="resource/images/special/Spic.png">
+											<div class="conlayer">
+												<p><span>团期：04-25  04-27</span></p>
+												<p>余位：50</p>
+											</div>
+											<div class="notStartIcon"></div>
+											<div class="notBeginIcon smallIcon"></div>
+											<div class="sellOut BigIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/></div>
+										</div>
+										<div class="SpecialCon">
+											<div class="SpecialTop">
+												<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+												<p class="TwoPrice"><span>门市价：￥3999起</span></p>
+												<p class="TwoPrice"><span>结算价：<em class="linethrough">￥3999起</em></span></p>
+												<div class="hasTags">
+													<p class="tagsIcon"><span>总优惠￥200</span><span class="yellow">赚￥200</span></p>
+												</div>	
+												<em class="quan block">券300</em>								
+												<p class="sEndPrice block">最终结算<span>￥<i>32599</i></span>起</p>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="javascript:;">
+									<div class="smallBox">
+										<div class="SpicBox">
+											<img class="SmallPic" src="resource/images/special/Spic.png">
+											<div class="conlayer">
+												<p><span>团期：04-25  04-27</span></p>
+												<p>余位：500</p>
+											</div>
+											<div class="sLayer sLayerL"><span>苏州出发</span></div>
+											<div class="sLayer sLayerR"><span>余位：50</span></div>
+											<div class="sellOut SmallIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/></div>
+										</div>
+										<div class="SpecialCon">
+											<div class="SpecialTop">
+												<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+												<em class="quan block">券300</em>	
+												<p class="sEndPrice block">最终结算<span>￥<i>32599</i></span>起</p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>	
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page_tabs" id="page_Tab_cell1">
+				<div class="banner">
+				<img src="resource/images/special/20180108/title.png">
+				</div>	
+				<div class="SdefaultBox">
+					<div class="BigSpecial">
+						<div class="BigPic">
+							<img src="resource/images/special/pic.png">
+							<div class="conlayer">
+								<p><span>团期：04-25  04-27</span></p>
+								<p></p>
+							</div>
+							<div class="sLayer sLayerL"><span>苏州出发sss</span></div>
+							<div class="sellOut BigIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/>
+							</div>
+							<div class="notStartIcon"></div>
+							<div class="notBeginIcon"></div>
+						</div>
+						<div class="SpecialCon">
+							<div class="SpecialTop">
+								<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+								<p style="display:none;">门市价<span>￥<i>32599</i></span>起</p>
+								<p class="TwoPrice"><span>门市价：￥3999起</span><span>结算价：<em class="linethrough">￥3999起</em></span></p>
+								<div class="specialPrice">
+									<img src="resource/images/icon/tmIcon.png">
+									<span><em>￥<i>1888</i></em>起</span>
+								</div>					
+								<div class="hasTags">
+									<p class="tagsIcon"><span>总优惠￥200</span><span>赚￥200</span><em class="quan">券300</em></p>
+								</div>
+								<p class="endPrice">最终结算<span>￥<i>32599</i></span>起</p>
+							</div>
+							<div class="SpecialBott">
+								<p>纯玩无购物，国行直飞国行直飞纯玩无购物，国行直飞国行直飞纯玩无购物，国行直飞国行直飞</p>
+								<p>纯玩无购物，国行直飞国行直飞</p>
+							</div>
+						</div>
+					</div>
+					<div class="specialBox">
+						<ul>
+							<li class="clearfix">
+								<a href="javascript:;">
+									<div class="smallBox">
+										<div class="SpicBox">
+											<img class="SmallPic" src="resource/images/special/Spic.png">
+											<div class="conlayer">
+												<p><span>团期：04-25  04-27</span></p>
+												<p>余位：50</p>
+											</div>
+											<div class="notStartIcon"></div>
+											<div class="notBeginIcon smallIcon"></div>
+											<div class="sellOut BigIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/></div>
+										</div>
+										<div class="SpecialCon">
+											<div class="SpecialTop">
+												<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+												<p class="TwoPrice"><span>门市价：￥3999起</span></p>
+												<p class="TwoPrice"><span>结算价：<em class="linethrough">￥3999起</em></span></p>
+												<div class="hasTags">
+													<p class="tagsIcon"><span>总优惠￥200</span><span class="yellow">赚￥200</span></p>
+												</div>	
+												<em class="quan block">券300</em>								
+												<p class="sEndPrice block">最终结算<span>￥<i>32599</i></span>起</p>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="javascript:;">
+									<div class="smallBox">
+										<div class="SpicBox">
+											<img class="SmallPic" src="resource/images/special/Spic.png">
+											<div class="conlayer">
+												<p><span>团期：04-25  04-27</span></p>
+												<p>余位：500</p>
+											</div>
+											<div class="sLayer sLayerL"><span>苏州出发</span></div>
+											<div class="sLayer sLayerR"><span>余位：50</span></div>
+											<div class="sellOut SmallIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/></div>
+										</div>
+										<div class="SpecialCon">
+											<div class="SpecialTop">
+												<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+												<em class="quan block">券300</em>	
+												<p class="sEndPrice block">最终结算<span>￥<i>32599</i></span>起</p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>	
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page_tabs" id="page_Tab_cell2">
+				<div class="banner">
+				<img src="resource/images/special/20180108/title.png">
+				</div>	
+				<div class="SdefaultBox">
+					<div class="BigSpecial">
+						<div class="BigPic">
+							<img src="resource/images/special/pic.png">
+							<div class="conlayer">
+								<p><span>团期：04-25  04-27</span></p>
+								<p></p>
+							</div>
+							<div class="sLayer sLayerL"><span>苏州出发eeeeee</span></div>
+							<div class="sellOut BigIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/>
+							</div>
+							<div class="notStartIcon"></div>
+							<div class="notBeginIcon"></div>
+						</div>
+						<div class="SpecialCon">
+							<div class="SpecialTop">
+								<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+								<p style="display:none;">门市价<span>￥<i>32599</i></span>起</p>
+								<p class="TwoPrice"><span>门市价：￥3999起</span><span>结算价：<em class="linethrough">￥3999起</em></span></p>
+								<div class="specialPrice">
+									<img src="resource/images/icon/tmIcon.png">
+									<span><em>￥<i>1888</i></em>起</span>
+								</div>					
+								<div class="hasTags">
+									<p class="tagsIcon"><span>总优惠￥200</span><span>赚￥200</span><em class="quan">券300</em></p>
+								</div>
+								<p class="endPrice">最终结算<span>￥<i>32599</i></span>起</p>
+							</div>
+							<div class="SpecialBott">
+								<p>纯玩无购物，国行直飞国行直飞纯玩无购物，国行直飞国行直飞纯玩无购物，国行直飞国行直飞</p>
+								<p>纯玩无购物，国行直飞国行直飞</p>
+							</div>
+						</div>
+					</div>
+					<div class="specialBox">
+						<ul>
+							<li class="clearfix">
+								<a href="javascript:;">
+									<div class="smallBox">
+										<div class="SpicBox">
+											<img class="SmallPic" src="resource/images/special/Spic.png">
+											<div class="conlayer">
+												<p><span>团期：04-25  04-27</span></p>
+												<p>余位：50</p>
+											</div>
+											<div class="notStartIcon"></div>
+											<div class="notBeginIcon smallIcon"></div>
+											<div class="sellOut BigIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/></div>
+										</div>
+										<div class="SpecialCon">
+											<div class="SpecialTop">
+												<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+												<p class="TwoPrice"><span>门市价：￥3999起</span></p>
+												<p class="TwoPrice"><span>结算价：<em class="linethrough">￥3999起</em></span></p>
+												<div class="hasTags">
+													<p class="tagsIcon"><span>总优惠￥200</span><span class="yellow">赚￥200</span></p>
+												</div>	
+												<em class="quan block">券300</em>								
+												<p class="sEndPrice block">最终结算<span>￥<i>32599</i></span>起</p>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="javascript:;">
+									<div class="smallBox">
+										<div class="SpicBox">
+											<img class="SmallPic" src="resource/images/special/Spic.png">
+											<div class="conlayer">
+												<p><span>团期：04-25  04-27</span></p>
+												<p>余位：500</p>
+											</div>
+											<div class="sLayer sLayerL"><span>苏州出发</span></div>
+											<div class="sLayer sLayerR"><span>余位：50</span></div>
+											<div class="sellOut SmallIcon" style="display:none;"><img src="resource/images/special/sellOutIcon.png"/></div>
+										</div>
+										<div class="SpecialCon">
+											<div class="SpecialTop">
+												<h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+												<em class="quan block">券300</em>	
+												<p class="sEndPrice block">最终结算<span>￥<i>32599</i></span>起</p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>	
+
+						</ul>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</div>	
+</body>
+<script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="resource/javascript/swiper.min.js"></script>
+<script type="text/javascript" src="resource/javascript/scroll.js"></script>
+<script type="text/javascript">
+	$('html,body').css("background","#cb2728");
+	$(function () {
+	    $(".hotSwiper .arrBot").click(function () {
+	    	$(this).toggleClass("up");
+	    	$(this).next(".popOuter").toggle();
+            $('.popOuter .poptags a').eq($('#page_Tab_title ul .cur').index()).addClass('cur').siblings().removeClass('cur');
+	    });
+        $('.popOuter .poptags a').click(function() {
+            $(".hotSwiper .arrBot").removeClass('up');
+            $('.popOuter').hide();
+            $('html,body').animate({scrollTop: $('#page_Tab_cell' + $(this).index()).offset().top}, 1000);
+        });
+	});	
+</script>
+</html>

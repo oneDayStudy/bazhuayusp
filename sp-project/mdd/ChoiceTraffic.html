@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">        
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/order.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/popLayer.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/train.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/swiper.min.css">
+    <script type="text/javascript" src="resource/js/global.js"></script>    
+    <title>选择大交通</title>
+    <style>
+        header .onl_talk{
+            font-size:0.20rem;
+            position: absolute;
+            right:0.25rem;
+            top:0;
+            color:#fff;
+        }
+        #sub{display:inline-block;color:#ffba64;padding-left:0.12rem;}
+
+        .tipReturn{
+            border-top:1px solid #e4e4e4;
+            background-color:#f7f9fa;
+            overflow: hidden;
+            padding:0.3rem;
+        }
+        .tipLeft{
+            width:5.2rem;
+            float: left;
+        }
+        .GO-left{
+            width:5.2rem;
+            height:0.45rem;
+            overflow: hidden;
+        }
+        .GO-left>span{
+            margin: 0 0.03rem;
+            color: #666;
+            font-size: 0.28rem;
+        }
+        .quIcon{
+            vertical-align: middle;
+            display: inline-block;
+            width: 0.34rem;
+            height: 0.34rem;
+            background: url(resource/images/qu.png) no-repeat center left;
+            background-size: 0.34rem 0.34rem;
+        }
+        .tipAir>img{
+            width:0.5rem;
+            height:0.2rem;
+        }
+        .fly{
+            padding-left:0.5rem;
+        }
+        .fly_time{
+            padding-bottom: 0.3rem;
+        }
+        .fly>span{
+            font-size: 0.20rem;
+            color:#999;
+        }
+        .fanIcon{
+            vertical-align: middle;
+            display: inline-block;
+            width: 0.34rem;
+            height: 0.34rem;
+            background: url(resource/images/fan.png) no-repeat center left;
+            background-size: 0.34rem 0.34rem;
+        }
+        .tipRight{
+            width:1.4rem;
+            float:right;
+            overflow: hidden;
+         }
+        .tipRight>p{
+            float: right;
+        }
+        .tipRight>p.visitor{
+            font-size:0.28rem;
+            color:#333;
+        }
+        .tip-price>i{
+            color:#e84c3d;
+            font-size: 0.20rem;
+        }
+        .tip-price{
+            font-size:0.28rem;
+            color:#ff4858;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap flex flex-v ">
+    <header class="header greenBg" style="top:0;">
+        <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+        <div class="title">选择大交通  2/4</div>
+        <a href="#" class="onl_talk">线路客服</a>
+    </header>
+    <div class="main flex-1">
+        <div class="orderInfoTop" style="border-bottom:none;">
+            <h2>日本九州3日3夜自由行，宿温泉酒店，旅游纯玩无购物，一天滑雪一天滑冰一天吃好玩刺身</h2>
+            <p class="timeGroup clearfix">
+              <span>成团时间：2018-01-16（<i class="f_red">14:00</i>）<br>离团时间：2018-01-21（任意时段）</span>
+              <span>人数：<i class="f_green">1</i>人</span>
+            </p>
+        </div>
+        <div class="orderBox">
+          <a href="javascript:;"><div class="title ShuttleTAB"><span class="car">目的地接送服务</span><i class="arrowR"></i></div></a>
+        </div>
+        <div class="blank_10"></div>
+        <div class="mainOuter">
+        <div class="orderBox Shadow">
+          <div class="title clearfix">
+          <span ><input type="checkbox">交通:飞机+火车<a href="javascript:;" class="RuleInfo">更换出行方式</a></span>
+          <label class="price">
+              <span>￥<i>3588</i></span><br>
+              <span id="sub">立减100</span>
+          </label>
+
+          </div>
+          <div class="dottLine">
+            <i class="circleL"></i>
+            <hr>
+            <i class="circleR"></i>
+          </div>
+          <div class="ticketBox">
+              <div class="ticketCol">
+                <div class="colTop">
+                  <p>
+                    <span class="quIcon"></span>
+                    <span>01-14</span><span>|</span>
+                    <span>南方航空CZ6738</span><span>|</span>
+                    <span>经济舱</span>
+                    <span class="ticketNum">仅剩8张</span>
+                  </p>
+                </div>
+                <div class="airDetail">
+                    <p class="airCol">
+                      <span class="time">21：00</span>
+                      <span class="address">上海浦东</span>
+                    </p>
+                    <p class="line"><span>4h20min</span><img src="resource/images/line.png"><span><i class="ticket"></i></span></p>
+                    <p class="airCol">
+                      <span class="time">21：00<i class="day">+1</i></span>
+                      <span class="address">上海浦东</span>
+                    </p>
+                </div>
+              </div>
+              <div class="ticketCol">
+                <div class="colTop">
+                  <p>
+                    <span class="fanIcon"></span>
+                    <span>01-14</span><span>|</span>
+                    <span>南方航空CZ6738</span><span>|</span>
+                    <span>经济舱</span>
+                  </p>
+                </div>
+                <div class="airDetail">
+                    <p class="airCol">
+                      <span class="time">21：00</span>
+                      <span class="address">上海浦东</span>
+                    </p>
+                    <p class="line"><img src="resource/images/line.png"></p>
+                    <p class="airCol">
+                      <span class="time">21：00<i class="day">+1</i></span>
+                      <span class="address">上海浦东</span>
+                    </p>
+                </div>
+              </div>              
+              <div class="tipInfo">
+                <p class="tips"><span>可超库存预订</span></p>
+                <a href="javascript:;" class="improveBtn">更换航班</a>
+              </div>
+
+              <div class="tipReturn">
+
+                  <div class="tipLeft">
+                      <div>
+                          <p class="GO-left">
+                              <span class="quIcon"></span>
+                              <span>上海浦东国际机场</span>
+                              <span class="tipAir"><img src="resource/images/air.png"/></span>
+                              <span>上海浦东国际机场</span>
+                          </p>
+                          <p class="fly fly_time">
+                              <span>起飞时间：</span>
+                              <span>01-16</span>
+                              <span>14:36</span>
+                          </p>
+                      </div>
+                      <div>
+                          <p class="GO-left">
+                              <span class="fanIcon"></span>
+                              <span>三亚凤凰</span>
+                              <span class="tipAir"><img src="resource/images/air.png"/></span>
+                              <span>上海浦东国际机场</span>
+                          </p>
+                          <p class="fly">
+                              <span>起飞时间：</span>
+                              <span>01-16</span>
+                              <span>14:36</span>
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="tipRight">
+                      <p class="visitor">游客预定</p>
+                      <p class="tip-price"><i>￥</i>3588</p>
+                  </div>
+              </div>
+
+
+          </div>
+        </div>
+        <div class="blank_10"></div>
+        <div class="orderBox Shadow">
+          <div class="title"><span class="safeInfo">火车出行保险</span></div>
+          <div class="safeList">
+            <p class="tit">交通意外险</p>
+            <div class="radioBox clearfix">
+            <label><input type="radio" name="safe" checked><span>20元-合众综合交通意外十天</span></label>
+            <i class="moreInfo"></i>
+            <p class="price">￥20/人</p>
+            </div>
+            <div class="radioBox clearfix">
+            <label><input type="radio" name="safe"><span>不购买保险</span></label>
+            <p class="price">￥0/人</p>
+            </div>
+          </div>
+          <div class="safeList">
+            <p class="tit">航空意外险</p>
+            <div class="radioBox clearfix">
+            <label><input type="radio" name="safe1" checked><span>20元-合众综合交通意外十天</span></label>
+            <i class="moreInfo"></i>
+            <p class="price">￥20/人</p>
+            </div>
+            <div class="radioBox clearfix">
+            <label><input type="radio" name="safe1"><span>30元-合众综合出行干啥险</span></label>
+            <i class="moreInfo"></i>
+            <p class="price">￥30/人</p>
+            </div>
+            <div class="radioBox clearfix">
+            <label><input type="radio" name="safe1"><span>不购买保险</span></label>
+            <p class="price">￥0/人</p>
+            </div>
+            <div class="hideBox">
+                <div class="radioBox clearfix">
+                <label><input type="radio" name="safe2" checked><span>20元-合众综合交通意外十天</span></label>
+                <i class="moreInfo"></i>
+                <p class="price">￥20/人</p>
+                </div>
+                <div class="radioBox clearfix">
+                <label><input type="radio" name="safe2"><span>30元-合众综合出行干啥险</span></label>
+                <i class="moreInfo"></i>
+                <p class="price">￥30/人</p>
+                </div>
+                <div class="radioBox clearfix">
+                <label><input type="radio" name="safe2"><span>不购买保险</span></label>
+                <p class="price">￥0/人</p>
+                </div>           
+            </div>
+            <a href="javascript:;" class="seeMore"><span>展开更多</span></a>              
+          </div>
+        </div>
+        <div class="blank_10"></div>  
+        <div class="orderBox Shadow">
+          <div class="title"><span class="safeInfo">航空出行保险</span></div>
+          <div class="safeList">
+            <p class="tit">航空意外险</p>
+            <div class="radioBox clearfix">
+            <label><input type="radio" name="safe" checked><span>20元-合众综合交通意外十天</span></label>
+            <i class="moreInfo"></i>
+            <p class="price">￥20/人</p>
+            </div>
+            <div class="radioBox clearfix">
+            <label><input type="radio" name="safe"><span>不购买保险</span></label>
+            <p class="price">￥0/人</p>
+            </div>
+          </div>         
+        </div>
+        <div class="blank_10"></div> 
+        </div>                               
+    </div>
+    <footer class="footer">
+        <div class="btn_two">
+            <a href="javascript:;" class="special_info">
+              总价:<font>￥<em>8180</em></font>
+              <span class="seeMX toTop">查看明细</span>
+            </a>
+            <a href="settlement.html" class="redBg next_step">下一步</a>
+        </div>
+    </footer>
+</div>
+<div class="layerBlack" id="layerBlack"></div>
+<!--更换交通方式开始-->
+<div class="tripMode none" id="tripMode">
+  <div class="title clearfix">
+    <a href="javascript:;" class="cancelBtn" id="cancelBtn">取消</a>
+    <a href="javascript:;" class="submitBtn" id="submitBtn">确定</a>
+  </div>
+  <ul class="modeList">
+    <li class="cur">飞机往返</li>
+    <li>火车往返</li>
+    <li>飞机+火车</li>
+    <li>火车+飞机</li>
+  </ul>
+</div>
+<!--更换出行方式结束-->
+<!--目的地接送服务开始-->
+<div id="mddServiceBox" class="none">
+  <div class="mddService">
+  <div class="mddBox">
+    <div class="serviceBox">
+        <h2>接机服务</h2>
+        <table class="serviceTable">
+            <tbody><tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr>                                   
+        </tbody></table>
+        <h2>送机服务</h2>
+        <table class="serviceTable">
+            <tbody><tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>三亚凤凰候机楼出港口</p>
+                    <p><span class="linkWord">至</span>三亚凤凰酒店</p>
+                </td>
+                <td>
+                    <span>13:30</span>
+                    <span>13:30</span>
+                    <span>13:30</span>                                
+                </td>
+            </tr>                        
+        </tbody></table>                    
+    </div>    
+  </div>
+  <div class="closeBox">
+    <a href="javascript:;" class="closedIcon"></a>
+  </div>
+  </div>
+</div>
+<!--目的地接送服务结束-->
+<!--查看明细开始-->
+<div class="feeDetail">
+  <div class="tit">费用明细<i class="closeIcon"></i></div>
+  <div class="feeItem">
+      <div class="feeList">
+          <div class="feeL">
+              <p>成人票价</p>
+              <p class="price"><span>￥2100</span> x 2</p>
+          </div>
+          <div class="feeR">
+              <p>￥4794</p>
+          </div>
+      </div>
+      <div class="feeList">
+          <div class="feeL">
+              <p>基建+燃油</p>
+              <p class="price"><span>￥2100</span> x 2</p>
+          </div>
+          <div class="feeR">
+              <p>￥4794</p>
+          </div>
+      </div>
+      <div class="feeList">
+          <div class="feeL">
+              <p>保险费用</p>
+              <p class="price"><span>￥2100</span> x 2</p>
+          </div>
+          <div class="feeR">
+              <p>￥4794</p>
+          </div>
+      </div>
+      <div class="feeList">
+          <div class="feeL">
+              <p>机票优惠规则名称</p>
+          </div>
+          <div class="feeR">
+              <p>-￥400</p>
+          </div>
+      </div>
+  </div>
+</div> 
+<!--查看明细结束-->
+<script type="text/javascript" src="resource/js/jquery.min.js"></script>
+<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+<script type="text/javascript">
+$('html,body').css("background","#f2f4f7");
+  $(".RuleInfo").click(function () {
+      $('#layerBlack').show();
+      $('#tripMode').removeClass('none');
+  });
+  $("#cancelBtn").click(function () {
+      $('#layerBlack').hide();
+      $('#tripMode').addClass('none');
+  }); 
+  $("#submitBtn").click(function () {
+      $('#layerBlack').hide();
+      $('#tripMode').addClass('none');
+  });    
+  $("#layerBlack").click(function () {
+      $('#layerBlack').hide();
+      $('#tripMode').addClass('none');
+      $('.feeDetail').hide();
+       $('#layerBlack').css('top','0');
+  });   
+  $(".ShuttleTAB").click(function () {
+    $('.wrap').addClass('poplayerBg');
+    $('#mddServiceBox').removeClass('none');
+  }); 
+  $(".closedIcon").click(function () {
+    $('.wrap').removeClass('poplayerBg');
+    $('#mddServiceBox').addClass('none');
+  });  
+  //查看明细
+    $('.seeMX').click(function(){
+        $('#layerBlack').show();
+        $('.feeDetail').show();
+        $('#layerBlack').css('top','-1.1rem');
+
+    });
+  
+    $('.feeDetail .closeIcon').click(function(){
+        $('#layerBlack').hide();
+        $('.feeDetail').hide();
+        $('#layerBlack').css('top','0');
+    });  
+
+
+$(function () {
+    $(".orderBox .seeMore").toggle(
+      function(){
+        $(this).addClass('packUp');
+        $(this).children('span').text('收起更多')
+        $(this).parent().find('.hideBox').show();
+      },
+      function(){
+        $(this).removeClass('packUp');
+        $(this).children('span').text('展开更多')
+        $(this).parent().find('.hideBox').hide();
+      }
+    );             
+});
+
+</script>	
+</body>
+</html>

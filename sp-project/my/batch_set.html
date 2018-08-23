@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/login.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <title>批量设置</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <div class="g_header">
+                <a href="javascript:history.go(-1);" title="返回" class="back w_back">返回</a> 
+                <div class="one_title">
+                  <p>批量设置</p>
+                </div> 
+                <a href="javascript:;" class="set_text add_new">新增</a>                            
+            </div>
+        </header>
+        <div class="container visa_o_detail">
+            <div class="v_o_item">
+                    <div class="title">已生效的批量定价</div>
+                    <div class="f_o_items">
+                    <ul>
+                        <li>
+                            <div class="o_item_tit">序列：1</div>
+                            <div class="o_item_detail">
+                                <div class="v_o_item">
+                                    <div class="v_o_intro">
+                                        <p>
+                                            <span><em>线路类型：</em>长线</span>
+                                            <span><em>组团方式：</em>目的地跟团</span>
+                                        </p>
+                                        <p>
+                                            <span><em>目的地：</em>华东豪华套票</span>
+                                        </p>
+                                        <p class="red">
+                                            <span><em>APP折扣：</em>102%</span>
+                                            <span><em>PC折扣：</em>103%</span>
+                                        </p>
+                                        <p class="red">
+                                            <span><em>保底利润：</em>￥120</span>
+                                        </p>                                                          
+                                    </div>
+                                </div>                       
+                            </div>
+                        </li>
+                        <li>
+                            <div class="o_item_tit">序列：2</div>
+                            <div class="o_item_detail">
+                                <div class="v_o_item">
+                                    <div class="v_o_intro">
+                                        <p>
+                                            <span><em>线路类型：</em>长线</span>
+                                            <span><em>组团方式：</em>目的地跟团</span>
+                                        </p>
+                                        <p>
+                                            <span><em>目的地：</em>华东豪华套票</span>
+                                        </p>
+                                        <p class="red">
+                                            <span><em>APP折扣：</em>102%</span>
+                                            <span><em>PC折扣：</em>103%</span>
+                                        </p>
+                                        <p class="red">
+                                            <span><em>保底利润：</em>￥120</span>
+                                        </p>                                                                                                                      
+                                    </div>
+                                </div> 
+                            </div>
+                        </li>                                                           
+                    </ul>
+                </div>                                     
+            </div>                        
+        </div>
+    </div> 
+    <!--弹出层开始-->
+    <div class="p_layer_main">
+        <div class="pop_layer_bg"></div>
+        <div class="pop_w_layer">
+            <div class="pop_content">
+                <div class="p_w_bg">
+                    <div class="pop_form_item">
+                        <div class="pop_form_tit">线路类型</div>
+                        <div class="pop_form_con">  
+                            <select>
+                                <option>长线</option>
+                                <option>短线</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pop_form_item">
+                        <div class="pop_form_tit">目的地</div>
+                        <div class="pop_form_con">  
+                            <select>
+                                <option>江西</option>
+                                <option>湖南</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pop_form_item">
+                        <div class="pop_form_tit">组团方式</div>
+                        <div class="pop_form_con">  
+                            <select>
+                                <option>出发地跟团游</option>
+                                <option>目的地跟团游</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pop_form_item">
+                        <div class="pop_form_tit">PC折扣（%）</div>
+                        <div class="pop_form_con">  
+                            <input type="text" placeholder="默认为100%" />
+                        </div>
+                    </div>
+                    <div class="pop_form_item">
+                        <div class="pop_form_tit">APP折扣（%）</div>
+                        <div class="pop_form_con">  
+                            <input type="text" placeholder="默认为100%" />
+                        </div>
+                    </div>
+                    <div class="pop_form_item">
+                        <div class="pop_form_tit">保底利润</div>
+                        <div class="pop_form_con">  
+                            <input type="text"/>
+                        </div>
+                    </div> 
+                    <div class="layer_btn_two">
+                        <a href="javascript:;"><span class="reback_btn">取消</span></a>
+                        <a href="javascript:;"><span class="modify_btn green">确认</span></a>
+                    </div>                                                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹出层结束-->
+    <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script> 
+    <script type="text/javascript">
+        $(".o_item_tit").toggle(
+            function(){
+                $(this).addClass('more');
+                $(this).next('.o_item_detail').slideDown();
+            },
+            function(){
+                $(this).removeClass('more');
+                $(this).next('.o_item_detail').slideUp();
+            }
+        )  
+        $('.add_new').click(function(){
+           $('.page').addClass('hide');
+            $('.p_layer_main').show();
+        });
+        $('.layer_btn_two').click(function(){
+           $('.page').removeClass('hide');
+            $('.p_layer_main').hide();
+        });                               
+    </script>
+</body>
+</html>

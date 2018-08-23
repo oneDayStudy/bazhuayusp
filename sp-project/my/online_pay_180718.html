@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <title>在线付款</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>在线付款</p>
+            </div>
+        </header>
+        <div class="page control_qrCode" style="background: #fff;height:9.14rem;display: none">
+            <div class="container qrCode_cont">
+                <div class="qr_img">
+                    <img src="../resource/images/Bitmap@2x.png" alt=""/>
+                </div>
+                <div class="pay_info">
+                    <p class="qrCode_p">请打开小八助理APP扫码，完成支付</p>
+                </div>
+
+                <a href="javascript:;" class="qrCode_btn">APP内打开</a>
+            </div>
+        </div>
+        <div class="container online_pay" style="display: block;">
+            <div class="pay_infoTit">
+                <span class="pay_info_name">kl-fxs</span>邀请您帮我代付
+            </div>
+            <div class="pay_info">
+                <p><span class="tit">账单编号：</span><span>RF00001987</span></p>
+                <p><span class="tit">订单类型：</span><span>肥鱼订单</span></p>
+                <p><span class="tit">下单时间：</span><span>2018-06-28</span></p>
+                <p><span class="tit">经办人：</span><span>吕小明</span></p>
+                <p><span class="tit">联系电话：</span><span>18078820923</span></p>
+                <p><span class="tit">应付金额：</span><span>¥46,345.00</span></p>
+                <p><span class="tit">已付金额：</span><span>¥13,771.00</span></p>
+                <p><span class="tit">未付金额：</span><span class="price">¥32,574.00</span></p>
+            </div>
+            <div class="pay_form">
+                <div class="payTit">现金支付</div>
+                <div class="innnerPrice disabled">
+                    <span class="rmb">￥</span>
+                    <span>32,574.00</span>
+                </div>
+                <div class="payTip" style="display: none">
+                <p class="notice">支付方式：<span class="font_red">全额支付</span></p>
+                </div>
+                <div class="payTip">
+                    <p>授权额度扣除：2000.00元</p>
+                    <p class="notice">账户剩余可用信用额度：10，000元</p>
+                </div>
+            </div>
+            <a href="javascript:;" class="payBtn">确认付款</a>          
+        </div>          
+    </div>
+    <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+</body>
+</html>

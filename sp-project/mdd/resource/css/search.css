@@ -1,0 +1,81 @@
+body,div,dl,dt,dd,ul,li,form,input,button,h1,h2,h3,h4,h5,h6,p{color:#999}
+ul,li,dl,dt,dd{display:block;list-style:none;}
+a{text-decoration:none;outline:none;}
+.fl{float:left;}
+.fr{float:right;}
+.none{display:none;}
+.DefineHead{width:100%;position:fixed;top:0;box-shadow:none;border:none;}
+.DefineHead .whiteBg{border-bottom:none;}
+.cityBox{padding-top:1.9rem;}
+.citySearch{display:block;background:#fff;padding:0.2rem 0;}
+.citySearch img{display:block;width:6.3rem;margin:0 auto;}
+
+.showLetter{
+    position: fixed;
+    color:#00c46c;
+    width: 0.8rem;
+    height:0.8rem;
+    top:50%;
+    left:40%;
+    margin-left:0.4rem;
+    margin-top:-0.4rem;
+    border-radius: 50%;
+    border: #00c46c 1px solid;
+    text-align: center;
+    display: none;
+}
+.showLetter span{
+    width: 0.8rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.5rem;
+}
+
+.letterOuter{position:fixed;width:0.7rem;background:rgba(255,255,255,0.4);height:100%;right:0;top:0;}
+.letter{width:0.7rem;text-align:center;position:fixed;height:100%;top:18%;right:0;text-align:center;}
+.letter ul{list-style-type:none;}
+.letter ul li a{text-decoration:none;color:#333;font-size:0.24rem;}
+.city{width:100%;overflow:hidden;}
+.city-list{width:100%;}
+.city-list .city-letter{font-size:0.32rem;display:inline-block;height:0.8rem;line-height:0.8rem;padding:0 0.3rem;border-bottom:1px solid #e4e4e4;width:100%;background:#f2f4f7;}
+.city-list p{color:#333;width:100%;height:0.8rem;line-height:0.8rem;padding:0 0.3rem;border-bottom:1px solid #e4e4e4;cursor:pointer;font-size:0.32rem;}
+.UISelect{margin-top:5px}
+.search-city
+{
+    width:6rem;
+    height:0.9rem;
+    padding-top:0.15rem;
+    background-color: #fff;
+    margin:0 auto;
+}
+.search-print
+{
+    width: 6rem;
+    height:0.6rem;
+    position:relative;
+    border-radius: 5rem;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    margin-left:0.4rem;
+}
+.search-fa
+{
+    display: inline-block;
+    float: left;
+    color:#ABB7C1;
+    margin-left: 0.3rem;
+    margin-top: 0.15rem;
+}
+.search-print input
+{
+position:absolute;
+width:100%;
+height:100%;
+background:transparent;
+top:0;
+left:0.8rem;
+font-size:0.32rem;
+color:#333;
+}
+.resultBox a{border-top:1px solid #e4e4e4;display:block;padding:0.2rem 0.3rem;font-size:0.32rem;color:#333;}
+.resultBox a i{color:#ff4858;}

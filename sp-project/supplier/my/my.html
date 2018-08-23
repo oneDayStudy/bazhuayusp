@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../../resource/css/my.css">
+    <link type="text/css" rel="stylesheet" href="../../resource/css/order.css">
+    <title>我的店铺</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <div class="my_header">
+                <a href="javascript:;" class="news" alt="消息"><span class="news_data">99+</span></a> 
+                <a href="javascript:;" class="set_text">设置</a>            
+            </div>
+        </header>
+        <div class="container">
+            <div class="my_con">
+                <div class="my_detail">
+                    <div class="my_photo">
+                        <div class="photo" style="background-image:url(../../resource/images/default.png);"></div>
+                    </div>
+                    <div class="my_info">
+                        <div class="my_name">苏州青年旅行社沧浪营业部苏州青年旅行社沧浪营业部苏州青年旅行社沧浪营业部s</div>
+                        <!--<div class="my_level"><span>LV.100</span></div>-->
+                        <div class="my_shop_info" style="margin-top:0.3rem;">
+                            <span class="linkman">王大宝</span>
+                            <span class="linkphone">1850597421</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_data_con supplier_my">
+                <div class="real_time_data">
+                    <div class="real_time_tit">
+                        <span>数据统计</span>
+                        <span class="update_date">更新时间：2016-09-29</span>
+                    </div>
+                    <div class="m_data">
+                        <div class="m_data_item">
+                            <span class="i_lv">累计访问量</span>
+                            <span class="money_count"><i>755586</i></span>
+                        </div>
+                        <div class="m_data_item">
+                            <span class="i_jr">累计订单</span>
+                            <span class="money_count"><i>1305</i></span>                        
+                        </div>
+                    </div>  
+                    <div class="m_data">
+                        <div class="m_data_item">
+                            <span class="i_zf">累计营收</span>
+                            <span class="money_count"><i>320,222,330</i></span>
+                        </div>
+                        <div class="m_data_item">
+                            <span class="i_ljs">累计服务</span>
+                            <span class="money_count"><i>2420<em>人/次</em></i></span>                        
+                        </div>
+                    </div>                              
+                </div>
+                <div class="money_record">
+                <div class="record_tit"><span>店内产品</span></div>
+                </div>                
+                <div class="set_list">
+                    <a href="javascript:;"><span>旅游线路</span></a>
+                    <a href="javascript:;"><span>邮轮</span></a> 
+                    <a href="javascript:;"><span>签证</span></a>               
+                </div>            
+            </div>                                                                              
+            </div>           
+        </div>
+    </div>
+    <footer>
+      <ul class="clearfix">
+        <li class="home"><a href="../home/home.html">首页</a></li>
+        <li class="wallet"><a href="../wallet/wallet.html">钱包</a></li>
+        <li class="orders"><a href="../order/order_center.html">订单</a></li>
+        <li class="my active"><a href="../my/my.html">我的店</a></li>
+      </ul>
+    </footer>    
+  <script type="text/javascript" src="../../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    //切换
+    $(".tabs li").click(function () { 
+    var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+    $(this).addClass('cur').siblings().removeClass('cur');
+    var content_obj = $(".tabs_show") //内容节点 
+    content_obj.hide(); 
+    content_obj.eq(index_tab).show(); 
+    });  
+  </script>
+</body>
+</html>

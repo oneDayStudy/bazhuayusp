@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css">
+    <title>小八APP震撼首发</title>
+	<style>
+html,body{background:#BC0033;height:100%;}
+.page{padding-bottom:0;}
+.container .sBanner img{display:block;width:100%;}
+.container .lineCon a{display:block;}
+.container .lineCon a img{display:block;width:100%;}
+.container .lineCon p{display:block;}
+.container .lineCon p img{display:block;width:100%;}	
+.pop_layer_bg{background:rgba(0,0,0,0.8);}
+.shareLayer{z-index:6;position:absolute;width:10rem;height:5.786rem;top:50%;margin-top:-2.893rem;text-align:center;display:none;}
+.shareLayer img{display:block;width:100%;}	
+
+	</style>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+			<div class="lineCon">
+				<a href="javascript:;"><img src="resource/images/special/0312/1.jpg"></a>
+				<a href="javascript:;"><img src="resource/images/special/0312/2.jpg"></a>
+				<p class="pop"><img src="resource/images/special/0312/3.jpg"></p>
+				<a href="javascript:;"><img src="resource/images/special/0312/4.jpg"></a>
+			</div>
+		</div>
+    </div>
+	<div class="pop_layer_bg"></div>
+	<div class="shareLayer"><a href="javascript:;"><img src="resource/images/special/0312/pop.png"/></a></div>		
+  <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
+ <script type="text/javascript">
+$(".pop").click(function(){
+	$('.pop_layer_bg').show();
+	$('body').addClass('hide');
+	$('.shareLayer').show();
+});
+$(".pop_layer_bg").click(function(){
+	$('.pop_layer_bg').hide();
+	$('body').removeClass('hide');
+	$('.shareLayer').hide();
+});
+$(".shareLayer img").click(function(){
+	$('.pop_layer_bg').hide();
+	$('body').removeClass('hide');
+	$('.shareLayer').hide();
+});
+</script>  
+</body>
+</html>

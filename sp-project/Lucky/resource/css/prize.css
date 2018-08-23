@@ -1,0 +1,202 @@
+.yes,.no,.activity-rule,.detail-yes,.detail-no{
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: none;
+}
+.gx{
+    width: 7.5rem;
+    height:100%;
+    background:url("../images/yes_bg.png") no-repeat center center;
+    background-size:100%;
+}
+.bingo{
+    width:6rem;
+    height:100%;
+    background:url("../images/hotel.png") no-repeat center center;
+    background-size:100%;
+    margin:auto;
+    padding-top: 0.01rem;
+}
+.gx-ip{
+    width:5rem;
+    height:4rem;
+    margin-top:5.5rem;
+    margin-left:0.5rem;
+    overflow:scroll;
+}
+.gift{
+    font-size: 0.32rem;
+    color:#fff;
+    line-height: 1rem;
+    text-align: center;
+}
+.gift_pic{
+    width:2.2rem;
+    height:2.3rem;
+    margin-left: 1.4rem;
+    margin-top: 0.2rem;
+}
+.tip{
+    font-size: 0.15rem;
+    color:#a31300;
+    text-align: center;
+}
+.close{
+    width:1rem;
+    height:1rem;
+    background: url("../images/close.png") no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left:50%;
+    margin-left: -0.5rem;
+    bottom: 0.38rem;
+}
+.gx_no{
+    width: 6.5rem;
+    height:8.4rem;
+    position:absolute;
+    top:50%;
+    margin-top:-4.2rem;
+    left:50%;
+    margin-left:-3.25rem;
+    background: url("../images/noPrize.png") no-repeat center center;
+    background-size:100%;
+    padding-top:0.01rem;
+}
+.gx_no>p{
+    margin-top:7rem;
+    text-align:center;
+    color:#fff;
+    font-size: 0.26rem;
+}
+.gx_rule{
+    width: 6.5rem;
+    height:8.4rem;
+    position:absolute;
+    top:50%;
+    margin-top:-4.2rem;
+    left:50%;
+    margin-left:-3.25rem;
+    background: url("../images/rule.png") no-repeat center center;
+    background-size:100%;
+}
+.rule_detail{
+    width:5rem;
+    height:4.7rem;
+    position:absolute;
+    overflow:scroll;
+    left:50%;
+    margin-left:-2.5rem;
+    top:2.9rem;
+}
+.rule_detail>p:first-child{
+    font-size: 0.26rem;
+    color:#d0995d;
+    line-height:0.5rem;
+}
+.sm{
+    font-size: 0.26rem;
+    color:#864600;
+}
+.number{
+    display: inline-block;
+    vertical-align:top;
+}
+.disc{
+    display: inline-block;
+    width:4.65rem;
+    margin-left: 0.1rem;
+    letter-spacing: 0.02rem;
+}
+.gx_yes{
+    width: 7.1rem;
+    height:8.4rem;
+    position:absolute;
+    top:50%;
+    margin-top:-4.2rem;
+    left:50%;
+    margin-left:-3.55rem;
+    background: url("../images/myprize_ye.png") no-repeat center center;
+    background-size:100%;
+}
+.gx-ip-yes{
+    width:5rem;
+    height:4rem;
+    position:absolute;
+    overflow:scroll;
+    left:50%;
+    margin-left:-2.5rem;
+    top:3.4rem;
+}
+.prize_list{
+    width:4rem;
+    height:1.4rem;
+    margin-left:0.5rem;
+    border-bottom:0.01rem solid #d0995d;
+}
+.hx{
+    width:0.6rem;
+    height:1rem;
+    margin-top: 0.13rem;
+    margin-left: 0.28rem;
+    display: inline-block;
+}
+.prize_pic{
+    width:100%;
+    height:100%;
+}
+.detail{
+    font-size: 0.26rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+    vertical-align:top;
+    margin-top: 0.3rem;
+}
+.detail>span{
+    display:block;
+}
+.detail_name{
+    color:#864600;
+    font-size: 0.28rem;
+}
+.detail_time{
+    color:#d0995d;
+    padding-top: 0.1rem;
+}
+.gx_prize_no{
+    width: 6rem;
+    height:100%;
+    margin:auto;
+    background: url("../images/myprize_ye.png") no-repeat center center;
+    background-size:100%;
+    padding-top: 0.01rem;
+}
+.gx-ip-no{
+    width:5rem;
+    height:4rem;
+    position:absolute;
+    overflow:scroll;
+    left:50%;
+    margin-left:-2.5rem;
+    top:3.4rem;
+    display: none;
+}
+.package{
+    width:50%;
+    height:50%;
+    margin-left:25%;
+    margin-top: 10%;
+}
+.package>img{
+    width:100%;
+    height:100%;
+}
+.gx-ip-no>p{
+    font-size: 0.26rem;
+    color:#D0995D;
+    text-align: center;
+}

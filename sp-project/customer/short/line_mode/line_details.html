@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/consult.css">
+    <title>线路详情</title>
+</head>
+<body>
+<div class="page gary_content">
+    <header class="header" style="z-index:10;">
+        <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+        <div class="one_title">
+            <p>线路详情</p>
+        </div>
+        <a href="javascript:;" title="分享" class="share">分享</a>
+    </header>
+    <div class="container">
+        <!-- Swiper begin-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" >
+                    <div class="swiper-slide_con" style="background-image:url(../../../resource/images/banner.png); background-size:cover;background-repeat:no-repeat;">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide_con" style="background-image:url(../../../resource/images/advert_2.jpg); background-size:cover;background-repeat:no-repeat;">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide_con" style="background-image:url(../../../resource/images/advert_4.jpg); background-size:cover;background-repeat:no-repeat;">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper_layer">
+                <span><font>上海出发</font> | <font>跟团游</font></span>
+                <span class="l_num">编号：SFFX455522</span>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+        </div>
+        <!-- Swiper end-->
+        <div class="line-detail">
+            <h2>日本九州3日3夜自由行，宿温泉酒店，纯玩无购物，一天滑雪一天滑冰一天吃刺身一天滑雪一天滑冰一天吃刺身</h2>
+            <style>
+                .haveVoucher{display:table;width:100%;margin:0.2rem 0;font-size:12px;}
+                [data-dpr="2"] .haveVoucher{font-size:24px}
+                [data-dpr="3"] .haveVoucher{font-size:36px;}
+                .haveVoucher p.VoucherL{display:table-cell;vertical-align:bottom;}
+                /*.haveVoucher p.VoucherL i{background:url(../../../resource/images/icon/VoucherBg.png) no-repeat center left;
+                background-size:auto 100%;color:#ed3e07;padding:0.1rem 0.16rem;border-radius:0.1rem;}*/
+                .haveVoucher p.VoucherL i{color:#999;margin-right:0.1rem;}
+                .haveVoucher p.VoucherL em{color:#ff5844;font-size: 16px;}
+                [data-dpr='2'] .haveVoucher p.VoucherL em{font-size: 32px;}
+                [data-dpr='3'] .haveVoucher p.VoucherL em{font-size: 48px;}
+                .haveVoucher p.VoucherR{display:table-cell;color:#9A9A9A;vertical-align:middle;text-align:right;}
+                .haveVoucher p.VoucherR em{margin-right:0.2rem;text-decoration:line-through;}
+                .haveVoucher p.VoucherR span.price{color:#E84C3D;margin:0 0.05rem;}
+                .haveVoucher p.VoucherR span.price i{font-weight:bold;font-size:22px;}
+                [data-dpr="2"] .haveVoucher p.VoucherR span.price i{font-size:44px}
+                [data-dpr="3"] .haveVoucher p.VoucherR span.price i{font-size:66px;}
+                .tipsBtn{color:#9A9A9A;text-align:right;background:url(../../../resource/images/icon/tipsBtn.png) no-repeat center right;
+                    background-size:auto 100%;padding-right:0.5rem;font-size:12px;}
+                [data-dpr="2"] .tipsBtn{font-size:24px}
+                [data-dpr="3"] .tipsBtn{font-size:36px;}
+                .poplayerBg{position:fixed;width:100%;height:100%;top:0;left:0;background:#fff;z-index: 99999;background:#fff;-moz-filter: blur(30px);-webkit-filter: blur(30px);-o-filter: blur(30px);-ms-filter: blur(30px);filter: blur(30px);}
+                .haveVoucher .return_price{
+                    color:#999;
+                    overflow: hidden;
+                }
+                [data-dpr="2"] .haveVoucher .return_price{font-size:24px}
+                [data-dpr="3"] .haveVoucher .return_price{font-size:36px;}
+                .haveVoucher .return_price span{
+                    float: right;
+                    padding:0.1rem ;
+                }
+                .haveVoucher .return_price span i{
+                    color:#ff5844;
+                }
+                [data-dpr="2"] .haveVoucher .return_price span i.price_tr{font-size:32px}
+                [data-dpr="3"] .haveVoucher .return_price span i.price_tr{font-size:48px;}
+                .gang{
+                    color:#e0e0e0;
+                }
+                .haveVoucher .youhui{
+                    color:#999;
+                    overflow: hidden;
+                    padding:0.2rem 0 0.2rem 0;
+
+                }
+                .haveVoucher .youhui span{
+                    display: inline-block;
+                }
+                [data-dpr="2"] .haveVoucher .youhui {font-size:24px}
+                [data-dpr="3"] .haveVoucher .youhui {font-size:36px;}
+
+                .haveVoucher .youhui span.you_money{
+                    float: left;
+                }
+                .haveVoucher .youhui span.you_money
+                i{
+                    color:#ff5844;
+                }
+                [data-dpr="2"] .haveVoucher .youhui span.you_money i.money_pr{font-size:32px}
+                [data-dpr="3"] .haveVoucher .youhui span.you_money i.money_pr{font-size:48px;}
+
+                .haveVoucher .youhui span.you_jia{
+                    float: right;
+                    padding-right: 0.1rem;
+                }
+                .haveVoucher .youhui span.you_jia i{
+                    color:#ff5844;
+                }
+                [data-dpr="2"]  .haveVoucher .youhui span.you_jia i:nth-child(2){font-size:32px}
+                [data-dpr="3"]  .haveVoucher .youhui span.you_jia i:nth-child(2){font-size:48px;}
+
+                .haveVoucher .youhui span.you_jia
+                i.wei{
+                    color:#99a8b5;
+                    padding-left: 0.1rem;
+                }
+                [data-dpr="2"]  .haveVoucher .youhui span.you_jia i.wei{font-size:20px}
+                [data-dpr="3"]  .haveVoucher .youhui span.you_jia i.wei{font-size:30px;}
+                .haveVoucher .youhui span.quan_pr{
+                    color:#ff467a;
+                    border:1px solid #ff467a;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    border-radius: 20px;
+                    padding: 0 0.1rem 0 0.1rem;
+                }
+            </style>
+            <div class="haveVoucher">
+                <!--<p class="VoucherL"><i>赚</i><em>¥720</em></p>-->
+                <!--<p class="VoucherR">-->
+                    <!--价格<span class="price">￥<i>8280</i></span>起-->
+                <!--</p>-->
+
+                <!--火车往返价格在右边-->
+                <div class="return_price">
+                    <span>火车往返<i>￥</i><i
+                            class="price_tr">2600</i>起</span>
+                    <span class="gang">|</span>
+                    <span>火车往返<i>￥</i><i
+                            class="price_tr">2600</i>起</span>
+                </div>
+
+                <!--赚或券-->
+                <div class="youhui">
+                    <span class="you_money">赚<i>￥</i><i class="money_pr">500</i></span>
+                    <!--<span>券100</span>-->
+                    <span class="you_jia">价格<i>￥</i><i>2600</i>起<i class="wei">未含大交通</i></span>
+                </div>
+
+                <div class="youhui">
+                    <span class="quan_pr">券500</span>
+                    <!--<span>券100</span>-->
+                    <span class="you_jia">价格<i>￥</i><i>2600</i>起<i class="wei">未含大交通</i></span>
+                </div>
+            </div>
+
+            <!--<div class="tipsBtn">不含往返交通</div>-->
+            <!--<div class="customer_price">门市价：<span>￥<i>269</i></span>起</div>-->
+        </div>
+        <div class="icon-wrap">
+            <em class="quan-item inline telephone">立减¥1000</em>
+            <em class="quan-item inline xiaoba">小八专供</em>
+            <em class="quan-item inline sure">及时确认</em>
+        </div>
+        <dl class="list_items yhq-line">
+            <a href="javascript:;"><dt><i></i><span class="list_item_tit i_yhq">领取优惠券</span></dt></a>
+            <a href="javascript:;">
+                <dt>
+                    <span class="list_item_tit i_bq">线路班期</span>
+                <div class="date_group">
+                    <span>04-30</span>
+                    <span>05-01</span>
+                    <span>05-05</span>
+                    <span>06-30</span>
+                </div>
+                </dt>
+            </a>
+        </dl>
+        <!--联系方式-->
+        <style>
+            .whiteBg{background:#fff;}
+            .innerContact{margin-top:0;}
+            [data-dpr="3"] .innerContact{margin-top:0;}
+            .innerContact .contact .conPhoto{width:auto;}
+            .blank_2{height:1.8rem;}
+            .enterBox{padding-left:1.666667rem;}
+            .enterBox a{display:block;float:left;border:2px solid #E4E4E4;width:2.72rem;height:0.75rem;text-align:center;line-height:0.75rem;color:#99a8b5;border-radius:0.375rem;margin-right:0.2rem;font-size:13px;}
+            [data-dpr="2"]  .enterBox a{font-size:26px;}
+            [data-dpr="3"]  .enterBox a{font-size:39px;}
+        </style>
+        <div class="contactBox innerContact whiteBg" style="margin-bottom:0.2rem;">
+            <div class="contact">
+                <div class="conPhoto">
+                    <div class="photo"><img src="../../../resource/images/110x110.png"></div>
+                    <div class="photoInfo">
+                        <h2>胖子_旅游顾问</h2>
+                        <p class="noIcon"><a href="tel:13459695698">13459695698</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="enterBox clearfix">
+                    <a href="javascript:;"><span>在线咨询</span></a>
+                    <a href="javascript:;"><span>进入店铺</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!--联系方式结束-->
+        <div class='content-wrap'>
+            <div class="line_detail_intro">
+                <div class="line_detail_tit tabs">
+                    <ul>
+                        <li class="cur">行程介绍</li>
+                        <li>产品特色</li>
+                        <li>费用说明</li>
+                    </ul>
+                </div>
+                <div class="line-introduce">
+                    <div class="line_detail_info tabs_show">
+                        <h2>行程介绍</h2>
+                        <div class="text_version">
+                            <div class='day-wrap'>
+                                <div class="day_list"><i></i><p class="day_con"><span>第1天</span>上海<span class="pl"></span>日本</p></div>
+                                <div class="text_con yu">
+                                    <div class="lin-info">信息信息信息</div>
+                                    <div class="line-food">
+                                        <span>早餐：敬请自理</span>
+                                        <span>午餐：敬请自理</span>
+                                        <span>晚餐：敬请自理</span>
+                                    </div>
+                                    <div class="line-bed">住宿：无</div>
+                                </div>
+                            </div>
+                            <div class='day-wrap'>
+                                <div class="day_list"><i></i><p class="day_con"><span>第2天</span>上海<span class="hc"></span>日本</p></div>
+                                <div class="text_con yu">
+                                    <div class="lin-info">信息信息信息</div>
+                                    <div class="line-food">
+                                        <span>早餐：敬请自理</span>
+                                        <span>午餐：敬请自理</span>
+                                        <span>晚餐：敬请自理</span>
+                                    </div>
+                                    <div class="line-bed">住宿：无</div>
+                                </div>
+                            </div>
+                            <div class='day-wrap'>
+                                <div class="day_list"><i></i><p class="day_con"><span>第3天</span>上海<span class="db"></span>日本</p></div>
+                                <div class="text_con yu">
+                                    <div class="lin-info">信息信息信息</div>
+                                    <div class="line-food">
+                                        <span>早餐：敬请自理</span>
+                                        <span>午餐：敬请自理</span>
+                                        <span>晚餐：敬请自理</span>
+                                    </div>
+                                    <div class="line-bed">住宿：无</div>
+                                    <div class="line_pic">
+                                        <span><img src="../../../resource/images/products/line_one.png"></span>
+                                        <span><img src="../../../resource/images/products/line_two0.png"></span>
+                                        <span><img src="../../../resource/images/products/line_one.png"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='menu-nav none'>
+                            <a><em class="em1">行程</em><br><em>简介</em></a>
+                        </div>
+                    </div>
+                    <div class="line_detail_info tabs_show">
+                        <h2 class="feature">产品特色</h2>
+                        <div class="text-panel">
+                            <p><em>纯品理念：</em>三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚；</p>
+                            <p><em>纯品体验：</em>让您无忧旅游，无需付费性价比高，尽享高端；</p>
+                            <p><em>纯品特色：</em>三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚；</p>
+                            <p><em>纯品奢享：</em>三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚消费，纯品三亚；</p>
+                        </div>
+                    </div>
+                    <div class="line_detail_info tabs_show">
+                        <h2>费用说明</h2>
+                        <p class='pay_title'>费用包含</p>
+                        <ul class="text-panel">
+                            <li>交通：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚；
+                                小交通：让您无忧旅游，无需付费性价比高，尽享高端；
+                                住宿：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚；
+                                用餐：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚消费，纯品三亚；
+                                门票：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚消费，纯品三亚；</li>
+                        </ul>
+                        <p class='pay_title'>费用不包含</p>
+                        <ul class="text-panel">
+                            <li>交通：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚；
+                                小交通：让您无忧旅游，无需付费性价比高，尽享高端；
+                                住宿：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚；
+                                用餐：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚消费，纯品三亚；
+                                门票：三亚异地100%零自费的一价全包产品，让你真正透明消费，纯品三亚消费，纯品三亚；</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <dl class="list_items item_info">
+                <a href="javascript:;"><dt><span class="list_item_tit i_yd">预订需知</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_qz">签证说明</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_pj">线路评价</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_sp">购物说明</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_bc">补充说明</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_zy">注意事项</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_ck">查看供应商店铺</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_tj">注意事项</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_tg">注意事项</span></dt></a>
+                <a href="javascript:;"><dt><span class="list_item_tit i_yq">友情提示</span></dt></a>
+            </dl>
+            <div class="adv_img">
+                <img src='../../../resource/images/products/line_one.png'>
+            </div>
+            <div class="specialBox line-info">
+                <div class='pro-title'>—— 相似产品 ——</div>
+                <ul>
+                    <li class="clearfix">
+                        <a href="javascript:;">
+                            <div class="lineItem">
+                                <div class="linePic"><img src="../../../resource/images/350x240.png"></div>
+                                <div class="lineInfo">
+                                    <h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+                                    <em class="quan block">券300</em>
+                                    <p class="price">门市价：<span>￥<i>32599</i></span>起</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="lineItem">
+                                <div class="linePic"><img src="../../../resource/images/350x240.png"></div>
+                                <div class="lineInfo">
+                                    <h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+                                    <em class="quan block">券300</em>
+                                    <p class="price">门市价：<span>￥<i>32599</i></span>起</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <div class="lineItem">
+                                <div class="linePic"><img src="../../../resource/images/350x240.png"></div>
+                                <div class="lineInfo">
+                                    <h2>日本本州5晚6天富士山南线私人温泉艺妓日本本州5晚6天富士山南线私人温泉艺妓</h2>
+                                    <em class="quan block">券300</em>
+                                    <p class="price">门市价：<span>￥<i>32599</i></span>起</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="imageviewer visible">
+    <div class="swiper-image image-srcoll">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide swiper-slide_con">
+                <img src="../../../resource/images/products/line_one.png">
+            </li>
+            <li class="swiper-slide swiper-slide_con">
+                <img src="../../../resource/images/products/line_two0.png">
+            </li>
+            <li class="swiper-slide swiper-slide_con">
+                <img src="../../../resource/images/products/line_one.png">
+            </li>
+        </ul>
+        <div class="img-nav swiper-pagination"></div>
+        <div class="close"></div>
+    </div>
+</div>
+<div class="jianjie_bg none"></div>
+<div class="jianjie tran">
+    <div class="container">
+        <div class="line_detail_info tabs_show">
+            <p class="title_intro">行程介绍</p>
+            <div class="text_version">
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D1</span>上海日本</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D2</span>日本</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+                <div class='day-wrap'>
+                    <div class="day_list"><i></i><span>D3</span>日本-上海vvvvv</div>
+                    <div class="text_con">
+                        <div class="line-food">
+                            <span>早餐：敬请自理</span>
+                            <span>午餐：敬请自理</span>
+                            <span>晚餐：敬请自理</span>
+                        </div>
+                        <div class="line-bed">住宿：无</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="btn_thr" style="display: none;">
+        <a href="javascript:;"><span class="i_ysc"></span><p class="text_collect">收藏</p></a>
+        <a href="javascript:;"><span class="i_tel"></span><p class="text_collect">咨询</p></a>
+        <a href="../reservation/line_reserve.html" class="orange ljyd">立即预订</a>
+    </div>
+    <div class="btn_thr">
+        <a href="javascript:;"><span class="i_ysc"></span><p class="text_collect">收藏</p></a>
+        <a href="javascript:;"><span class="i_tal"></span><p class="text_collect">在线咨询</p></a>
+        <a href="../reservation/line_reserve.html" class="orange ljyd">立即预订</a>
+    </div>
+
+</footer>
+<!--价格弹层开始-->
+<style>
+    .feeBox{position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: transparent; z-index: 999992; display:table;}
+    .feeBox .feeCol{display:table-cell; vertical-align:middle; padding:0 0.8rem; font-size:14px;}
+    [data-dpr="2"] .feeBox .feeCol{font-size:28px;}
+    [data-dpr="3"] .feeBox .feeCol{font-size:42px;}
+    .feeBox .feeCol p{line-height:1.2;padding:0.05rem;}
+    .feeBox .feeCol .price{color:#ff5844;font-weight:bold;margin:0 0.08rem;}
+    .feeBox .feeCol .price i{font-size:20px;}
+    [data-dpr="2"] .feeBox .feeCol .price i{font-size:40px;}
+    [data-dpr="3"] .feeBox .feeCol .price i{font-size:60px;}
+    .feeBox .feeCol p em{color:#999;}
+    .feeBox .feeCol p.tips{background:url(../../../resource/images/icon/tipsBtn.png) no-repeat top left; background-size:0.4rem 0.4rem;padding-left:0.5rem;color:#999;margin-top:0.1rem;}
+    .closeBox{height: 10vh; position: relative; position: fixed; width: 100%; bottom: 0.3rem; left: 0; background: transparent; z-index: 999994;}
+    .closeBox .closedIcon{display: block; position: absolute; left: 50%; margin-left: -0.7rem; bottom: 0.2rem; width: 1.4rem; height: 1.4rem; background: url(../../../resource/images/icon/iconClosed.png) no-repeat center center; background-size: 100% 100%;}
+</style>
+<div id="mddServiceBox" class="none">
+    <div class="feeBox">
+        <div class="feeCol">
+            <p>线路价格<span class="price">￥<i>8280</i></span><em>起</em></p>
+            <p>推荐飞机往返<span class="price">￥<i>8280</i></span><em>起</em></p>
+            <p>推荐火车往返<span class="price">￥<i>8280</i></span><em>起</em></p>
+            <p class="tips">线路价格不包含大交通，交通价格以旅行社实际下单为准</p>
+        </div>
+    </div>
+    <div class="closeBox">
+        <a href="javascript:;" class="closedIcon"></a>
+    </div>
+</div>
+</div>
+<!--价格弹层结束-->
+<a href="javascript:;" class="totop"></a>
+<a href="javascript:;" class="openApp"><img src="../../../resource/images/APPbtn.png"></a>
+
+<script type="text/javascript" src="../../../resource/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="../../../resource/javascript/swiper.min.js"></script>
+<script type="text/javascript" src="../../../resource/javascript/global.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false,
+
+        });
+        //产品价格弹层
+        $(".tipsBtn").click(function () {
+            $('.page').addClass('poplayerBg');
+            $('#mddServiceBox').removeClass('none');
+        });
+        $(".closedIcon").click(function () {
+            $('.page').removeClass('poplayerBg');
+            $('#mddServiceBox').addClass('none');
+        });
+        /*图片点击显示*/
+        function imgSlider(initSslide){
+            var swiper1 = new Swiper('.swiper-image', {
+                pagination: '.img-nav.swiper-pagination',
+                paginationType :'fraction',
+                paginationClickable: true,
+                spaceBetween: 0,
+                centeredSlides: true,
+                paginationType : 'fraction',
+                initialSlide:initSslide
+            });
+        }
+        $(".line_pic span").click(function(){
+            imgSlider($(this).index());
+            $(".imageviewer").removeClass("visible");
+        })
+        $(".swiper-image").on('click','.close',function(){
+            $(".imageviewer").addClass("visible");
+        })
+
+        $(".o_item_tit").toggle(
+                function(){
+                    $(this).addClass('more');
+                    $(this).next('.o_item_detail').slideDown();
+                },
+                function(){
+                    $(this).removeClass('more');
+                    $(this).next('.o_item_detail').slideUp();
+                }
+        )
+        //滚动
+        $(window).scroll(function(){
+            var offTop = $('.line_detail_intro').offset().top-150;
+            var scrollTop = $(window).scrollTop();
+            //tab置顶
+            $('.line_detail_tit').toggleClass('fixed',scrollTop >= offTop)
+            //滚动导航出现
+            $(".menu-nav").toggleClass('none',scrollTop < offTop);
+            //滚动到对应天数
+            $(".text_version .day-wrap").each(function(){
+                if( scrollTop>= $(this).offset().top - 150){
+                    $(".day span").eq($(this).index()).addClass('active').siblings().removeClass('active');
+                }
+            })
+            //滚动到对应tab
+            $(".line-introduce .tabs_show").each(function(){
+                if( scrollTop >= $(this).offset().top - 150){
+                    $(".tabs li").eq($(this).index()).addClass("cur").siblings().removeClass("cur");
+                }
+            })
+        });
+        //tab切换
+        $(".tabs li").click(function () {
+            $('.line_detail_tit').addClass('fixed');
+            $(this).addClass('cur').siblings().removeClass('cur');
+            var scrollTop = $(".line-introduce .tabs_show").eq($(this).index()).offset().top-160;
+            $(window).scrollTop(scrollTop);
+        });
+        //天数导航
+        $(".jianjie .text_version .day-wrap").click(function(){
+            var dayTop = $(".page .day-wrap").eq($(this).index()).offset().top - 100;
+            $(".jianjie").removeClass("transform");
+            $(".jianjie_bg").addClass("none");
+            $(window).scrollTop(dayTop);
+        })
+        $(".menu-nav").click(function(){
+            $(".jianjie_bg").removeClass("none");
+            $(".jianjie").removeClass("tran").addClass("transform");
+        })
+        $(".jianjie").click(function(e){
+            var con = $(".jianjie .line_detail_info");
+            if(!con.is(e.target && con.has(e.target).length == 0)){
+                $(".jianjie").removeClass("transform").addClass("tran");
+                $(".jianjie_bg").addClass("none");
+            }
+            e.stopPropagation();
+        })
+        $(".jianjie").on("touchstart", function(e) {
+            startX = e.originalEvent.changedTouches[0].pageX,
+                    startY = e.originalEvent.changedTouches[0].pageY;
+        });
+        $(".jianjie").on("touchmove", function(e) {
+            moveEndX = e.originalEvent.changedTouches[0].pageX,
+                    moveEndY = e.originalEvent.changedTouches[0].pageY,
+                    X = moveEndX - startX,
+                    Y = moveEndY - startY;
+            if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
+                $(".jianjie").removeClass("transform").addClass("tran");
+                $(".jianjie_bg").addClass("none");
+            }
+        })
+
+    });
+
+</script>
+</body>
+</html>

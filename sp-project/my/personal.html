@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/login.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <title>出游人信息</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>个人信息</p>
+            </div>
+            <a href="my.html" class="log_out save">保存</a>
+        </header>    
+        <div class="container">
+            <div class="travel_peo_info">
+                <div class="change_photo">
+                    <div class="photo_text">头像</div>
+                    <div class="photo_upload">
+                        <div class="p_upload_pic" style="background:url(../resource/images/hot_1.png) no-repeat;background-size:cover;"></div>
+                    </div>
+                </div>
+                <!--copy begin-->
+                <div class="peo_info_edit personal_form">
+                    <ul class="edit_item_form">                   
+                        <li>
+                            <span class="form_item_tit">登录账号</span>
+                            <span class="form_item_edit">KL-FXS</span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">所属旅行社</span>
+                            <span class="form_item_edit">苏州青年旅行社</span>
+                        </li>  
+                        <li>
+                            <span class="form_item_tit">账号角色</span>
+                            <span class="form_item_edit">分销达人</span>
+                        </li>   
+                        <li>
+                            <span class="form_item_tit">姓名</span>
+                            <span class="form_item_edit">李大胖</span>
+                        </li>                                                      
+                    </ul>
+                </div>
+                <!--copy end--> 
+                <!--copy begin-->
+                <div class="peo_info_edit personal_form">
+                    <ul class="edit_item_form">                     
+                        <li>
+                            <span class="form_item_tit">昵称</span>
+                            <span class="form_item_edit"><input type="text" placeholder="lipang"></span>
+                        </li>                                                                                                 
+                        <li>
+                            <span class="form_item_tit">性别</span>
+                            <span class="form_item_edit sex_box">
+                                <label class="female">
+                                    <i>女</i>
+                                    <input type="radio" name="1">
+                                </label> 
+                                <label class="male check">
+                                     <i>男</i>
+                                     <input type="radio" name="1">
+                                </label>                                
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">电话</span>
+                            <span class="form_item_edit"><input type="text" placeholder="13015662240"></span>
+                        </li>   
+                        <li>
+                            <span class="form_item_tit">邮箱</span>
+                            <span class="form_item_edit"><input type="text" placeholder="807284396@qq.com"></span>
+                        </li>                                                   
+                    </ul>
+                </div>
+                <!--copy end-->                           
+            </div>
+        </div>
+    </div>  
+    <!--弹出层开始-->
+    <div class="pop_layer_bg"></div>
+    <div class="upload_layer">
+        <ul>
+            <li>拍照</li>
+            <li>从相册选择</li>
+        </ul>
+        <div class="cancel_upload">取消</div>
+    </div>
+    <!--弹出层结束-->  
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('.change_photo').click(function(){
+           $('.page').addClass('hide');
+            $('.pop_layer_bg').show();
+            $('.upload_layer').show();
+        });
+        $('.cancel_upload').click(function(){
+           $('.page').removeClass('hide');
+            $('.pop_layer_bg').hide();
+             $('.upload_layer').hide();
+        });                             
+    </script>  
+</body>
+</html>

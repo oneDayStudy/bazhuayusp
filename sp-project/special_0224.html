@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="resource/lib-flexible-master/build/flexible.js"></script> 
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+    <title></title>
+	<style type="text/css">
+	body{
+		background: #3e1281;
+		padding-bottom: 1.1rem;
+	}
+	.header,.top{
+		width:100%;
+		display: block;
+	}
+	.s_contain img{
+		display: block;
+		width:100%;
+	}
+	.meng{
+		position: relative;
+	}
+	.meng:after{
+        content: '';
+        width:100%;
+        height: 100%;
+        position: absolute;
+        left:0;
+        top:0;
+        background:rgba(0,0,0,0.5);
+        z-index:8;
+	}
+	.meng:before{
+		content:'';
+		width:3.57rem;
+		height: 3.12rem;
+		background: url(resource/images/s_over.png) no-repeat center;
+		position: absolute;
+		left: 50%;
+		top:50%;
+		margin-left:-1.785rem;
+		margin-top:-1.56rem;
+		z-index:9;
+		background-size: contain;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="s_contain">
+		<a href="javascript:;" class="header">
+			<img src="resource/images/special/s_header.jpg">
+		</a>	
+		<a href="javascript:;" class="top">
+			<img src="resource/images/special/s_top.jpg">
+		</a>	
+		<a href="javascript:;" class="header meng">
+			<img src="resource/images/special/active01.jpg">
+		</a>	
+		<a href="javascript:;" class="top">
+			<img src="resource/images/special/active02.jpg">
+		</a>
+		<a href="javascript:;" class="header">
+			<img src="resource/images/special/active03.jpg">
+		</a>	
+		<a href="javascript:;" class="top">
+			<img src="resource/images/special/active04.jpg">
+		</a>					
+	</div>
+  <script type="text/javascript">
+	
+  </script>
+</body>
+</html>

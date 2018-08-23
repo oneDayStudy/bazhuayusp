@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <!--
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">
+    -->        
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/order.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/popLayer.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/swiper.min.css">
+    <script type="text/javascript" src="resource/js/global.js"></script>    
+    <title>选择机票</title>
+    <style>
+       .fif{
+           font-size: 0.24rem;
+           display: inline-block;
+           border-radius: 0.2rem;
+           text-align: center;
+           margin-top: -0.3rem;
+           border:1px solid #FFBCB4;background:#FFF2F0;color:#ff5844;
+       }
+       .ticketOuter .packageIcon{margin:0.08rem 0 0 0.01rem;}
+       .ticketOuter .packageIcon img{display:block;width:1.6rem;height:0.52rem;}
+    </style>
+</head>
+<body>
+<div class="wrap flex flex-v">
+    <header class="header greenBg" style="top:0;">
+        <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+        <div class="title">飞机往返<i class="fa fa-angle-down"></i></div>
+    </header>
+    <div class="hideTabBox">
+      <div class="hideTabs">
+          <a href="javascript:;" class="cur">飞机往返</a>
+          <a href="javascript:;">火车往返</a>
+          <a href="javascript:;">飞机+火车</a>
+          <a href="javascript:;">火车+飞机</a>
+      </div>
+    </div>
+    <div class="tabs">
+        <span class="active" data-index="0">特惠组合<i class="bottLine"></i></span>
+        <span data-index="1">自由选择<i class="bottLine"></i></span>
+    </div>
+    <div class="main flex-1">
+        <div class="tab_con" data-index="0">
+          <div class="airportTit">
+            <span>上海浦东国际机场</span>
+            <span class="returnIcon"><img src="resource/images/returnIcon.png"></span>
+            <span>厦门高崎机场</span>
+          </div>
+          <div class="blank_10"></div>
+        <div class="mainOuter">
+          <div class="ticketOuter">
+            <div class="packageIcon"><img src="resource/images/IntroPackage.png"></div>           
+            <div class="orderBox Shadow">
+              <div class="ticketBox">
+                  <div class="ticketCol">
+                    <div class="colTop">
+                      <p class="oneRow">
+                        <span class="quIcon"></span>
+                        <span>01-14</span><span>|</span>
+                        <span>南方航空CZ6738</span><span>|</span>
+                        <span>空客321（中）</span>
+                      </p>
+                    </div>
+                    <div class="airDetail">
+                        <p class="airCol">
+                          <span class="time">21：00</span>
+                          <span class="address">上海浦东</span>
+                        </p>
+                        <p class="line">
+                          <span>4h20min</span>
+                          <img src="resource/images/line.png">
+                          <span>经停</span>
+                        </p>
+                        <p class="airCol">
+                          <span class="time">21：00<i class="day">+1</i></span>
+                          <span class="address">上海浦东</span>
+                        </p>
+                    </div>
+                  </div>
+                  <div class="ticketCol">
+                    <div class="colTop">
+                      <p>
+                        <span class="fanIcon"></span>
+                        <span>01-14</span><span>|</span>
+                        <span>南方航空CZ6738<i class="f_green">共享</i></span><span>|</span>
+                        <span>波音777（大）</span>
+                      </p>
+                    </div>
+                    <div class="airDetail">
+                        <p class="airCol">
+                          <span class="time">21：00</span>
+                          <span class="address">上海浦东</span>
+                        </p>
+                        <p class="line">
+                          <span>4h20min</span>
+                          <img src="resource/images/line.png">
+                          <span>经停</span>
+                        </p>
+                        <p class="airCol">
+                          <span class="time">21：00<i class="day">+1</i></span>
+                          <span class="address">上海浦东</span>
+                        </p>
+                    </div>
+                  </div> 
+                  <div class="dottLine">
+                    <i class="circleL"></i>
+                    <hr>
+                    <i class="circleR"></i>
+                  </div>
+                  <div class="seatBox">                          
+                  <div class="checkInfo">
+                      <p>
+                        <span>经济舱</span>
+                        <span class="ruleLink">退改规则</span>
+                      </p>
+                      <p>
+                          <span class="fif">立减50</span>
+                      </p>
+                      <p class="price">
+                        <span class="data">￥<b>3588</b></span>
+                        <span class="tips">余位充足</span>
+                      </p>
+                      <p class="clickBtn">
+                        <a href="javascript:;">选择</a>
+                      </p>
+                  </div>
+                  </div>
+                  <i class="checkedIcon"></i>             
+              </div>
+            </div>
+          </div>
+          <div class="blank_10"></div>
+            <!--7-25zb-->
+            <div class="ticketOuter ticketOuter_choiced">
+                <div class="packageIcon"><img src="resource/images/IntroPackage.png"></div>
+                <div class="orderBox Shadow">
+                    <div class="ticketBox TicketChecked">
+                        <div class="ticket_con">
+                            <p class="ticket_con_tit">
+                                默认交通（价格稳定，下单需确认，具体航次以出团前出票为准）：
+                            </p>
+                            <p class="ticket_con_p">
+                                单程机票含机场建设税及燃油税（实际航班时间及机场以出票为准），单程高铁二等座（按照苏州北-北京南票价含手续费核算，具体车次以实际出票为准）
+                            </p>
+                            <p class="ticket_con_yu">
+                            </p>
+                        </div>
+                        <div class="dottLine">
+                            <i class="circleL"></i>
+                            <hr>
+                            <i class="circleR"></i>
+                        </div>
+                        <div class="seatBox">
+                            <div class="checkInfo">
+                                <p>
+                                    <span class="ruleLink">退改规则</span>
+                                </p>
+                                <p>
+                                </p>
+                                <p class="price">
+                                    <span class="tips">余位充足</span>
+                                </p>
+                                <p class="clickBtn">
+                                    <a href="javascript:;">已选</a>
+                                </p>
+                            </div>
+                        </div>
+                        <i class="checkedIcon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="blank_10"></div>
+            <!--7-25zbovr-->
+          <div class="ticketOuter"> 
+          <div class="packageIcon"><img src="resource/images/OtherPackage.png"></div> 
+          <div class="orderBox Shadow">
+            <div class="ticketBox">
+                <div class="ticketCol">
+                  <div class="colTop">
+                    <p>
+                      <span class="quIcon"></span>
+                      <span>01-14</span><span>|</span>
+                      <span>南方航空CZ6738</span><span>|</span>
+                      <span>经济舱</span>
+                      <span class="ticketNum">仅剩8张</span>
+                    </p>
+                  </div>
+                  <div class="airDetail">
+                      <p class="airCol">
+                        <span class="time">21：00</span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                      <p class="line">
+                        <span>4h20min</span>
+                        <img src="resource/images/line.png">
+                        <span>经停</span>
+                      </p>
+                      <p class="airCol">
+                        <span class="time">21：00<i class="day">+1</i></span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                  </div>
+                </div>
+                <div class="ticketCol">
+                  <div class="colTop">
+                    <p>
+                      <span class="fanIcon"></span>
+                      <span>01-14</span><span>|</span>
+                      <span>南方航空CZ6738</span><span>|</span>
+                      <span>经济舱</span>
+                    </p>
+                  </div>
+                  <div class="airDetail">
+                      <p class="airCol">
+                        <span class="time">21：00</span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                      <p class="line">
+                        <span>4h20min</span>
+                        <img src="resource/images/line.png">
+                        <span>经停</span>
+                      </p>
+                      <p class="airCol">
+                        <span class="time">21：00<i class="day">+1</i></span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                  </div>
+                </div> 
+                <div class="dottLine">
+                  <i class="circleL"></i>
+                  <hr>
+                  <i class="circleR"></i>
+                </div>
+                <div class="seatBox">                           
+                <div class="checkInfo">
+                    <p>
+                      <span>经济舱</span>
+                      <span class="ruleLink">退改规则</span>
+                    </p>
+                    <p>
+                        <span class="fif">立减50</span>
+                    </p>
+                    <p class="price">
+                      <span class="data">￥<b>3588</b></span>
+                      <span class="tips">余位充足</span>
+                    </p>
+                    <p class="clickBtn">
+                      <a href="javascript:;">选择</a>
+                    </p>
+                </div>
+                </div>
+                <i class="checkedIcon"></i>             
+            </div>
+          </div>
+          </div>
+          <div class="blank_10"></div> 
+        </div>                  
+        </div>
+        <div class="tab_con none" data-index="1">
+          <div class="singleLine">
+            <div class="airportTit oneRow">
+              <span class="smallIcon"><i class="quIcon"></i></span>
+              <span>上海浦东国际机场</span>
+              <span class="returnIcon"><img src="resource/images/singleIcon.png"></span>
+              <span>厦门高崎机场</span>
+              <span class="date">01月16日</span>
+            </div>
+            <p class="tips"><span>东航MU9185</span><span>|</span> <span>大型机321</span> <span>|</span> <span>经济舱</span></p>
+          </div>      
+          <div class="airportTit">
+            <span class="smallIcon"><i class="fanIcon"></i></span>
+            <span>上海浦东国际机场</span>
+            <span class="returnIcon"><img src="resource/images/singleIcon.png"></span>
+            <span>厦门高崎机场</span>
+          </div>
+          <div class="blank_10"></div> 
+          <div class="mainOuter"> 
+          <div class="orderBox Shadow">
+            <div class="ticketBox">
+                <div class="ticketCol">
+                  <div class="colTop">
+                    <p class="oneRow">
+                      <span class="airlineBox"><i class="airlines pubFlights_3u"></i></span>
+                      <span>01-14</span><span>|</span>
+                      <span>南方航空CZ6738</span><span>|</span>
+                      <span>空客321（中）</span>
+                    </p>
+                  </div>
+                  <div class="airDetail">
+                      <p class="airCol">
+                        <span class="time">21：00</span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                      <p class="line">
+                        <span>4h20min</span>
+                        <img src="resource/images/line.png">
+                        <span>经停</span>
+                      </p>
+                      <p class="airCol">
+                        <span class="time">21：00<i class="day">+1</i></span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                  </div>
+                </div>
+                <div class="dottLine">
+                  <i class="circleL"></i>
+                  <hr>
+                  <i class="circleR"></i>
+                </div>
+                <div class="seatBox">                          
+                  <div class="checkInfo">
+                      <p>
+                        <span>经济舱</span>
+                        <span class="ruleLink">退改规则</span>
+                      </p>
+                      <p>
+                          <span class="fif">立减50</span>
+                      </p>
+                      <p class="price">
+                        <span class="data">￥<b>3588</b></span>
+                        <span class="tips">余位充足</span>
+                      </p>
+                      <p class="clickBtn">
+                        <a href="javascript:;">选择</a>
+                      </p>
+                  </div>
+                  <div class="checkInfo">
+                      <p>
+                        <span>头等舱</span>
+                        <span class="ruleLink">退改规则</span>
+                      </p>
+                      <p class="price">
+                        <span class="data">￥<b>3588</b></span>
+                        <span class="tips f_yellow">仅剩6张</span>
+                      </p>
+                      <p class="clickBtn">
+                        <a href="javascript:;">选择</a>
+                      </p>
+                  </div>
+                  <div class="hideBox">                          
+                      <div class="checkInfo">
+                          <p>
+                            <span>经济舱</span>
+                            <span class="ruleLink">退改规则</span>
+                          </p>
+                          <p>
+                              <span class="fif">立减50</span>
+                          </p>
+                          <p class="price">
+                            <span class="data">￥<b>3588</b></span>
+                            <span class="tips">余位充足</span>
+                          </p>
+                          <p class="clickBtn">
+                            <a href="javascript:;">选择</a>
+                          </p>
+                      </div>
+                      <div class="checkInfo">
+                          <p>
+                            <span>头等舱</span>
+                            <span class="ruleLink">退改规则</span>
+                          </p>
+                          <p class="price">
+                            <span class="data">￥<b>3588</b></span>
+                            <span class="tips f_yellow">仅剩6张</span>
+                          </p>
+                          <p class="clickBtn">
+                            <a href="javascript:;">选择</a>
+                          </p>
+                      </div>                                    
+                  </div>                                    
+                </div>
+                <div class="blank_30"></div>
+                <a href="javascript:;" class="seeMore"><span>展开舱位</span></a> 
+                <i class="checkedIcon"></i>             
+            </div>
+          </div>
+          <div class="blank_10"></div> 
+          <div class="orderBox Shadow">
+            <div class="ticketBox">
+                <div class="ticketCol">
+                  <div class="colTop">
+                    <p>
+                      <span class="quIcon"></span>
+                      <span>01-14</span><span>|</span>
+                      <span>南方航空CZ6738</span><span>|</span>
+                      <span>经济舱</span>
+                      <span class="ticketNum">仅剩8张</span>
+                    </p>
+                  </div>
+                  <div class="airDetail">
+                      <p class="airCol">
+                        <span class="time">21：00</span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                      <p class="line">
+                        <span>4h20min</span>
+                        <img src="resource/images/line.png">
+                        <span>经停</span>
+                      </p>
+                      <p class="airCol">
+                        <span class="time">21：00<i class="day">+1</i></span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                  </div>
+                </div>
+                <div class="ticketCol">
+                  <div class="colTop">
+                    <p>
+                      <span class="fanIcon"></span>
+                      <span>01-14</span><span>|</span>
+                      <span>南方航空CZ6738</span><span>|</span>
+                      <span>经济舱</span>
+                    </p>
+                  </div>
+                  <div class="airDetail">
+                      <p class="airCol">
+                        <span class="time">21：00</span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                      <p class="line">
+                        <span>4h20min</span>
+                        <img src="resource/images/line.png">
+                        <span>经停</span>
+                      </p>
+                      <p class="airCol">
+                        <span class="time">21：00<i class="day">+1</i></span>
+                        <span class="address">上海浦东</span>
+                      </p>
+                  </div>
+                </div> 
+                <div class="dottLine">
+                  <i class="circleL"></i>
+                  <hr>
+                  <i class="circleR"></i>
+                </div>                           
+                <div class="checkInfo">
+                    <p>
+                      <span>经济舱</span>
+                      <span class="ruleLink">退改规则</span>
+                    </p>
+                    <p>
+                        <span class="fif">立减50</span>
+                    </p>
+                    <p class="price">
+                      <span class="data">￥<b>3588</b></span>
+                      <span class="tips">余位充足</span>
+                    </p>
+                    <p class="clickBtn">
+                      <a href="javascript:;">选择</a>
+                    </p>
+                </div>
+                <i class="checkedIcon"></i>             
+            </div>
+          </div>
+          <div class="blank_10"></div> 
+          </div>       
+        </div>             
+    </div>
+    <footer class="footer">
+        <div class="airFoot">
+            <ul class="clearfix">
+              <li class="filter"><a href="javascript:;">筛选</a></li>
+              <li class="plane"><a href="javascript:;">航空公司</a></li>
+              <li class="date"><a href="javascript:;">起飞时间</a></li>
+              <li class="sortUp"><a href="javascript:;">排序</a></li>
+            </ul>          
+        </div>
+    </footer>
+</div>
+<div class="layerBlack" id="layerBlack"></div>
+<!--筛选弹层开始-->
+<div class="FilterGroup none">
+        <div class="FilterTit clearfix">
+            <a href="javascript:;" class="cancelFilter">取消</a>
+            <a href="javascript:;" class="subFilter">确定</a>
+        </div>
+        <div class="FilterBox">
+            <div class="FilterBoxL">
+                <div class="LeftCon">
+                    <dl>
+                        <dd>
+                            <a href="javascript:;" class="sel" data-index="0">出发日期</a>
+                            <a href="javascript:;" data-index="1">返程日期<i class="Gdot"></i></a>
+                            <a href="javascript:;" data-index="2">出发机场<i class="Gdot"></i></a>
+                            <a href="javascript:;" data-index="3">到达机场<i class="Gdot"></i></a>
+                        </dd>                        
+                    </dl>
+                </div>
+            </div>
+            <div class="FilterBoxR">
+                <div class="RightCon" data-index="0">
+                    <a href="javascript:;" class="cur">01月15日<i class="checked"></i></a>
+                    <a href="javascript:;">01月16日<i class="checked"></i></a>                                              
+                </div>
+                <div class="RightCon none" data-index="1">
+                    <a href="javascript:;">01月15日<i class="checked"></i></a>
+                    <a href="javascript:;">01月16日<i class="checked"></i></a>                                             
+                </div>
+                <div class="RightCon none" data-index="2">
+                    <a href="javascript:;">上海浦东机场<i class="checked"></i></a>
+                    <a href="javascript:;">上海虹桥机场<i class="checked"></i></a>
+                    <a href="javascript:;">南京机场<i class="checked"></i></a>
+                    <a href="javascript:;">南通机场<i class="checked"></i></a>                                              
+                </div>
+                <div class="RightCon none" data-index="3">
+                    <a href="javascript:;">上海浦东机场<i class="checked"></i></a>
+                    <a href="javascript:;">上海虹桥机场<i class="checked"></i></a>
+                    <a href="javascript:;">南京机场<i class="checked"></i></a>
+                    <a href="javascript:;">南通机场<i class="checked"></i></a> 
+                    <a href="javascript:;">无锡硕放机场<i class="checked"></i></a>                                                                  
+                </div>                                                
+            </div>
+        </div>
+        </div>
+<!--筛选弹层结束-->
+<!--航空公司开始-->
+<div class="popList none" id="flyCompany">
+  <ul class="modeList">
+    <li class="cur">上海浦东机场</li>
+    <li>上海虹桥机场</li>
+    <li>南京机场</li>
+    <li>南通机场</li>
+    <li>无锡硕放机场</li>
+    <li>上海虹桥机场</li>
+    <li>南京机场</li>
+    <li>南通机场</li>
+    <li>无锡硕放机场</li>
+    <li>上海虹桥机场</li>
+    <li>南京机场</li>
+    <li>南通机场</li>
+    <li>无锡硕放机场</li>        
+  </ul>
+</div>
+<!--航空公司结束-->
+<!--起飞时间开始-->
+<div class="popList none" id="flyDate">
+  <ul class="modeList">
+    <li class="cur">不限</li>
+    <li>上午(06:00-11:59)</li>
+    <li>中午(12:00-12:59</li>
+    <li>下午(12:00-12:59</li>
+    <li>晚上(12:00-12:59</li>
+  </ul>
+</div>
+<!--起飞时间结束-->
+<!--排序开始-->
+<div class="popList none" id="sortBox">
+  <ul class="modeList">
+    <li class="cur">不限</li>
+    <li>价格从高到低</li>
+    <li>价格从低到高</li>
+  </ul>
+</div>
+<!--排序结束-->
+<!--退改规则开始-->
+<div id="mddServiceBox" class="none">
+  <div class="mddService">
+  <div class="mddBox">
+  	<!--4-11-zb-->
+  	<style>
+  		.mddBox{
+  			margin-top:0.8rem;
+  		}
+  		.popMian{
+  			padding-left:0.44rem;
+  			padding-bottom:0rem;
+  		}
+  		.popM-title{
+  			font-size:0.38rem;color:#333333;margin-left:0.4rem;
+  			
+  			line-height:0.48rem;
+  			font-weight:700;
+  		}
+  		.popMian{
+  			padding-top:0.44rem;
+  		}
+  		.popMian .popM-p{
+  			
+  			color: #00bc71;
+  			font-size:0.28rem;
+  			margin-bottom:0.4rem
+  		}
+  		.popMian .popItem h2{
+  			font-size:0.28rem;color:#333333;
+  		}
+  		.popMian .popItem p{
+  			font-size:0.24rem;color:#666666;
+  			line-height:0.44rem;
+  		}
+  		.underLine{
+  			height:0.03rem;
+  			width:100%;
+  			background: #e0e0e0;
+  			margin-top:0.5rem;
+  		}
+  	</style>
+  	<div class="popM-title">
+  		机票退改说明
+  	</div>
+    <div class="popMian">
+    	<!--4-11-->
+    <p class="popM-p">
+  		南方航空CZ6738
+  	</p>
+      <div class="popItem">
+        <h2>改签规则</h2>
+        <p>不得自行签转！</p>
+      </div>
+      <div class="popItem">
+        <h2>退票规则</h2>
+        <p>按票面值计算，起飞前2小时退票费5%，距离起飞时间两小时以内（含两小时）和起飞后退票费为10%</p> 
+      </div>
+      <div class="popItem">             
+        <h2>升舱规则</h2>
+        <p>按票面值计算，起飞前2小时退票费5%，距离起飞时间两小时以内（含两小时）和起飞后退票费为10%</p> 
+      </div> 
+      <div class="underLine"></div>
+    </div> 
+    <div class="popMian">
+    	<!--4-11-->
+    <p class="popM-p">
+  		南方航空CZ6738
+  	</p>
+      <div class="popItem">
+        <h2>改签规则</h2>
+        <p>不得自行签转！</p>
+      </div>
+      <div class="popItem">
+        <h2>退票规则</h2>
+        <p>按票面值计算，起飞前2小时退票费5%，距离起飞时间两小时以内（含两小时）和起飞后退票费为10%</p> 
+      </div>
+      <div class="popItem">             
+        <h2>升舱规则</h2>
+        <p>按票面值计算，起飞前2小时退票费5%，距离起飞时间两小时以内（含两小时）和起飞后退票费为10%</p> 
+      </div> 
+      <div class="underLine"></div>
+    </div> 
+  </div>
+  <div class="closeBox">
+    <a href="javascript:;" class="closedIcon"></a>
+  </div>
+  </div>
+</div>
+<!--退改规则结束-->
+<script type="text/javascript" src="resource/js/jquery.min.js"></script>
+<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+<script type="text/javascript">
+$('html,body').css("background","#f2f4f7");
+    $(".LeftCon a").click(function(){
+        $(this).addClass("sel").siblings("a").removeClass("sel");
+        $(this).parents().find(".FilterBoxR").find(".RightCon[data-index="+$(this).data("index")+"]").removeClass("none").siblings(".RightCon").addClass("none");
+    })
+    $(".tabs span").click(function(){
+        $(this).addClass("active").siblings("span").removeClass("active");
+        $(this).parent().next(".main").find(".tab_con[data-index="+$(this).data("index")+"]").removeClass("none").siblings(".tab_con").addClass("none");
+    })
+  $("header .title").click(function () {
+    $('.hideTabBox').toggle();
+  });     
+    //退改规则
+  $(".checkInfo .ruleLink").click(function () {
+    $('.wrap').addClass('poplayerBg');
+    $('#mddServiceBox').removeClass('none');
+  }); 
+  $(".closedIcon").click(function () {
+    $('.wrap').removeClass('poplayerBg');
+    $('#mddServiceBox').addClass('none');
+  }); 
+    //筛选
+  $(".airFoot .filter").click(function () {
+      $('#layerBlack').show();
+      $('.FilterGroup').removeClass('none');
+  });
+  $(".cancelFilter").click(function () {
+      $('#layerBlack').hide();
+      $('.FilterGroup').addClass('none');
+  }); 
+  $(".subFilter").click(function () {
+      $('#layerBlack').hide();
+      $('.FilterGroup').addClass('none');
+  });
+  //出发、往返时间
+  $(".airFoot .date").click(function () {
+      $('#layerBlack').show();
+      $('#flyDate').removeClass('none');
+  });
+  //航空公司
+  $(".airFoot .plane").click(function () {
+      $('#layerBlack').show();
+      $('#flyCompany').removeClass('none');
+  });
+  //排序
+  $(".airFoot .sortUp").click(function () {
+      $('#layerBlack').show();
+      $('#sortBox').removeClass('none');
+  });    
+  $("#layerBlack").click(function () {
+      $('#layerBlack').hide();
+      $('.FilterGroup').addClass('none');
+      $('#flyDate').removeClass('none');
+      $('#flyCompany').removeClass('none');
+      $('.popList').addClass('none');
+  });         
+  $(".popList li").click(function () {
+      $('#layerBlack').hide();
+      $('.popList').addClass('none');      
+  });          
+    $(".orderBox .seeMore").toggle(
+      function(){
+        $(this).addClass('packUp');
+        $(this).children('span').text('收起舱位')
+        $(this).parent().find('.hideBox').show();
+      },
+      function(){
+        $(this).removeClass('packUp');
+        $(this).children('span').text('展开舱位')
+        $(this).parent().find('.hideBox').hide();
+      }
+    );             
+    $(".checkInfo .clickBtn").toggle(
+      function(){
+        $(this).addClass('cancelBtn');
+        $(this).children('a').text('取消')
+        $(this).parents('.seatBox').parent().addClass('TicketChecked');
+        $(this).parents('.seatBox').parent().removeClass('Shadow');
+      },
+      function(){
+        $(this).removeClass('cancelBtn');
+        $(this).children('a').text('选择')
+        $(this).parents('.seatBox').parent().removeClass('TicketChecked');
+        $(this).parents('.seatBox').parent().addClass('Shadow');
+      }
+    );
+</script>	
+</body>
+</html>

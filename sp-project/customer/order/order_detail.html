@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../resource/css/login.css">
+	<link type="text/css" rel="stylesheet" href="../../resource/css/common.css">
+    <title>订单详情</title>
+    <style>
+        .order_plane{
+            padding: 0.3rem;
+            border-bottom:1px dashed #DEDEDE;
+        }
+        .order_go span{
+            margin: 0 0.1rem;
+            color: #666;
+            font-size: 0.28rem;
+        }
+        .quIcon{
+            vertical-align: middle;
+            display: inline-block;
+            width: 0.45rem;
+            height: 0.45rem;
+            background: url(../../resource/images/qu.png) no-repeat center left;
+            background-size: 0.45rem 0.45rem;
+        }
+        .fanIcon{
+            vertical-align: middle;
+            display: inline-block;
+            width: 0.45rem;
+            height: 0.45rem;
+            background: url(../../resource/images/fan.png) no-repeat center left;
+            background-size: 0.45rem 0.45rem;
+        }
+        [data-dpr="2"] .order_go>span{font-size:28px;  }
+        [data-dpr="3"] .order_go>span{font-size: 42px;  }
+
+        .airDetail{
+            margin-top: 0.3rem;
+            display: table;
+            width: 100%;
+        }
+        .airDetail>p{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .airCol{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .airCol>span{
+            display: block;
+        }
+        .airCol>span.time{
+            font-weight: bold;
+            color: #333;
+            position: relative;
+            font-size:18px;
+        }
+        .airCol>span.address{
+            color:#666;
+        }
+        [data-dpr="2"] .airCol>span.time{font-size:36px;  }
+        [data-dpr="3"] .airCol>span.time{font-size:54px;  }
+        [data-dpr="2"] .airCol>span.address{font-size:28px;  }
+        [data-dpr="3"] .airCol>span.address{font-size:42px;  }
+
+        .line>span{
+            display: block;
+            text-align: center;
+            color: #999;
+            font-size: 0.24rem;
+        }
+        [data-dpr="2"] .line>span{font-size:24px;  }
+        [data-dpr="3"] .line>span{font-size:36px;  }
+
+        .order_go img{
+            width:0.6rem;
+            height:0.3rem;
+        }
+
+        .line>img{
+            width:2rem;
+            height:0.3rem;
+        }
+        .plane_traffic img{
+            width:2rem;
+            height:0.5rem;
+            padding-left: 0.1rem;
+        }
+        /*7-26 zb new add*/
+        .f_o_items .o_item_tit span{padding-left:0.1rem;!important;}
+        .shugang{display:inline-block;width:0.08rem;height:0.5rem;background:#FF4858;;vertical-align: middle;margin-right: 0.3rem;}
+    </style>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <div class="g_header">
+                <a href="javascript:history.go(-1);" title="返回" class="back w_back">返回</a> 
+                <div class="one_title">
+                  <p>订单详情</p>
+                </div> 
+                <a href="javascript:;" class="log_out order_processing">订单处理</a>                              
+            </div>
+        </header>
+        <div class="container fit_order_detail">
+            <div class="register_con">
+                <div class="steps">
+                  <span class="steps_1 active">待审核</span>
+                  <span class="steps_2">已报名确认</span>
+                  <span class="steps_3">已出票</span>
+                  <span class="steps_4">已回团确认</span>                  
+                </div>
+            </div>
+            <div class="f_order_item">
+                <ul>
+                    <li class="hide_parents">
+                        <div class="f_order_t"><span>当地游  |  目的地参团</span><span>2016-04-29  14:33</span></div>
+                        <div class="order_item">
+                            <div class="order_item_pic">
+                                <a href="javascript:;" style="background-image:url(../../resource/images/products/line_one.png);"></a>
+                            </div>
+                            <div class="order_item_info">
+                                <h2>马尔代夫莉莉岛浪漫豪华6日4晚，马尔代夫莉莉岛浪漫豪华6日4晚马尔代夫莉莉岛浪漫豪华6日4晚马尔代夫莉莉岛浪漫豪华6日4晚马尔代夫莉莉岛浪漫豪华6日4晚</h2>
+                                <p>
+                                    <span>出发日期：2016/10/05</span>
+                                    <span>人<i class="two_word"></i>数：成人2人、儿童2人</span>
+                                    <span class="order_status">待审核</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--飞机去-->
+                        <div class="order_plane">
+                            <p class="plane_traffic"><img src="../../resource/images/selfCon.png" alt=""/></p>
+                            <p class="order_go">
+                                <span class="quIcon"></span>
+                                <span>01-14</span><span>|</span>
+                                <span>南方航空CZ6738</span><span>|</span>
+                                <span>经济舱</span>
+                            </p>
+                            <div class="airDetail">
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海浦东</span>
+                                </p>
+                                <p class="line"><span>4h20min</span><img src="../../resource/images/airLine.png"><span>经停</span></p>
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海浦东</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--飞机回-->
+                        <div class="order_plane">
+                            <p class="order_go">
+                                <span class="fanIcon"></span>
+                                <span>01-14</span><span>|</span>
+                                <span>南方航空CZ6738</span><span>|</span>
+                                <span>经济舱</span>
+                            </p>
+                            <div class="airDetail">
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海浦东</span>
+                                </p>
+                                <p class="line"><span>4h20min</span><img src="../../resource/images/trainLine.png"><span>经停</span></p>
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海浦东</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="order_price">
+                            <span class="profit">订单金额：<font>￥</font><font class="price_r">12000</font></span>
+                        </div>
+                        <div class="order_detail_info show_child">
+                            <dl>
+                                <dd>
+                                    <span>团次编号：G0034500156</span>
+                                    <span>发团日期：2016-09-09</span>
+                                </dd>
+                                <dd>
+                                    <span>线路编号：G0034500156</span>
+                                    <span>回团日期：2016-10-10</span>
+                                </dd>
+                                <dd>
+                                    <span>出游人数：3</span>
+                                    <span>行程天数：5天</span>
+                                </dd> 
+                                <dd>
+                                    <span>应急电话：18862300248</span>
+                                    <span>座位编号：21,22,23</span>
+                                </dd> 
+                                <dd>
+                                    <span>上车地点：07:00 苏州西环路音乐空间站</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="read_more"><span>更多详情</span></div>                          
+                    </li>                                               
+                </ul>
+            </div>
+            <div class="f_o_items">
+                <ul>
+                    <li>
+                        <div class="o_item_tit">
+                            <!--<span class="i_js">费用信息</span>-->
+                            <span><i class="shugang"></i>费用信息</span>
+                        </div>
+                        <div class="o_item_detail">
+                          <!--copy begin--> 
+                            <div class="peo_info_edit">                              
+                                <div class="travel_info_show">
+                                    <dl>
+                                        <dd>
+                                            <h1>结算价</h1>
+                                            <div class="price_item">
+                                                <span>成<font class="one_word"></font>人：￥2000<i>X</i>2人</span>
+                                                <span class="total_price">￥4000</span>
+                                            </div>
+                                            <div class="price_item">
+                                                <span>成<font class="one_word"></font>人：￥2000<i>X</i>2人</span>
+                                                <span class="total_price">￥4000</span>
+                                            </div>                                  
+                                        </dd>
+                                        <dd>
+                                            <h1>接送费</h1>
+                                            <div class="price_item">
+                                                <span>成<font class="one_word"></font>人：￥2000<i>X</i>2人</span>
+                                                <span class="total_price">￥4000</span>
+                                            </div>
+                                            <div class="price_item">
+                                                <span>成<font class="one_word"></font>人：￥2000<i>X</i>2人</span>
+                                                <span class="total_price">￥4000</span>
+                                            </div>                              
+                                        </dd> 
+                                        <dd>
+                                            <div class="price_item">
+                                                <span class="total_tit">合计</span>
+                                                <span class="total_price">￥4000<font class="stages">*12期</font></span>
+                                            </div>
+                                            <p>（门市价￥5860&nbsp;&nbsp;&nbsp;预计利润￥1000）</p>                                
+                                        </dd>                                                        
+                                    </dl>
+                                </div>
+                            </div>                    
+                            <!--copy end-->                                
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o_item_tit">
+                            <!--<span class="i_yk">游客信息</span>-->
+                            <span><i class="shugang"></i>游客信息</span>
+                        </div>
+                        <div class="o_item_detail">
+                            <div class="yk_info">
+                                <div class="yk_info_item">
+                                    <span>预订人：</span>
+                                    <span>小明</span>
+                                </div>
+                                <div class="yk_info_item">
+                                    <span>联系电话：</span>
+                                    <span><a href="tel:18501597421">18501597421</a></span>
+                                </div> 
+                                <hr>
+                                <div class="yk_info_item">
+                                    <span>出游人：</span>
+                                    <span>小明</span>
+                                </div>
+                                <div class="yk_info_item">
+                                    <span>身份证号：</span>
+                                    <span>18501597421120263</span>
+                                </div>                            
+                                <div class="yk_info_item">
+                                    <span>联系电话：</span>
+                                    <span><a href="tel:18501597421">13013556625</a></span>
+                                </div> 
+                                <div class="yk_info_item">
+                                    <span>接送信息：</span>
+                                    <span>自行前往火车站/机场集合</span>
+                                </div> 
+                                <div class="yk_info_item">
+                                    <span>备注：</span>
+                                    <span>无</span>
+                                </div>
+                            </div>                                                         
+                        </div>
+                    </li>  
+                    <li>
+                        <a href="javascript:;" class="openNew"><div class="o_item_tit">
+                            <!--<span class="i_tg">退改规则</span>-->
+                            <span><i class="shugang"></i>退改规则</span>
+                        </div></a>
+                    </li>   
+                    <li>
+                        <a href="javascript:;" class="openNew"><div class="o_item_tit">
+                            <!--<span class="i_mdd">目的地接送服务</span>-->
+                            <span><i class="shugang"></i>目的地接送服务</span>
+                        </div></a>
+                    </li>                                                                                                    
+                </ul>
+            </div>
+        </div>
+    </div> 
+      <footer>  
+            <div class="c_order_detail">
+                <a href="javascript:;" class="green">支付订单</a>
+                <a href="javascript:;">取消订单</a>
+                <a href="javascript:;" >出团通知书</a>
+            </div>
+      </footer>       
+    <script type="text/javascript" src="../../resource/javascript/jquery.min.js"></script> 
+    <script type="text/javascript" >
+        $(".read_more").toggle(
+            function(){
+                $(this).children('span').text('收起').addClass('more');
+                $(this).parents('.hide_parents').children('.show_child').slideDown();
+            },
+            function(){
+                $(this).children('span').text('更多详情').removeClass('more');
+                $(this).parents('.hide_parents').children('.show_child').slideUp();
+            }
+        )  
+        $(".o_item_tit").toggle(
+            function(){
+                $(this).addClass('more');
+                $(this).next('.o_item_detail').slideDown();
+            },
+            function(){
+                $(this).removeClass('more');
+                $(this).next('.o_item_detail').slideUp();
+            }
+        )               
+    </script>
+</body>
+</html>

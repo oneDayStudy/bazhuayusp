@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/login.css">
+    <title>小八助力APP下载</title>
+</head>
+<style>
+html,body{background:#7ccf74;overflow:hidden;}
+.downPic img{width:100%;display:block;}
+.pop_layer_bg{background:rgba(0,0,0,0);}
+.shareLayer{z-index:6;position:absolute;width:100%;top:0;text-align:center;display:none;}
+.shareLayer img{display:block;width:100%;}
+</style>
+<body>
+    <div class="page">
+		<div class="downPic"><img src="../resource/images/download_bg.jpg"></div>
+		
+    </div>
+	<div class="pop_layer_bg"></div>
+	<div class="shareLayer"><a href="javascript:;"><img src="../resource/images/Safari.png"/></a></div>	
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+ <script>
+$(".downPic").click(function(){
+	$('.pop_layer_bg').show();
+	$('.shareLayer').show();
+});
+$(".pop_layer_bg").click(function(){
+	$('.pop_layer_bg').hide();
+	$('.shareLayer').hide();
+});
+</script> 
+</body>
+</html>

@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../resource/css/login.css">
+    <title>象山两日游</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>象山两日游</p>
+            </div>
+        </header>    
+        <div class="container">
+            <!--日历开始-->
+            <div class="calendar_con">
+                <div class="date_table">
+                    <div class="date_year">
+                        <ul>
+                            <li>
+                                <span class="choice_m i_m_l"></span>
+                                <span>2016年9月</span>
+                                <span class="choice_m i_m_r"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="date_week">
+                        <ul>
+                            <li>
+                                <span class="i_week">日</span>
+                                <span>一</span>
+                                <span>二</span>
+                                <span>三</span>
+                                <span>四</span>
+                                <span>五</span>
+                                <span class="i_week">六</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="date_day">
+                        <ul>
+                            <li>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                            </li>
+                            <li>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span class="se have_price">7<font class="price">￥123<i>起</i></font></span>
+                                <span class="have_price">8<font class="price">￥123<i>起</i></font></span>
+                                <span class="have_price">9<font class="price">￥82300<i>起</i></font></span>
+                                <span class="have_price">10<font class="price">￥123<i>起</i></font></span>
+                            </li>
+                            <li>
+                                <span>11</span>
+                                <span>12</span>
+                                <span>13</span>
+                                <span>14</span>
+                                <span>中秋节<font class="i_holiday">假</font></span>
+                                <span>16<font class="i_holiday">假</font></span>
+                                <span>17<font class="i_holiday">假</font></span>
+                            </li>
+                            <li>
+                                <span>18</span>
+                                <span>19</span>
+                                <span>20</span>
+                                <span>21</span>
+                                <span>22</span>
+                                <span>23</span>
+                                <span>24</span>
+                            </li>
+                            <li>
+                                <span>25</span>
+                                <span>26</span>
+                                <span>27</span>
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span></span>
+                            </li>
+                         </ul>
+                    </div>              
+                </div>                
+            </div>
+            <!--日历结束-->
+            <style>
+                .djsCon{position:absolute;right:0.4rem;overflow:hidden;zoom:1;}
+                .djsCon span{display:block;float:left;}
+                .djsCon .djsText{font-size:12px;color:#999;line-height:0.506667rem;}
+                [data-dpr="2"] .djsCon .djsText{font-size:24px;}
+                [data-dpr="3"] .djsCon .djsText{font-size:36px;}
+                .djsCon .djsBig{width:0.426667rem;height:0.506667rem;background:url(../../resource/images/icon/djs_1.png) no-repeat center center; background-size:100% 100%;color:#fff;text-align:center;font-size:14px;font-weight:bold;line-height:0.55rem;} 
+                [data-dpr="2"] .djsCon .djsBig{font-size:28px;line-height:0.506667rem;}
+                [data-dpr="3"] .djsCon .djsBig{font-size:42px;line-height:0.506667rem;}                
+                .djsCon .djsDot{width:0.12rem;height:0.506667rem;background:url(../../resource/images/icon/djs_2.png) no-repeat center center; background-size:100% 100%;}  
+                .team_info .t_line_price{text-align:right;padding-right:0.4rem;}
+                .team_info .t_line_price h2{padding-top:0.5rem;}              
+            </style>
+            <div class="team_info">
+                <div class="team_num">
+                    <h2>团队编号：<span>GJIII122F</span></h2>
+                    <p><span>座位：<i>34</i></span><span>当前余位：<i>25</i></span></p>
+                </div>
+                <div class="djsCon">
+                    <span class="djsText">距离开始：</span>
+                    <span class="djsBig">2</span>
+                    <span class="djsBig">3</span>
+                    <span class="djsDot"></span>
+                    <span class="djsBig">4</span>
+                    <span class="djsBig">3</span>
+                    <span class="djsDot"></span>
+                    <span class="djsBig">0</span>
+                    <span class="djsBig">5</span>
+
+                </div>
+                <div class="t_line_price" >
+                    <h2>门市价：<span>￥20005</span></h2>                    
+                </div>
+            </div>
+            <div class="ticket_detail">
+                <div class="ticket_price">
+                    <h2>成人票<i>（含乌镇东栅、西溪湿地大门票、西塘门票、1早2正餐含乌镇东栅、西溪湿地大门票、西塘门票、1早2正餐）</i></h2>
+                    <style>
+                    .newBox p{margin:0;padding:0;line-height:auto;}
+                    .newBox p.bfcP{color:#999;}
+                    .newBox p.jsP{color:#333;font-size:14px;}
+                    [data-dpr="2"] .newBox p.jsP{font-size:26px;}
+                    [data-dpr="3"] .newBox p.jsP{font-size:40px;}
+                    .newBox .jgIntro{color:#00a7de;background:url(../../resource/images/icon/i_blue.png) no-repeat center left;background-size:auto 100%;padding-left:0.45rem;font-size:12px;} 
+                    [data-dpr="2"] .newBox .jgIntro{font-size:20px;}
+                    [data-dpr="3"] .newBox .jgIntro{font-size:30px;}                                      
+                    </style>
+                    <div class="ticket-info">      
+                        <div class="team_seat_info newBox">
+                            <p class="bfcP"><span>补房差：<i>￥1580</i></span></p>
+                            <p class="jsP">
+                            <span>免息：<i>￥1880<font class="stages">*12期</font></i></span>
+                            <span class="jgIntro">价格明细</span>
+                            </p>                           
+                        </div>
+                        <div class="add_peo">
+                            
+                            <div class="num_edit_btn">
+                                <div class="i_reduce"></div>
+                                <div class="add_blank"><input type="text" placeholder="1"></div>
+                                <div class="i_add"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket_price">
+                    <h2>儿童票<i>（12-18岁必须沾床）</i></h2>
+                    <div class="ticket-info">      
+                        <div class="team_seat_info newBox">
+                            <p class="bfcP"><span>补房差：<i>￥1580</i></span></p>  
+                            <p class="jsP">
+                                <span>免息：<i>￥1880<font class="stages">*12期</font></i></span>
+                                <span class="jgIntro">价格明细</span>
+                            </p>                         
+                        </div>
+                        <div class="add_peo">
+                            <div class="num_edit_btn">
+                                <div class="i_reduce"></div>
+                                <div class="add_blank"><input type="text" placeholder="1"></div>
+                                <div class="i_add"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>          
+    </div> 
+  <footer>
+      <div class="btn_two">
+          <a href="javascript:;" class="special_info squre_check"><label><input type="checkbox"><span>阅读特别说明</span></label></a>
+          <a href="bc_info.html" class="orange next_step">下一步</a>
+      </div>
+  </footer> 
+  <style>
+.price_intro .intro_tit{border-bottom:none;border-top:1px solid #E0E0E0;padding-top:0.5rem;}
+.price_intro_con .price_item p{color:#666;}
+.intro_tit .notice{margin-top:0.1rem;}
+.intro_tit .notice span{color:#e84c3d;}
+.price_intro_con .tips{color:#999;text-align:center;}
+.price_intro_con .tips span{color:#e84c3d;}
+[data-dpr="2"] .price_intro_con .tips{font-size:24px;}
+[data-dpr="3"] .price_intro_con .tips{font-size:36px;}
+.price_intro_tit{position:relative;}
+.price_intro_tit .closeIcon{width:0.4rem;height:0.4rem;background:url(../../resource/images/icon/closeIcon.png) no-repeat center center;background-size:100% 100%;position:absolute;right:0.4rem;top:50%;margin-top:-0.2rem;}
+  </style>
+    <!--弹出层开始-->
+    <div class="p_layer_main price_info" style="display:block;">
+        <div class="pop_layer_bg"></div>
+        <div class="pop_w_layer">
+            <div class="pop_content">
+                <div class="p_w_bg price_intro">
+                    <div class="price_intro_tit">价格说明<i class="closeIcon"></i></div>
+                    <div class="price_intro_con">
+                        <div class="price_item">
+                            <p>门市价：<span>￥1580<font class="stages">*12期</font></span>/人</p>
+                            <p>结算价：￥<span>1580</span>/人</p>
+                        </div>
+                        <div class="price_item" style="padding-bottom:0.5rem;">
+                            <p>补房差：￥1580/人</p>
+                            <p>基础利润：<span>￥1580</span>/人</p>
+                        </div>  
+                        <div class="intro_tit">
+                            <p>八爪鱼额外返利：</p>
+                            <p class="notice">下单立减:<span>￥200</span>；加返优惠:<span>￥50</span>；日结优惠:<span>￥50</span></p>
+                        </div> 
+                        <p class="tips"><span>*</span>出游人数为单数时，需补足房差</p>                                                                 
+                    </div>                                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹出层结束-->
+    <!--阅读特别说明-->
+    <div class="p_layer_main spe_con">
+    <div class="pop_layer_bg"></div>    
+    <div class="pop_w_layer">
+        <div class="pop_content">
+            <div class="p_w_bg price_intro">
+                <div class="price_intro_tit">特别说明</div>
+                <div class="price_intro_con special_box">
+                    <div class="special_tips">
+                        <p>1、此团需满16人开班 </p>
+                        <p>2、由于旅行社组织的是散客拼团线路，未成年人须有成人陪伴出游，残疾人、老年人、行动不便者建议有家人朋友照顾同行，体弱多病及孕妇不建议参团，否则由此造成的不便或问题，我社不承担责任。</p>
+                        <p>3、若是由于天气、突发状况等不可抗力因素造成游船停航，导游现退团队协议船票差价20元/人 。</p>
+                        <p>4、酒店为当地星级，非挂牌</p>
+                        <p>5、此线路为散客打包组合特价，房差只补不退</p>
+                        <p>6、★如人数较少可与其他天目湖线路拼车★</p>
+                        <p>7、国假期间 如果由于堵车，景区游览时间会有所缩减，敬请谅解！！</p>
+                        <p>8、行程中赠送内容不可折现不可延期如不需要属自动放弃。 </p>
+                        <p>1、此团需满16人开班 </p>
+                        <p>2、由于旅行社组织的是散客拼团线路，未成年人须有成人陪伴出游，残疾人、老年人、行动不便者建议有家人朋友照顾同行，体弱多病及孕妇不建议参团，否则由此造成的不便或问题，我社不承担责任。</p>
+                        <p>3、若是由于天气、突发状况等不可抗力因素造成游船停航，导游现退团队协议船票差价20元/人 。</p>
+                        <p>4、酒店为当地星级，非挂牌</p>
+                        <p>5、此线路为散客打包组合特价，房差只补不退</p>
+                        <p>6、★如人数较少可与其他天目湖线路拼车★</p>
+                        <p>7、国假期间 如果由于堵车，景区游览时间会有所缩减，敬请谅解！！</p>
+                        <p>8、行程中赠送内容不可折现不可延期如不需要属自动放弃。 </p>                      
+                    </div>                                          
+                </div> 
+                <div class="special_cancel">关闭</div>                                   
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--阅读特别说明结束-->     
+  <script type="text/javascript" src="../../resource/javascript/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.newBox .jsP').click(function(){
+            $('.price_info').show();
+        });
+        $('.closeIcon').click(function(){
+            $('.price_info').hide();
+        });  
+        $('.squre_check').click(function(){
+            $('.spe_con').show();
+        });
+        $('.special_cancel').click(function(){
+            $('.spe_con').hide();
+        });              
+    });
+    </script>  
+</body>
+</html>

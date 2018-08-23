@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <title>热搜关键词</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>热搜关键词</p>
+            </div>
+            <a href="javascript:;" class="log_out tags_edit">保存</a>
+        </header>
+        <div class="container">
+            <div class="hot_tags_con hot_line">
+				<div class="tags_tip"><i>2</i>/10<span>（最多不超过10个)</span></div>				
+                <div class="hot_tags">
+                  <a href="javascript:;">泰国<i class="i_click"></i></a>
+                  <a href="javascript:;">日本</a>
+                  <a href="javascript:;">水上世界日本</a>
+                  <a href="javascript:;">首尔</a>
+                  <a href="javascript:;">日本</a>
+                  <a href="javascript:;">水上世界</a>
+                  <a href="javascript:;">泰国</a>
+                  <a href="javascript:;">水上世界</a>
+                  <a href="javascript:;">泰国</a>
+				  <a href="javascript:;" class="add_tags"></a>
+                </div> 
+            </div>           
+        </div>
+    </div>
+    <footer>
+        <div class="btn_group tags_btn">
+            <a href="javascript:;"><span class="i_m_edit">编辑</span></a>
+        </div> 		
+        <div class="btn_group btn_cancel" >
+           <div class="cancel_tz">删除</div>
+        </div>
+    </footer> 
+    <!--弹出层开始-->
+    <div class="p_layer_main">
+        <div class="pop_layer_bg"></div>
+        <div class="pop_w_layer">
+            <div class="pop_content">
+                <div class="p_w_bg price_intro">
+                    <div class="change_price_con">
+                        <div class="change_price_intro">
+                            <h1>创建热搜关键词</h1>
+                            <div class="change_price_edit">
+                                <input type="text" placeholder="最多不超过4个字">
+                            </div>                            
+                        </div>
+                        <div class="layer_btn_two">
+                            <a href="javascript:;"><span>取消</span></a>
+                            <a href="javascript:;"><span class="green">确定</span></a>
+                        </div>                                              
+                    </div>                                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹出层结束-->  	
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".i_m_edit").toggle(
+          function () {
+			$('.tags_btn').css('display','none');
+            $('.tags_edit').html('取消');
+			$('.tags_tip').hide();
+            $('.btn_cancel').show();
+          },
+          function () {
+            $(this).css('display','block');
+			$('.tags_edit').html('保存');
+            $('.btn_cancel').hide();
+			$('.tags_tip').show();
+          }
+        );
+		$('.add_tags').click(function(){
+		   $('.page').addClass('hide');
+			$('.p_layer_main').show();
+		});
+		$('.layer_btn_two').click(function(){
+		   $('.page').removeClass('hide');
+			$('.p_layer_main').hide();
+		}); 		
+    });
+    </script>
+</body>
+</html>

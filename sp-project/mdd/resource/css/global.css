@@ -1,0 +1,218 @@
+/*
+* @description: 公共样式
+* @author: Wang xiao ping
+* @update: name (2017-11-07)
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins,sup,sub, kbd, p, samp,
+small, strong, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,hgroup, menu, nav, section, menu,
+time, mark, audio, video{margin:0; padding:0; border:0; outline:0; }
+body{font-family: Helvetica, "Microsoft Yahei", "Heiti SC", "Droid Sans", "Droidsansfallback", SimSun, sans-serif;}
+article, aside, figure, footer, header,hgroup, nav, section{display:block;}
+nav ul,ul,li{list-style:none;}
+blockquote, p{quotes:none;}
+blockquote:before, blockquote:after, p:before, p:after{content:''; content:none;}
+a{margin:0; padding:0; vertical-align:top; text-decoration:none;color:inherit;}
+a:link,a:visited,a:hover,a:active{text-decoration:none}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input, select{vertical-align:middle;-webkit-appearance:none;border:none;outline:none;background:transparent;}
+ins{background-color:#ff9; color:#000; text-decoration:none;}
+mark{background-color:#ff9; color:#000; font-style:italic; font-weight:bold;}
+del{ text-decoration: line-through; }
+abbr[title], dfn[title] {border-bottom:1px dotted #000; cursor:help;}
+/* tables still need cellspacing="0" in the markup */
+table{border-collapse:collapse; border-spacing:0;}
+em,i{font-style:normal;}
+hr{display:block; height:1px; border:0; border-top:1px solid #e0e0e0; }
+select{-webkit-appearance:none;background:rgba(0,0,0,0);}
+.clearfix:after{content: "."; display: block;height: 0;clear: both;visibility: hidden;}
+*{box-sizing:border-box;padding: 0;margin: 0;}
+html,body{background-color: #fff;color:#000;}
+.oneWord{display:inline-block;width:1em;}
+.twoWord{display:inline-block;width:2em;}
+.halfWord{display:inline-block;width:0.5em;}
+.redBg{background:#e84c3d;}
+.f_red{color:#ff4858;}
+.f_darkRed{color:#ff4858!important;}
+.f_org{color:#ff5844!important;}
+.f_yellow{color:#ffba64!important;}
+.f_green{color:#ff4858!important;}
+.f_blue{color:#16aeec!important;}
+.f_black{color:#333!important;}
+.f_gary{color:#999!important;}
+.page{display:block;width:100%;}
+.hide{height: 100vh;overflow:hidden;}
+.blank_10{height:0.1rem;width:100%;}
+.blank_20{height:0.2rem;width:100%;}
+.blank_30{height:0.3rem;width:100%;}
+.BottShadow{box-shadow:0px 8px 10px rgba(0,67,109,0.1);}
+.Shadow{box-shadow:0px 0 12px rgba(0,67,109,0.1);}
+.twoRow{overflow:hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.oneRow{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.none{display:none;}
+.relative{position:relative;}
+/*
+@media screen and (max-width:321px){body{font-size:14px}}
+@media screen and (min-width:321px) and (max-width:400px){body{font-size:16px}}
+@media screen and (min-width:400px){body{font-size:18px}}
+*/
+/*flex begin*/
+html,body{height: 100%}
+body{font-size:32px;font-size:.32rem;max-width:1080px;margin:0 auto;background:#fff;font-family:'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+
+.wrap{width:7.5rem;margin:0 auto;height: 100%;position:relative;}
+.header{height:0.9rem;line-height:0.9rem;background-color:#D8D8D8;width:100%;left:0;box-shadow: 0px 0 12px rgba(0,67,109,0.1);}
+.footer{height:1.1rem;background-color:#636261;width:100%;left:0;}
+.main{overflow:auto;-webkit-overflow-scrolling: touch;}
+.flex{display:-webkit-flex;display:flex;display: -webkit-box;display: -moz-box;display: -ms-flexbox;}
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+.flex-1{-webkit-flex:1;-ms-flex:1;flex:1;-webkit-box-flex:1;-moz-box-flex: 1;}
+/*flex end*/
+
+header a{display:block;}
+header .back,header .menu{position: absolute;top:0;}
+header .back{text-indent: -9999px;font-size: 0;left:0.25rem;
+background:url(../images/i_back.png) no-repeat center center;background-size:0.37rem 0.3rem;width:0.37rem;height:0.9rem;}
+header .title{height:0.9rem;line-height:0.9rem;font-size:0.36rem;width:6rem;margin:0 auto;text-align:center;color:#333;}
+header .title i.fa{margin-left:0.1rem;}
+header .title i.fa-angle-down{display:inline-block;background:url(../images/fa_down.png) no-repeat center center;background-size:0.17rem 0.09rem;width:0.17rem;height:0.28rem;}
+.greenBg{background: #ffffff;border-bottom: 2px solid #f2f4f7;}
+.whiteBg{background:#fff;border-bottom:1px solid #fafafa}
+header.whiteBg .title{color:#333;}
+header.whiteBg .back{color:#00BC71;background:url(../images/i_backGreen.png) no-repeat center center;background-size:0.37rem 0.3rem;}
+
+
+.btn_two{width:100%;height:1.1rem;display:table;}
+.btn_two a{display:table-cell;vertical-align:middle;text-align:center;}
+.btn_two .special_info{color:#fff;font-size:0.28rem;padding:0 0.3rem;text-align:left;}
+.btn_two .special_info em{font-size:0.4rem;font-weight:bold;}
+.btn_two .special_info .seeMX{margin-top:0.08rem;float:right;padding-right:0.2rem;background: url(../images/arrBott_W.png) no-repeat center right;background-size:0.15rem 0.1rem;}
+.btn_two .special_info .seeMX.toTop{background: url(../images/arrTop_W.png) no-repeat center right;background-size:0.15rem 0.1rem;}
+
+.btn_two .next_step{width:2.8rem;font-weight:bold;color:#fff;font-size:0.36rem;}
+.searchBox{width:7.5rem;height:1.49rem;position:fixed;left:50%;margin-left:-3.75rem;padding-top:0.3rem;background:url(../images/searchBg.png) no-repeat;background-size:100% 100%;z-index:99;box-sizing:border-box;}
+.searchBox .back{position:absolute;left:0.35rem;top:0.3rem;display:inline-block;height:0.6rem;width:0.37rem;float:left;background:url(../images/i_back.png) no-repeat center center;background-size:0.37rem 0.3rem;}
+.searchBox .share{position:absolute;right:0.35rem;top:0.3rem;display:inline-block;height:0.6rem;width:0.34rem;float:right;background:url(../images/i_share.png) no-repeat center center;background-size:0.34rem 0.34rem;}
+.searchBox .S_blank{display:block;width:4.7rem;height:0.6rem;background:rgba(255,255,255,0.3);border-radius:0.3rem;margin:0 auto;text-align:center;line-height:0.6rem;font-size:0.28rem;color:#fff;}
+
+.tags i{display:inline-block;margin-right:0.05rem;font-size:0.2rem;padding:0 0.1rem;border-radius:0.05rem;vertical-align:middle;}
+
+input[type="checkbox"]{margin-right:0.1rem;display:inline-block;vertical-align:middle;-webkit-appearance: none;background: url(../images/check.png) no-repeat center center;background-size:88% 88%;height:0.4rem;width:0.4rem;border:none;outline:none;}
+input[type="checkbox"]:checked{display:inline-block;vertical-align:middle;-webkit-appearance: none;background: url(../images/checked.png) no-repeat center center;background-size:88% 88%;height:0.4rem;width:0.4rem;border:none;outline:none;}
+input[type="radio"]{margin-right:0.1rem;display:inline-block;vertical-align:middle;-webkit-appearance: none;background: url(../images/i_check.png) no-repeat center center;background-size:100% 100%;height:0.32rem;width:0.32rem;border:none;outline:none;}
+input[type="radio"]:checked{display:inline-block;vertical-align:middle;-webkit-appearance: none;background: url(../images/i_checked.png) no-repeat center center;background-size:100% 100%;height:0.32rem;width:0.32rem;border:none;outline:none;}
+input[type="radio"].square{margin-right:0.1rem;display:inline-block;vertical-align:middle;-webkit-appearance: none;background: url(../images/i_check.png) no-repeat center center;background-size:100% 100%;height:0.32rem;width:0.32rem;border:none;outline:none;}
+input[type="radio"].square:checked{display:inline-block;vertical-align:middle;-webkit-appearance: none;background: url(../images/i_checked.png) no-repeat center center;background-size:100% 100%;height:0.32rem;width:0.32rem;border:none;outline:none;}
+input[type="date"]{height:1rem;}
+.selectBox{position:relative;}
+.selectBox select{position:absolute;width:100%;height:100%;top:0;left:0;z-index:2;padding-right:0.6rem;}
+.selectBox .selectIcon{position:absolute;z-index:1;right:0.2rem;top:50%;margin-top:-0.07rem;display:block;width:0.24rem;height:0.14rem;background: url(../images/selectIcon.png) no-repeat center center;background-size:0.24rem 0.14rem;}
+.relative .cameraIcon{position:absolute;z-index:1;right:0.2rem;top:50%;margin-top:-0.16rem;display:block;width:0.38rem;height:0.32rem;background: url(../images/cameraIcon.png) no-repeat center center;background-size:0.38rem 0.32rem;}
+
+
+.dottLine{width:100%;height: 0.18rem;position: relative;z-index: 2;margin: 0 auto;left: 50%;margin-left:-50%;}
+.dottLine hr{display:block; height:0.01rem; border:0; border-top:0.01rem dashed #DFDFDF;width:100%;position:absolute;left:0;top:60%;margin-top:-0.005rem;z-index:2;}
+.dottLine .circleL{display:inline-block;position:absolute;z-index:3;width:0.07rem;height:0.18rem;left:0;top:0;background: url(../images/circleL.png) no-repeat center center;background-size:100% 100%;}
+.dottLine .circleR{display:inline-block;position:absolute;z-index:3;width:0.07rem;height:0.18rem;right:0;top:0;background: url(../images/circleR.png) no-repeat center center;background-size:100% 100%;}
+
+
+.TicketChecked .dottLine .circleL{display:inline-block;position:absolute;z-index:3;width:0.1rem;height:0.23rem;left:-0.04rem;top:0;background: url(../images/circleL_green.png) no-repeat center center;background-size:100% 100%;}
+.TicketChecked .dottLine .circleR{display:inline-block;position:absolute;z-index:3;width:0.1rem;height:0.23rem;right:-0.04rem;top:0;background: url(../images/circleR_green.png) no-repeat center center;background-size:100% 100%;}
+
+.hideBox{display:none;}
+
+.footer .airFoot{background:#4c5962;}
+.airFoot{background:#55616a;}  
+.airFoot a{color:#fff;font-size:0.24rem;}
+.airFoot ul{display:table;width:100%;}
+.airFoot ul li{display:table-cell;vertical-align:middle;height:1.1rem;width:25%;text-align:center;color:#666;padding-top:0.138889rem;}
+.airFoot ul li.plane a{display:block;padding-top:0.34rem;background:url(../images/planeIcon.png) no-repeat scroll center 0;background-size:0.32rem 0.32rem;}
+.airFoot ul li.end a{display:block;padding-top:0.34rem;background:url(../images/planeIcon.png) no-repeat scroll center 0;background-size:0.32rem 0.32rem;}
+.airFoot ul li.price a{display:block;padding-top:0.34rem;background:url(../images/priceIcon.png) no-repeat scroll center 0;background-size:0.32rem 0.32rem;}
+.airFoot ul li.filter a{display:block;padding-top:0.34rem;background:url(../images/filterIcon.png) no-repeat scroll center 0;background-size:0.32rem 0.33rem;}
+.airFoot ul li.date a{display:block;padding-top:0.34rem;background:url(../images/timeIcon.png) no-repeat scroll center 0;background-size:0.32rem 0.33rem;}
+.airFoot ul li.sortUp a{display:block;padding-top:0.34rem;background:url(../images/sortUp.png) no-repeat scroll center 0;background-size:0.33rem 0.25rem;}
+
+.singleFoot{background:#e84c3d;color:#fff;font-weight:bold;font-size:0.36rem;text-align:center;height:1.1rem;line-height:1.1rem;}
+
+
+
+
+
+.airlineBox{display:inline-block;width: 0.34rem;height: 0.34rem;position:relative;vertical-align:middle;}
+.airlines{position:absolute;top:0;left:0;display:block;height:0.34rem;width:0.34rem;}
+.pubFlights_3u{background: url(../images/airLogo/3U.png) no-repeat;background-size:100% 100%;}
+.pubFlights_8c{background: url(../images/airLogo/8C.png) no-repeat;background-size:100% 100%;}
+.pubFlights_8l{background: url(../images/airLogo/8L.png) no-repeat;background-size:100% 100%;}
+.pubFlights_bk{background: url(../images/airLogo/BK.png) no-repeat;background-size:100% 100%;}
+.pubFlights_ca{background: url(../images/airLogo/CA.png) no-repeat;background-size:100% 100%;}
+.pubFlights_cn{background: url(../images/airLogo/CN.png) no-repeat;background-size:100% 100%;}
+.pubFlights_cz{background: url(../images/airLogo/CZ.png) no-repeat;background-size:100% 100%;}
+.pubFlights_eu{background: url(../images/airLogo/EU.png) no-repeat;background-size:100% 100%;}
+.pubFlights_fm{background: url(../images/airLogo/FM.png) no-repeat;background-size:100% 100%;}
+.pubFlights_g5{background: url(../images/airLogo/G5.png) no-repeat;background-size:100% 100%;}
+.pubFlights_gs{background: url(../images/airLogo/GS.png) no-repeat;background-size:100% 100%;}
+.pubFlights_ho{background: url(../images/airLogo/HO.png) no-repeat;background-size:100% 100%;}
+.pubFlights_hu{background: url(../images/airLogo/HU.png) no-repeat;background-size:100% 100%;}
+.pubFlights_kn{background: url(../images/airLogo/KN.png) no-repeat;background-size:100% 100%;}
+.pubFlights_mf{background: url(../images/airLogo/MF.png) no-repeat;background-size:100% 100%;}
+.pubFlights_mu{background: url(../images/airLogo/MU.png) no-repeat;background-size:100% 100%;}
+.pubFlights_ns{background: url(../images/airLogo/NS.png) no-repeat;background-size:100% 100%;}
+.pubFlights_pn{background: url(../images/airLogo/PN.png) no-repeat;background-size:100% 100%;}
+.pubFlights_sc{background: url(../images/airLogo/SC.png) no-repeat;background-size:100% 100%;}
+.pubFlights_zh{background: url(../images/airLogo/ZH.png) no-repeat;background-size:100% 100%;}
+.pubFlights_vd{background: url(../images/airLogo/VD.png) no-repeat;background-size:100% 100%;}
+.pubFlights_jr{background: url(../images/airLogo/JR.png) no-repeat;background-size:100% 100%;}
+.pubFlights_ky{background: url(../images/airLogo/KY.png) no-repeat;background-size:100% 100%;}
+.pubFlights_tv{background: url(../images/airLogo/TV.png) no-repeat;background-size:100% 100%;}
+.pubFlights_9c{background: url(../images/airLogo/9C.png) no-repeat;background-size:100% 100%;}
+.pubFlights_jd{background: url(../images/airLogo/JD.png) no-repeat;background-size:100% 100%;}
+.pubFlights_g8{background: url(../images/airLogo/G8.png) no-repeat;background-size:100% 100%;}
+.pubFlights_gj{background: url(../images/airLogo/GJ.png) no-repeat;background-size:100% 100%;}
+.pubFlights_dz{background: url(../images/airLogo/DZ.png) no-repeat;background-size:100% 100%;}
+.pubFlights_yi{background: url(../images/airLogo/YI.png) no-repeat;background-size:100% 100%;}
+.pubFlights_qw{background: url(../images/airLogo/QW.png) no-repeat;background-size:100% 100%;}
+.pubFlights_dr{background: url(../images/airLogo/DR.png) no-repeat;background-size:100% 100%;}
+.pubFlights_uq{background: url(../images/airLogo/UQ.png) no-repeat;background-size:100% 100%;}
+.pubFlights_fu{background: url(../images/airLogo/FU.png) no-repeat;background-size:100% 100%;}
+.pubFlights_aq{background: url(../images/airLogo/AQ.png) no-repeat;background-size:100% 100%;}
+.pubFlights_gx{background: url(../images/airLogo/GX.png) no-repeat;background-size:100% 100%;}
+.pubFlights_oq{background: url(../images/airLogo/OQ.png) no-repeat;background-size:100% 100%;}
+.pubFlights_a6{background: url(../images/airLogo/A6.png) no-repeat;background-size:100% 100%;}
+.pubFlights_gy{background: url(../images/airLogo/GY.png) no-repeat;background-size:100% 100%;}
+.pubFlights_y8{background: url(../images/airLogo/Y8.png) no-repeat;background-size:100% 100%;}
+.pubFlights_ry{background: url(../images/airLogo/RY.png) no-repeat;background-size:100% 100%;}
+.pubFlights_9h{background: url(../images/airLogo/9H.png) no-repeat;background-size:100% 100%;}
+.pubFlights_n1{background: url(../images/airLogo/N1.png) no-repeat;background-size:100% 100%;}
+.pubFlights_da{background: url(../images/airLogo/DA.png) no-repeat;background-size:100% 100%;}
+.pubFlights_gt{background: url(../images/airLogo/GT.png) no-repeat;background-size:100% 100%;}
+.pubFlights_lt{background: url(../images/airLogo/LT.png) no-repeat;background-size:100% 100%;}
+
+
+.maleIcon{display:inline-block;width:0.33rem;height:0.33rem;background: url(../images/maleIcon.png) no-repeat;background-size:100% 100%;}
+.femaleIcon{display:inline-block;width:0.33rem;height:0.33rem;background: url(../images/femaleIcon.png) no-repeat;background-size:100% 100%;}
+.poplayerBg{position:fixed;width:100%;height:100%;top:0;left:0;background:#fff;z-index: 99999;background:#fff;-moz-filter: blur(30px);-webkit-filter: blur(30px);-o-filter: blur(30px);-ms-filter: blur(30px);filter: blur(30px);}
+.layerBlack{position:fixed;width:100%;height:100%;left:0;bottom:0;z-index:99998;display:none;background:rgba(0,0,0,0.8);}
+/*更改出行方式*/
+.tripMode{background:#fff;position:fixed; left:0; bottom:0;width:100%;z-index: 99999;-webkit-animation-duration: .5s; animation-duration: .5s;}
+.tripMode .title{padding:0.2rem 0.3rem;font-size:0.28rem;color:#fff;background:#4c5962;}
+.tripMode .title a.submitBtn{;float:right;}
+.tripMode .modeList li{border-top:1px solid #e4e4e4;padding:0.2rem 0;text-align:center;font-size:0.28rem;color:#666;}
+.tripMode .modeList li.cur{color:#ff4858;}
+
+.mddService{position:fixed;width:100%;height:100%;top:0;left:0;background:transparent;z-index: 99999;}
+.mddBox{text-align:left;height:90vh;padding-top:0.3rem;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.mddBox .serviceBox{padding:0 0.3rem 0.3rem 0.3rem;}
+.mddBox .serviceBox h2{margin:0;padding:0.25rem 0;}
+.closeBox{height:10vh;position:relative;}
+.closeBox .closedIcon{display:block;position:absolute;left:50%;margin-left:-0.5rem;bottom:0.2rem;width:1rem;height:1rem;background: url(../images/iconClosed.png) no-repeat center center;background-size:1rem 1rem;}
+
+.layui-layer-content{font-size:0.28rem;}
+
+

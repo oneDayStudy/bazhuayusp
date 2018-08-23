@@ -1,0 +1,96 @@
+html,body{background:#acdf6c;height:100%;}
+i,em{font-style:normal;}
+.linethrough{text-decoration:line-through;}
+.SdefaultBox{padding:0.4rem 0.2rem 0 0.2rem;}
+.BigSpecial{width:100%;margin-bottom:0.4rem;}
+.BigSpecial .BigPic{width:100%;position:relative;}
+.BigSpecial .BigPic img{display:block;width:100%;}
+.conlayer{position:absolute;left:0;bottom:0;display:table;width:100%;padding:0 0.2rem;box-sizing:border-box;height:1.186667rem;}
+.conlayer p{display:table-cell;color:#fff;vertical-align:middle;font-size:14px;}
+.conlayer p:first-child{width:6rem;}
+.conlayer p:first-child span{width:6rem;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:1;-webkit-box-orient:vertical;}
+.conlayer p:last-child{text-align:right;}
+[data-dpr="2"] .conlayer p{font-size:28px;}
+[data-dpr="3"] .conlayer p{font-size:42px;}
+.BigSpecial{box-shadow:0 1px 8px #666;border-radius:0.066667rem;}
+.SpecialCon{background:#fff;}
+.SpecialCon .SpecialTop{padding:0.2rem;border-bottom:1px solid #E0E0E0;}
+.SpecialCon .SpecialTop h2{height:2.7em;line-height:1.4;color:#333;font-size:15px;font-weight:bold;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+[data-dpr="2"] .SpecialCon .SpecialTop h2{font-size:30px;}
+[data-dpr="3"] .SpecialCon .SpecialTop h2{font-size:45px;}
+.SpecialCon .SpecialTop p{color:#999;font-size:9px;}	
+[data-dpr="2"] .SpecialCon .SpecialTop p{font-size:18px;}
+[data-dpr="3"] .SpecialCon .SpecialTop p{font-size:27px;}
+.SpecialCon .SpecialTop p span{color:#ff2a00;font-weight:bold;margin:0 0.1rem;}		
+.SpecialCon .SpecialTop p span i{font-size:20px;font-style:normal;}
+[data-dpr="2"] .SpecialCon .SpecialTop p span i{font-size:40px;}
+[data-dpr="3"] .SpecialCon .SpecialTop p span i{font-size:60px;}
+.SpecialBott {padding:0.1rem 0.2rem;}
+.SpecialBott p{color:#999;font-size:12px;background:url(../images/special/specialIcon.png) no-repeat center left; background-size:0.4rem auto;margin:0.1rem 0;padding-left:0.5rem;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:1;-webkit-box-orient:vertical;}
+[data-dpr="2"] .SpecialBott p{font-size:24px;}
+[data-dpr="3"] .SpecialBott p{font-size:36px;}
+.sellOut{position:absolute;right:0.2rem;bottom:0.2rem;}
+.BigIcon{width:2.786667rem;height:2.213333rem;}
+.sellOut img{display:block;width:100%;}
+.banner img{display:block;width:100%;}
+.specialBox ul li{width:100%;padding-bottom:0.2rem;}
+.specialBox ul li a{float: left; display: block;width:50%;box-sizing:border-box;vertical-align:top;}
+.specialBox ul li a:first-child{padding-left:0;padding-right:0.1rem;}
+.smallBox{width:100%;box-shadow:0 1px 8px #666;border-radius:0.066667rem;}
+.smallBox .SpicBox{position:relative;width:100%;height:3.2rem;overflow:hidden;}
+.smallBox .SpicBox .SmallPic{width:100%;height:3.2rem;}
+.smallBox .SpicBox .conlayer{height:0.6rem;line-height:0.6rem;}
+.smallBox .SpicBox .conlayer p{font-size:11px;} 
+.smallBox .SpicBox .conlayer p:first-child{width:2.5rem;}
+[data-dpr="2"] .smallBox .SpicBox .conlayer p{font-size:22px;}
+[data-dpr="3"] .smallBox .SpicBox .conlayer p{font-size:33px;}
+.smallBox .SpicBox .conlayer p:first-child span{width:2.5rem;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:1;-webkit-box-orient:vertical;}
+.SmallIcon{width:1.973333rem;height:1.56rem;}
+.sLayer{color:#fff;font-size:12px;position:absolute;top:0.2rem;}
+.sLayerL{left:0;}
+.sLayer span{background:rgba(0,0,0,0.7);padding:0.08rem 0.2rem;border-radius:0 0.2rem 0 0;}
+.sLayerR{right:0.2rem;}
+[data-dpr="2"] .sLayer{font-size:24px;}
+[data-dpr="3"] .sLayer{font-size:36px;}
+.SpecialTop .TwoPrice{color:#999;}
+.SpecialTop .TwoPrice span{color:#999!important;font-weight:normal!important;font-size:12px;}
+[data-dpr="2"] .SpecialTop .TwoPrice span{font-size:24px;}
+[data-dpr="3"] .SpecialTop .TwoPrice span{font-size:36px;}
+.SpecialTop .TwoPrice span:first-child{margin-right:0.4rem;}
+.hasTags{display:table;width:100%;margin-top:0.2rem;}
+.hasTags p{display:table-cell;}
+.hasTags p.endPrice{text-align:right;}
+.hasTags .tagsIcon{font-size:9px;}
+[data-dpr="2"] .hasTags .tagsIcon{font-size:18px;}
+[data-dpr="3"] .hasTags .tagsIcon{font-size:27px;}
+.hasTags .tagsIcon span{display:inline-block;font-size:9px;border:1px solid #F5C0B4;font-weight:normal!important;height:0.4rem;padding:0 0.15rem;border-radius:0.25rem;}
+[data-dpr="1"] .hasTags .tagsIcon span{line-height:0.5rem;}
+[data-dpr="2"] .hasTags .tagsIcon span{font-size:18px;line-height:0.4rem;}
+[data-dpr="3"] .hasTags .tagsIcon span{font-size:27px;line-height:0.4rem;}
+.tagsIcon span.yellow{color:#ff9900!important;border:1px solid #ff9900;}
+.smallBox .hasTags{margin-top:0.2rem;}
+.sEndPrice{padding-left:0.08rem;}
+.specialBox .SpecialTop{height:3.5rem;position:relative;}
+
+/*2017-04-25 新增倒计时*/
+.banner{position:relative;width:100%;}
+.banner .djsLayer{height:1.466667rem;background:rgba(0,0,0,0.2);width:100%;position:absolute;bottom:0;left:0;display:table;}
+.djsLayer .djs{display:table-cell;vertical-align:middle;text-align:center;}
+.djsLayer .djs .djsCon{width:6.5rem;margin:0 auto;}
+.djsLayer .djs span{display:inline-block;float:left;line-height:0.8rem;}
+.djsLayer .djs span.numBg{color:#fff;width:0.9066666rem;height:0.8rem;font-size:18px;text-align:center;background:url(../../resource/images/icon/home/icon_cound.png); background-size:100% 100%;}
+[data-dpr="2"] .djsLayer .djs span.numBg{font-size:36px}
+[data-dpr="3"] .djsLayer .djs span.numBg{font-size:54px}
+.djsLayer .djs span.dot{width:0.293333rem;height:0.8rem;background:url(../../resource/images/icon/home/icon_spot.png); background-size:100% 100%;}
+.djsLayer .djs span.txt{color:#fff;font-size:14px;margin-right:0.1rem;font-weight:bold;}
+[data-dpr="2"] .djsLayer .djs span.txt{font-size:28px}
+[data-dpr="3"] .djsLayer .djs span.txt{font-size:42px}
+
+.SpecialTop .endPrice{text-align: right;margin-top:0 !important;}
+.quan{display:inline-block;font-size:10px;color:#448ce5;background:#f0f6fd;padding:0 0.15rem;margin:0.1rem;height: 0.4rem;line-height: 0.4rem;text-align:center;}
+[data-dpr="2"] .quan{font-size:20px;}
+[data-dpr="3"] .quan{font-size:30px;}
+.quan.block{margin-top: 0.1rem;}
+.totalYH{display:inline-block;font-size:10px;color:#DA5D66;background:#FFF1F2;padding:0 0.15rem;margin:0.1rem;height: 0.4rem;line-height: 0.4rem;text-align:center;}
+[data-dpr="2"] .totalYH{font-size:20px;}
+[data-dpr="3"] .totalYH{font-size:30px;}

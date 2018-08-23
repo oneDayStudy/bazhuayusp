@@ -1,0 +1,666 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"sha",
+				"shadow"
+			],
+			[
+				"togg",
+				"toggleClass"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"data",
+				"data-index"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"has",
+				"hasborder"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"col",
+				"colspan"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"show",
+				"showCon"
+			],
+			[
+				"se",
+				"select	Tag"
+			],
+			[
+				"white",
+				"whiteBg"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"n",
+				"nowrap"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"child",
+				"children"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"no",
+				"noBorder"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"font",
+				"font_roseo"
+			],
+			[
+				"tab",
+				"table	Tag"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"in",
+				"inputbox"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"img",
+				"img	Tag"
+			],
+			[
+				"backr",
+				"background"
+			],
+			[
+				"form",
+				"formBox"
+			],
+			[
+				"width",
+				"width_40"
+			],
+			[
+				"tabe",
+				"table-cell"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"to",
+				"toggle"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"pal",
+				"placeholder	Attr"
+			],
+			[
+				"p",
+				"placeholder	Attr"
+			],
+			[
+				"boder",
+				"border-box"
+			],
+			[
+				"tabs",
+				"tabs_con"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"text-",
+				"text-overflow"
+			],
+			[
+				"table",
+				"table-layout"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"g",
+				"gary_content"
+			],
+			[
+				"vr",
+				"vertical-align"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"sel",
+				"selection_list"
+			],
+			[
+				"lo",
+				"log_out"
+			],
+			[
+				"one_",
+				"one_word"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"ver",
+				"vertical-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"i",
+				"Package Control: Install Package→安装插件"
+			]
+		],
+		"width": 594.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/common.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/specialDefault_2018.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/exit_home.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/resource/css/home.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/customer/home/home_0420.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/proDetail.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/mix_order.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/MixOrder_DLY.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/ticket.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/long/detail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/exitHome.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/home.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/resource/css/main.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/customer/order/order_detail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/resource/css/Buy.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/order.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/ChoiceTrain.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/short/line_mode/rulePage.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/searchCity.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/searchResult.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/ChoiceTraffic.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/js/city.js",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/search.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/global.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/OrderFilling.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/MixOrderDetai.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/mix_ordertail.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/orderDetail.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/popLayer.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/ChoiceTicket.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/PayAll.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/main.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/train.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/js/layer_mobile/need/layer.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/popLayer.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/NoticeConfirm.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/Reserve_1129.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/Reserve.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/MixOrderDetai_DJP.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/MixOrderDetai_HCP.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/ticket_order.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/MixOrder_SKP.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/GroupOrder.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/GroupDetail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/GroupTicketDetail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/GroupTicketDetail_1.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/GroupTicketDetail_fail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/UnsubscribeTicket.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/ticket_orderdetail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/require.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/BuyTicket.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/OfferDetail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/NoTicketInfo.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/NoticeConfirm.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/Notice.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/GroupNotice.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/Buy.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/long/list.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/perfectInfo.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/ApplyUnsubscribe.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/RequireForm.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/Reserve.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/drop-down.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/flt_logo.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/ticketList.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/search.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/manage.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/long.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/list.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/ticketLayer.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/main.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/index.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/customer/short/line_mode/line_details.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/long/detail-1129.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/mix_order.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/Offer.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/short/line_mode/line_list.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/group/RequireEnter.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/search.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/ConfirmOrder.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/theme.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/long/index_1114.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/resource/css/swiper.min.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/mdd/home.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/long/index.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/dest/control.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/ticket/Reserve.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/js/jquery.mx.controls-1.1.js",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/ticket/list.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/manage/manage.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/template.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/Success.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/ticket/Success.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/proDetail.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/common.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/main.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/drop-down.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/原型设计/分销商采购平台S2B/resource/css/ticket.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/resource/css/common.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/resource/css/main.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/resource/css/proDetail.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/long/list.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/long/detail.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/resource/css/list.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/resource/css/long.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/long/index.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/S2B_Website/home.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/resource/css/global.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/distributor2/distributor.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/contract.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/submit.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/confirm.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/404.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/resource/css/main.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/noData.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/choiceSeat.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/searchOrder.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/TBMobile/index.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/TBMobile/resource/css/global.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/TBMobile/resource/css/main.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/TBMobile/confirm.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/TBMobile/submit.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/TBMobile/demo.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/customer/short/reservation/travel_info.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/consultList.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/MOBILE.APP/1.2_RequirementAndDesign/移动端原型设计/切图/resource/css/common.css",
+		"/D/项目/OCTOPUS.MOBILE/trunk/EteamM_0522/index.html",
+		"/D/项目/OCTOPUS.MOBILE/trunk/EteamM_0522/resource/css/global.css"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 110.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dot",
+			"leftSlide",
+			"checked",
+			"\\",
+			"产品信息",
+			"hideBox",
+			"hideBox ",
+			".layui-m-layerchild h3",
+			"choiceTicket",
+			"18501597421",
+			"bc_order",
+			".plane_name .share",
+			"dialog_price",
+			"num_p",
+			"formCol",
+			"signStyle",
+			"产品信息",
+			"机票",
+			"订单评价",
+			"h",
+			"checkbox",
+			"select\nselect",
+			"select",
+			"selct",
+			"价格",
+			"ticketPop",
+			"formBtn",
+			".formBtn",
+			"question",
+			"relative",
+			"往返大交通",
+			"popBg",
+			"更换航班开始",
+			"更换航班",
+			"chooseBtn",
+			"ticketPop",
+			"更换航班开始",
+			"lineAddress",
+			"notice",
+			".airList .airTabs",
+			"ticketPop",
+			".layui-layer-title",
+			"12月21日",
+			"infoBox",
+			"popBg",
+			"行程",
+			"优惠信息",
+			"建议门市价",
+			"预",
+			"icon",
+			"23rem",
+			"price_detail",
+			"ring",
+			"all_shop",
+			"menuIcon",
+			".swiper-container-horizontal>.swiper-pagination",
+			"choiceBtn",
+			"airList",
+			"弹出层",
+			"团队3",
+			"_self.combox",
+			"combox-lay",
+			"popBg",
+			"select",
+			"selected",
+			"changes",
+			"分页",
+			"common",
+			"乘机人信息",
+			"删除",
+			"shanchu ",
+			"depart_wrap",
+			"选中",
+			">01-13 周五",
+			"1026",
+			"plane",
+			"flightList",
+			"date_bar",
+			";\n",
+			"航班信息",
+			"coupon",
+			"bar_l",
+			".ticketFilterBox select",
+			"游客下单",
+			"常用客户列表",
+			"question",
+			"ticketCon",
+			".ticketLeft",
+			"1170",
+			"contactBox",
+			"secureCol",
+			"book-select",
+			"book-select select-open",
+			".YHtable",
+			"secureCol",
+			".YHtable tr td",
+			".lineStyle label",
+			"radio",
+			".YHtable",
+			".infoItems .greyBox",
+			".calendar .calendarIcon",
+			".lineInfoScan",
+			"ReservePrice",
+			"ReserveConR",
+			".ReserveCon .ReserveConR",
+			".steps_5",
+			"feeIntro",
+			"calendar-head-box",
+			"100",
+			"shadow",
+			"topBlank",
+			"prointro",
+			"topBlank",
+			";\n",
+			"img",
+			"1060x530.png",
+			"住宿标准",
+			"monthBox",
+			"priceItem",
+			"standard",
+			"buyForm",
+			"buyFormEdit",
+			".proInfoR .buyCon",
+			".calendar-container",
+			"proPicGroup",
+			"salessort",
+			".cond_tab a span",
+			"pack_down"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"div",
+			"wrapper"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

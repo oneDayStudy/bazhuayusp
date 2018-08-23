@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/order.css">
+    <title>累计访问量统计</title>
+	<style>
+	body{font-family:"微软雅黑","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;margin:0;padding:0;background:#fff;position:relative;overflow:hidden;}
+	.length{width:94%;overflow:hidden;zoom:1;padding:0.2rem 3%;}
+	.length .length_red{float:left;color:#000;line-height:20px;}
+	.length .length_red i{display:inline-block;width:20px;height:20px;margin-right:10px;background:#EA2447;float:left;}
+	.length .length_orange{float:right;color:#000;line-height:20px;}
+	.length .length_orange i{display:inline-block;width:20px;height:20px;margin-right:10px;background:#F7B22A;float:left;}	
+	</style>
+</head>
+<body>
+    <div class="page ">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>累计访问量统计</p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="my_con">
+                <div class="order_data_con supplier_my">
+                    <div class="real_time_data">
+                        <div class="m_data">
+                            <div class="m_data_item">
+                                <span class="i_lv">累计访问量</span>
+                                <span class="money_count"><i>755586</i></span>
+                            </div>
+                            <div class="m_data_item">
+                                <span class="i_jr">累计订单</span>
+                                <span class="money_count"><i>1305</i></span>                        
+                            </div>
+                        </div>                                
+                    </div>
+                </div>           
+            </div> 
+            <div class="blank_30"></div>
+            <!--
+            <div class="time_count">
+                <ul>
+                    <li>
+                        <span>起始时间</span>
+                        <span class="specific">2016-08-30</span>
+                    </li>
+                    <li>
+                        <span>结束时间</span>
+                        <span class="specific">2016-09-30</span>
+                    </li>
+                </ul>
+            </div>
+            --> 
+			<div class="time_data" style="overflow:hidden;zoom:1;">
+                <ul>
+                    <li class="cur">一周内</li>
+                    <li>一月内</li>
+                    <li>三个月内</li>
+                    <li>半年内</li>
+                    <li>一年内</li>
+                    <li>半年内</li>
+                    <li>一年内</li>                  
+                </ul>
+            </div>
+			<div class="blank_30"></div>
+			<div id="main" style="background:#fff;height:350px;width:100%;"></div>
+			<div class="length">
+				<div class="length_red"><i></i><span>2016-08 最高</span></div>
+				<div class="length_orange"><i></i><span>2016-10 最低</span></div>
+			</div>			
+        </div>
+    </div>  
+    <footer>
+      <ul class="clearfix">
+        <li class="home active"><a href="javascript:;">首页</a></li>
+        <li class="wallet"><a href="javascript:;">钱包</a></li>
+        <li class="orders"><a href="javascript:;">订单</a></li>
+        <li class="my"><a href="javascript:;">我的店</a></li>
+      </ul>
+    </footer>	
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+    <script src="../resource/echarts/echarts.js"></script>
+    <script type="text/javascript">
+    // Step:3 conifg ECharts's path, link to echarts.js from current page.
+    // Step:3 为模块加载器配置echarts的路径，从当前页面链接到echarts.js，定义所需图表路径
+    require.config({
+        paths: {
+            echarts: '../echarts'
+        }
+    });
+    
+    // Step:4 require echarts and use it in the callback.
+    // Step:4 动态加载echarts然后在回调函数中开始使用，注意保持按需加载结构定义图表路径
+    require(
+        [
+            'echarts',
+            'echarts/theme/macarons',
+			'echarts/chart/bar',
+			'echarts/chart/line',
+			'echarts/chart/pie',
+            'echarts/chart/map'
+        ],
+        function (ec,theme) {
+		//--- 柱状图 ---
+		var myChart = ec.init(document.getElementById('main'),theme);
+		myChart.setOption({
+
+    tooltip : {
+        trigger: 'axis',
+		axisPointer:{type : 'none'}
+    },
+
+    grid: {
+        x: 35,
+        y: 25,
+        x2: 35,
+        y2: 25,
+
+    },
+    calculable : false,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日'],
+			 show: true,
+			axisLine:{
+				show:true,
+				 lineStyle:{color: '#000',width: 2,type: 'solid'}     
+			}	,
+			axisLabel:{show:false},
+			axisTick:{show:false}
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+			show : false,
+
+        }
+    ],
+    series : [
+        {
+            name:'服务统计',
+            type:'line',
+			color: '#00c46c',
+			
+			splitArea:{show : false},
+            data:[15, 11, 1555, 13, 12, 13, 10],
+			itemStyle : {  
+				normal : {  
+					color:'#00c46c',  
+					lineStyle:{  
+						color:'#00c46c'  
+					}  
+				}  
+			},  			
+            markPoint : {
+                data : [
+                    {
+					type : 'max', 
+					name: '最高',
+					itemStyle: {normal: {color:'#EA2447',label : {show: true,textStyle : {fontSize : '18'}}}},          
+					symbolSize:26
+					},
+                    {type : 'min', name: '最低',itemStyle: {normal: {color:'#F7B22A',label : {show: true,textStyle : {fontSize : '18'}}}}, symbolSize:25}
+                ]
+            }
+        }
+    ]
+			});
+	}
+    );
+    </script>  
+</body>
+</html>

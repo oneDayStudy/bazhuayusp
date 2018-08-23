@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <title>店铺优惠券</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+                <a href="javascript:history.go(-1);" title="返回" class="back">返回</a> 
+                <div class="one_title">
+                  <p>店铺优惠券</p>
+                </div>                            
+        </header>
+        <div class="container">
+            <div class="news_center tabs">
+                <ul>
+                    <li class="cur">可使用</li>
+                    <li>已过期</li>
+                </ul>
+            </div>
+            <div class="coupons_list tabs_show">
+                <ul>
+                    <li>
+                        <div class="icon_coupons coupons_1"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_coupons coupons_2"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_coupons coupons_3"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_coupons coupons_4"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>                                        
+                </ul>
+            </div>
+            <div class="coupons_list tabs_show" style="display:none;">
+                <ul>
+                    <li>
+                        <div class="icon_coupons coupons_1"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_coupons coupons_2"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_coupons coupons_3"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_coupons coupons_4"></div>
+                        <div class="coupons_detail">
+                            <h2>券编号:000150664</h2>
+                            <p><span>已用金额:￥0</span><span>可用金额:￥88</span></p>
+                            <p>有效期：2016/05/05 - 2016/06/06</p>
+                        </div>
+                    </li>                                        
+                </ul>
+            </div>                       
+        </div>
+    </div>
+    <!--
+    <footer>
+      <ul class="clearfix">
+        <li class="home active"><a href="javascript:;">首页</a></li>
+        <li class="wallet"><a href="javascript:;">钱包</a></li>
+        <li class="orders"><a href="javascript:;">订单</a></li>
+        <li class="my"><a href="javascript:;">我的店</a></li>
+      </ul>
+    </footer>
+    -->    
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    //切换
+    $(".tabs li").click(function () { 
+    var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+    $(this).addClass('cur').siblings().removeClass('cur');
+    var content_obj = $(".tabs_show") //内容节点 
+    content_obj.hide(); 
+    content_obj.eq(index_tab).show(); 
+    });  
+  </script>  
+</body>
+</html>

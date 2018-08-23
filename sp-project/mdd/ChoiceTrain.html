@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">        
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/order.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/popLayer.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/swiper.min.css">
+    <script type="text/javascript" src="resource/js/global.js"></script>    
+    <title>火车往返</title>
+</head>
+<body>
+<div class="wrap flex flex-v">
+    <header class="header greenBg" style="top:0;">
+        <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+        <div class="title">火车往返<i class="fa fa-angle-down"></i></div>
+    </header>
+    <div class="hideTabBox">
+      <div class="hideTabs">
+          <a href="javascript:;" class="cur">飞机往返</a>
+          <a href="javascript:;">火车往返</a>
+          <a href="javascript:;">飞机+火车</a>
+          <a href="javascript:;">火车+飞机</a>
+      </div>
+    </div>
+    <div class="main flex-1">
+        <div class="returnList">
+          <ul>
+            <li>
+              <div class="lineOne"></div>
+              <i class="dot"></i>
+              <div class="tripItem">
+                  <h2><span>上海浦东</span><i class="trainIcon"></i><span>厦门高崎</span><span class="date">01月16日</span></h2>
+                  <p><span>01-14</span><span>|</span><span>南方航空CZ6738</span><span>|</span><span>经济舱</span></p>
+              </div>              
+            </li>
+            <li>
+              <div class="lineOne"></div>
+              <i class="dot"></i>            
+              <div class="tripItem">
+                  <h2><span>上海浦东</span><i class="airIcon"></i><span>厦门高崎</span></h2>
+                  <p><span>选择回程</span></p>
+              </div>              
+            </li>
+          </ul>
+          <i class="filterShowIcon"></i>
+        </div>
+        <div class="trainSearchBox">
+            <div class="searchCol">
+              <h2>去程出发机场</h2>
+              <div class="searchTabs">
+                <a href="javascript:;" class="cur">北京首都</a>
+                <a href="javascript:;">北京南苑机场</a>
+              </div>
+            </div>
+            <div class="searchCol">
+              <h2>去程起飞日期</h2>
+              <div class="searchTabs">
+                <a href="javascript:;" class="cur">01-16</a>
+                <a href="javascript:;">01-15</a>
+              </div>
+            </div>
+            <div class="searchCol">
+              <h2>回程出发机场</h2>
+              <div class="searchTabs">
+                <a href="javascript:;" class="cur">北京首都</a>
+                <a href="javascript:;">北京南苑机场</a>
+              </div>
+            </div>
+            <div class="searchCol">
+              <h2>回程起飞日期</h2>
+              <div class="searchTabs">
+                <a href="javascript:;" class="cur">01-20</a>
+                <a href="javascript:;">01-21</a>
+              </div>
+            </div>
+            <div class="searchCol">
+              <h2>选择回程条件</h2>
+              <div class="searchForm">
+                <div class="searchFormCol">
+                  <p class="left"><span>出发站点</span></p>
+                  <p class="searchTabs s_formInput">
+                    <input type="text">
+                    <i class="cclx"></i>             
+                  </p>              
+                </div> 
+                <div class="searchFormCol">
+                  <p class="left"><span>到达站点</span></p>
+                  <p class="searchTabs s_formInput">
+                    <input type="text">
+                    <i class="add"></i>             
+                  </p>              
+                </div>                                         
+                <div class="searchFormCol">
+                  <p class="left"><span>出发日期</span></p>
+                  <p class="searchTabs s_formInput">
+                    <a href="javascript:;" class="cur">01-20</a>
+                    <a href="javascript:;">01-21</a>
+                    <a href="javascript:;">01-21</a>
+                    <a href="javascript:;">01-21</a>
+                    <a href="javascript:;">01-21</a>               
+                  </p>              
+                </div>
+              </div>
+            </div>            
+            <a href="javascript:;" class="trainSearchBtn">搜索</a>                                   
+        </div>
+        <div class="blank_10"></div>
+        <div class="mainOuter">          
+          <div class="orderBox Shadow">
+            <div class="ticketBox trainBox">
+                <div class="ticketCol">
+                  <div class="airDetail">
+                      <p class="airCol">
+                        <span class="time">21：00</span>
+                        <span class="address">厦门北</span>
+                      </p>
+                      <p class="line">
+                        <span>4h20min</span>
+                        <img src="resource/images/line.png">
+                        <span>G7032<i class="ticket"></i></span>
+                      </p>
+                      <p class="airCol">
+                        <span class="time">00：40</span>
+                        <span class="address">上海虹桥</span>
+                      </p>
+                      <p class="price"><i>￥</i><em>35880</em></p>
+                  </div>
+                  <div class="colBottom">
+                    <p>商务座 :10张</p>
+                    <p>头等座 :10张</p>
+                    <p>一等座 :10张</p>
+                    <p>二等座 :10张</p>
+                  </div>                  
+                </div>
+                <div class="checkSeatBox">
+                <div class="checkSeat">
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                    <i class="checkIcon"></i>
+                  </a>
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                    <i class="checkIcon"></i>
+                  </a>
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                    <i class="checkIcon"></i>
+                  </a>
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                    <i class="checkIcon"></i>
+                  </a>                                                      
+                </div> 
+                </div>          
+            </div>
+            <div class="checkOuter Shadow"><i class="checkIcon"></i></div>            
+          </div>
+          <div class="blank_10"></div> 
+          <div class="orderBox Shadow">
+            <div class="ticketBox trainBox">
+                <div class="ticketCol">
+                  <div class="airDetail">
+                      <p class="airCol">
+                        <span class="time">21：00</span>
+                        <span class="address">厦门北</span>
+                      </p>
+                      <p class="line">
+                        <span>4h20min</span>
+                        <img src="resource/images/line.png">
+                        <span>G7032<i class="ticket"></i></span>
+                      </p>
+                      <p class="airCol">
+                        <span class="time">00：40</span>
+                        <span class="address">上海虹桥</span>
+                      </p>
+                      <p class="price"><i>￥</i><em>35880</em></p>
+                  </div>
+                  <div class="colBottom">
+                    <p>商务座 :10张</p>
+                    <p>头等座 :10张</p>
+                    <p>一等座 :10张</p>
+                    <p>二等座 :10张</p>
+                  </div>                  
+                </div>
+                <div class="checkSeatBox">
+                <div class="checkSeat">
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                  </a>
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                  </a>
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                  </a>
+                  <a href="javascript:;" class="seatCol">
+                    <p>一等座</p>
+                    <p class="price">￥358</p>
+                    <p class="PiaoStatus">有票</p>
+                  </a>                                                      
+                </div>
+                </div>           
+            </div>
+          </div>
+          <div class="blank_10"></div> 
+        </div>                             
+    </div>
+    <footer class="footer">
+        <div class="airFoot">
+            <ul class="clearfix">
+              <li class="filter"><a href="javascript:;">筛选</a></li>
+              <li class="plane"><a href="javascript:;">航空公司</a></li>
+              <li class="date"><a href="javascript:;">起飞时间</a></li>
+              <li class="sortUp"><a href="javascript:;">排序</a></li>
+            </ul>          
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="resource/js/jquery.min.js"></script>
+<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+<script type="text/javascript">
+$('html,body').css("background","#f2f4f7");
+    $(".LeftCon a").click(function(){
+        $(this).addClass("sel").siblings("a").removeClass("sel");
+        $(this).parents().find(".FilterBoxR").find(".RightCon[data-index="+$(this).data("index")+"]").removeClass("none").siblings(".RightCon").addClass("none");
+    })
+    $(".tabs span").click(function(){
+        $(this).addClass("active").siblings("span").removeClass("active");
+        $(this).parent().next(".main").find(".tab_con[data-index="+$(this).data("index")+"]").removeClass("none").siblings(".tab_con").addClass("none");
+    })
+  $("header .title").click(function () {
+    $('.hideTabBox').toggle();
+  });       
+  //火车票展开
+  $(".trainBox .ticketCol").click(function () {
+    $(this).next('.checkSeatBox').toggle();
+  }); 
+  $(".orderBox").click(function () {
+    $(this).next('.checkSeatBox').toggle();
+  });   
+  //火车票搜索条件展开
+  $(".returnList").click(function () {
+    $(this).next('.trainSearchBox').toggleClass('none');
+    $(this).children('.filterShowIcon').toggleClass('up');
+    $('.mainOuter').toggleClass('none');
+  }); 
+  //火车票座位选择
+  $(".checkSeat .seatCol").click(function () {
+    $(this).toggleClass('checked');
+    $(this).parents('.orderBox').toggleClass('checked');
+    $(this).parents('.checkSeatBox').toggleClass('checked');
+  });   
+  //出发、往返时间
+  $(".airFoot .date").click(function () {
+      $('#layerBlack').show();
+      $('#flyDate').removeClass('none');
+  });
+  //航空公司
+  $(".airFoot .plane").click(function () {
+      $('#layerBlack').show();
+      $('#flyCompany').removeClass('none');
+  });
+  //排序
+  $(".airFoot .sortUp").click(function () {
+      $('#layerBlack').show();
+      $('#sortBox').removeClass('none');
+  });    
+  $("#layerBlack").click(function () {
+      $('#layerBlack').hide();
+      $('.FilterGroup').addClass('none');
+      $('#flyDate').removeClass('none');
+      $('#flyCompany').removeClass('none');
+      $('.popList').addClass('none');
+  });         
+  $(".popList li").click(function () {
+      $('#layerBlack').hide();
+      $('.popList').addClass('none');      
+  });          
+    $(".orderBox .seeMore").toggle(
+      function(){
+        $(this).addClass('packUp');
+        $(this).children('span').text('收起舱位')
+        $(this).parent().find('.hideBox').show();
+      },
+      function(){
+        $(this).removeClass('packUp');
+        $(this).children('span').text('展开舱位')
+        $(this).parent().find('.hideBox').hide();
+      }
+    );             
+    $(".checkInfo .clickBtn").toggle(
+      function(){
+        $(this).addClass('cancelBtn');
+        $(this).children('a').text('取消')
+        $(this).parents('.seatBox').parent().addClass('TicketChecked');
+        $(this).parents('.seatBox').parent().removeClass('Shadow');
+      },
+      function(){
+        $(this).removeClass('cancelBtn');
+        $(this).children('a').text('选择')
+        $(this).parents('.seatBox').parent().removeClass('TicketChecked');
+        $(this).parents('.seatBox').parent().addClass('Shadow');
+      }
+    ); 
+ 
+
+</script>	
+</body>
+</html>

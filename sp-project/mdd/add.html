@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/order.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/popLayer.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/train.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/LArea.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/add.css">
+    <script type="text/javascript" src="resource/js/global.js"></script>
+    <title>选择大交通</title>
+    <style>
+        header .onl_talk{
+            font-size:0.20rem;
+            position: absolute;
+            right:0.25rem;
+            top:0;
+            color:#fff;
+        }
+        #sub{display:inline-block;color:#ffba64;padding-left:0.12rem;}
+
+        .mainOuter{
+            padding:0.1rem 0.1rem;
+        }
+        .area_btn{
+            color:#ff4858;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrap flex flex-v ">
+    <header class="header greenBg" style="top:0;">
+        <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+        <div class="title">添加地址</div>
+    </header>
+    <div class="main flex-1">
+        <div class="mainOuter">
+        <div class="orderBox Shadow">
+          <div class="bc_con">
+
+              <div class="peo_info_edit">
+                  <div class="info_edit_tit">
+                      <span class="tit_header" style="display: block;padding-left:1rem;">游客信息</span>
+                  </div>
+                  <div class="travel_info_show">
+                      <ul class="travel_info">
+                          <li>
+                              <div class="fir_tra cad_sty">
+                                  <span class="zh_Sa">张三（18501597421）</span>
+                                  <span class="zh_pros cad_sty"><img src="../resource/images/icon/bottom_x.png" alt=""/></span>
+                              </div>
+                              <div class="tra_card card_style">
+                                  <div class="card_row">
+                                      <span>证件类型</span>
+                                      <span>身份证</span>
+                                  </div>
+                                  <div class="card_row">
+                                      <span>证件号</span>
+                                      <span>410922198503273458</span>
+                                  </div>
+                                  <div class="card_row">
+                                      <span>出生日期</span>
+                                      <span>1990-02-02</span>
+                                  </div>
+                              </div>
+                          </li>
+
+                          <li>
+                              <div class="fir_tra lv_ming">
+                                  <span class="zh_Boy">吕明</span>
+                                  <span class="zh_pros lv_ming"><img src="../resource/images/icon/bottom_x.png" alt=""/></span>
+                              </div>
+                              <div class="tra_card rn_he">
+                                  <div class="card_row">
+                                      <span>证件类型</span>
+                                      <span>身份证</span>
+                                  </div>
+                                  <div class="card_row">
+                                      <span>证件号</span>
+                                      <span>410922198503273458</span>
+                                  </div>
+                                  <div class="card_row">
+                                      <span>出生日期</span>
+                                      <span>1990-02-02</span>
+                                  </div>
+                              </div>
+                          </li>
+
+                          <li>
+                              <div class="fir_tra sui_ji">
+                                  <span class="zh_Boy">张三</span>
+                                  <span class="zh_pros qaa"><img src="../resource/images/icon/bottom_x.png" alt=""/></span>
+                              </div>
+                              <div class="tra_card xas">
+                                  <div class="card_row">
+                                      <span>证件类型</span>
+                                      <span>身份证</span>
+                                  </div>
+                                  <div class="card_row">
+                                      <span>证件号</span>
+                                      <span>410922198503273458</span>
+                                  </div>
+                                  <div class="card_row">
+                                      <span>出生日期</span>
+                                      <span>1990-02-02</span>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                      <div class="tra_tips">
+                          <p>手续费 5元/人，共15元</p>
+                          <p>邮寄费 15元，每张订单可购买20张票</p>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+
+
+        </div>
+        <div class="blank_10"></div>
+
+        <div class="orderBox Shadow">
+            <div class="info_edit_tit">
+                <span class="email_address" style="display: block;padding-left:1rem;">邮寄地址</span>
+                <!--<span class="edit_info"><a href="travel_info.html"><i>编辑信息</i></a></span>-->
+            </div>
+            <div class="travel_info_show">
+                <ul class="travel_info2">
+                    <li>
+                        <div class="info_tra2">
+                            <span>所在区域<i>*</i></span>
+                            <div style="display: inline-block;width:68%;" id="demo2" class="demo holo" type="text" readonly="" placeholder="城市选择特效"></div>
+                            <input id="value2" class="value" type="hidden" />
+                        </div>
+                    </li>
+                    <li>
+                        <span class="sex_boy">详细地址<i>*</i></span>
+                        <span class="awe"><input type="text" placeholder="请输入详细地址"/></span>
+                    </li>
+                    <li>
+                        <span class="sex_boy">收件人<i>*</i></span>
+                        <span class="awe"><input type="text" placeholder="请输入收件人姓名"/></span>
+                    </li>
+                    <li>
+                        <span class="sex_boy">联系电话<i>*</i></span>
+                        <span class="awe"><input type="text" placeholder="请输入联系电话"/></span>
+                    </li>
+                </ul>
+                <div class="tra_tips tra_t2">
+                    <p>配送票如需退票或改签，请携带纸质车票和购票时的有效证件前往火车站人工窗口办理</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="btn_two">
+            <a href="#" class="orange next_step" style=" background-color:#ff4858;border-top:1px solid #ff4858;">确定</a>
+        </div>
+    </footer>
+</div>
+
+
+<!--查看明细结束-->
+<script type="text/javascript" src="resource/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resource/javascript/area/LAreaData2.js"></script>
+<script type="text/javascript" src="../resource/javascript/area/LArea.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.cad_sty').toggle(function () {
+                $(".cad_sty>img").attr("src","../resource/images/icon/top_x.png");
+                $('.card_style').css('display','block');
+            }, function () {
+                $(".cad_sty>img").attr("src","../resource/images/icon/bottom_x.png");
+                $('.card_style').css('display','none');
+            }
+    );
+
+    $('.lv_ming').toggle(function () {
+                $(".lv_ming>img").attr("src","../resource/images/icon/top_x.png");
+                $('.rn_he').css('display','block');
+            }, function () {
+                $(".lv_ming>img").attr("src","../resource/images/icon/bottom_x.png");
+                $('.rn_he').css('display','none');
+            }
+    );
+
+    $('.sui_ji').toggle(function () {
+                $(".qaa>img").attr("src","../resource/images/icon/top_x.png");
+                $('.xas').css('display','block');
+            }, function () {
+                $(".qaa>img").attr("src","../resource/images/icon/bottom_x.png");
+                $('.xas').css('display','none');
+            }
+    );
+
+
+});
+$(document).ready(function(){
+    var area2 = new LArea();
+    area2.init({
+        'trigger': '.demo',
+        'valueTo': '.value',
+        'keys': {
+            id: 'value',
+            name: 'text'
+        },
+        'type': 2,
+        'data': [provs_data, citys_data, dists_data]
+    });
+    $('html,body').css('background','#F2F4F7');
+});
+
+</script>	
+</body>
+</html>

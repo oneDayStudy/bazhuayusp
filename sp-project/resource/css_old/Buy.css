@@ -1,0 +1,196 @@
+/*选择团期*/
+.darkGreen{background:#38af7f;color:#fff;}
+.calendarBox{margin-top:0;border-top:none;}
+.calendarBox .date_table{background:#38af7f;}
+.calendarBox .date_table .date_year{background:#38af7f;border-top:none;}
+.calendarBox .date_table .date_week{background:#38af7f;border-top:1px solid #59BC94;color:#fff;}
+.calendarBox .date_day li span{border:none;}
+.calendarBox .date_table .date_year .swiper-container{height:1.34rem;color:#AFD9C6;font-size:16px;}
+[data-dpr="2"] .calendarBox .date_table .date_year .swiper-container{font-size:32px;}
+[data-dpr="3"] .calendarBox .date_table .date_year .swiper-container{font-size:48px;}
+.calendarBox .date_table .date_year .swiper-container .swiper-slide a{display:inline-block;width:25%;}
+.calendarBox .date_table .date_year .swiper-container .swiper-slide a.current{color:#fff;border-bottom:3px solid #fff;line-height:1.28rem;} 
+.calendarBox .date_day li span{color:#fff;}
+.calendarBox .date_day .have_price{background:none;}
+.calendarBox .date_day .price{color:#6EDEA6;}
+.calendarBox .date_day li span.before{color:#6EDEA6;}
+.calendarBox .date_day li span.select{background:#41BD8B;color:#f8d200;border-radius:0.1rem;}
+.calendarBox .date_day li span.select .price{color:#f8d200;bottom: 0.22rem;}
+.calendarBox .date_day li span .price{bottom: 0.22rem;}
+.calendarBox .date_day li span{line-height:none;}
+.blank_15{height:0.2rem;background:#F2F4F7;}
+.font_g{color:#19c36b;}
+.todayPrice{display:table;width:100%;padding:0.3rem;box-sizing:border-box;background:#fff;border-bottom:1px solid #DDDDDD;}
+.todayPrice p{display:table-cell;}
+.todayPrice p{font-size:16px;}
+[data-dpr="2"] .todayPrice p{font-size:32px;}
+[data-dpr="3"] .todayPrice p{font-size:48px;}
+.todayPrice p.price{text-align:right;font-size:14px;color:#999;}
+[data-dpr="2"] .todayPrice p.price{font-size:28px;}
+[data-dpr="3"] .todayPrice p.price{font-size:42px;}
+.todayPrice p.price .font_r{color:#ff4545;font-size:18px;margin:0 0.05rem;}
+[data-dpr="2"] .todayPrice p.price .font_r{font-size:36px;}
+[data-dpr="3"] .todayPrice p.price .font_r{font-size:54px;}
+.toursBox{border-bottom:1px solid #DDDDDD;border-top:1px solid #DDDDDD;background:#fff;} 
+.toursBox .toursItem{display:table;padding:0.3rem;font-size:14px;border-bottom:1px solid #E4E4E4;width:100%;box-sizing:border-box;position:relative;}
+[data-dpr="2"] .toursBox .toursItem{font-size:28px;}
+[data-dpr="3"] .toursBox .toursItem{font-size:42px;}
+.toursBox .toursItem .iconShow{position:absolute;width:0.32rem;height:0.186667rem;top:50%;margin-top:-0.1rem;background:url(../images/icon/i_Bot24.png) no-repeat center center;background-size:100% 100%;right:0.4rem;}
+.toursBox .upicon .iconShow{background:url(../images/icon/i_Top24.png) no-repeat center center;background-size:100% 100%;}
+.toursBox .toursItem p{display:table-cell;vertical-align:middle;}
+.toursBox .toursItem p .djs{font-size:12px;color:#999;}
+[data-dpr="2"] .toursBox .toursItem p .djs{font-size:24px;}
+[data-dpr="3"] .toursBox .toursItem p .djs{font-size:36px;}
+.toursBox .toursItem p .djs i{color:#ff5844;}
+.toursBox .toursItem p.seat{width: 4em;padding-right:0.6rem;position:relative;text-align:right;}
+.toursBox dd .toursItem{color:#999;width:96%;margin:0 2%;padding:0.3rem 0.1rem;display:none;}
+.toursBox .toursItem .iconCur{position:absolute;width:0.28rem;height:0.2rem;top:50%;margin-top:-0.1rem;background:url(../images/icon/i_smallC.png) no-repeat center center;background-size:100% 100%;right:0.2rem;}
+.toursBox .toursItem:first-child{border-bottom:none;}
+.toursBox dt .teamGroup{padding:0 0.3rem 0.3rem 0.3rem!important;}
+.toursBox dd .teamGroup{padding:0 0.1rem 0.3rem 0.1rem!important;}
+.ticketBox{margin:0 0.2rem;background:#fff;}
+.ticketBox .ticketlist{box-shadow:0 0 0.1rem #ccc;border-top:1px solid #E6E6E6;}
+.ticketBox .infoShow{position:relative;padding:0.27rem;}
+.ticketBox .infoShow h2{font-size:16px;margin-bottom:0.1rem;}
+[data-dpr="2"] .ticketBox .infoShow h2{font-size:32px;}
+[data-dpr="3"] .ticketBox .infoShow h2{font-size:48px;}  
+.ticketBox .infoShow h2 span.price{font-size:18px;color:#ff5844;}
+[data-dpr="2"] .ticketBox .infoShow h2 span.price{font-size:36px;}
+[data-dpr="3"] .ticketBox .infoShow h2 span.price{font-size:54px;}
+.ticketBox .infoShow h2 span.showMore{font-size:10px;color:#00a7de;padding-right:0.25rem;background:url(../images/icon/i_blue14Bot.png) no-repeat center right;background-size:0.186667rem 0.106667rem;}
+[data-dpr="2"] .ticketBox .infoShow h2 span.showMore{font-size:20px;}
+[data-dpr="3"] .ticketBox .infoShow h2 span.showMore{font-size:30px;}
+.ticketBox .infoShow h2 .showMore:after{content:'展开明细';}
+.ticketBox .infoShow h2.active .showMore:after{content:'收起明细';}            
+.ticketBox .infoShow h2.active span.showMore{background:url(../images/icon/i_blue14Top.png) no-repeat center right;background-size:0.186667rem 0.106667rem;}             
+.ticketBox .infoShow p.subHead{color:#999;font-size:12px;max-width: 4.8rem;} 
+[data-dpr="2"] .ticketBox .infoShow p.subHead{font-size:24px;}
+[data-dpr="3"] .ticketBox .infoShow p.subHead{font-size:36px;}
+.ticketBox .infoShow p.subHead i{display:inline-block;margin-right:0.3rem;padding-left:0.32rem;}
+.ticketBox .infoShow p.subHead i.yes{background:url(../images/icon/yes.png) no-repeat center left;background-size:0.266667rem 0.266667rem;}
+.ticketBox .infoShow p.subHead i.no{background:url(../images/icon/no.png) no-repeat center left;background-size:0.266667rem 0.266667rem;} 
+.ticketBox .infoShow p.tags{color:#999;font-size:10px;margin-top:0.1rem;} 
+[data-dpr="2"] .ticketBox .infoShow p.tags{font-size:20px;}
+[data-dpr="3"] .ticketBox .infoShow p.tags{font-size:30px;}
+.ticketBox .infoShow p.tags i{padding:0.03rem 0.2rem;margin-right:0.2rem;border-radius: 0.7em;}
+.ticketBox .infoShow p.tags i.lj{background:url(../images/icon/phone.png) no-repeat center left 0.2rem #FFF0F5;background-size:0.173333rem 0.28rem;border:1px solid #FF467A;border-radius:0.7em;color:#FF467A;padding:0 0.2rem 0 0.5rem;}
+.ticketBox .infoShow p.tags i.green{background:#F2FBF4;border:1px solid #5DCA79;border-radius:0.7em;color:#67CD81;}
+.ticketBox .infoShow .num_edit_btn{position:absolute;top:0.3rem;right:0.3rem;width:3.3rem;height:1rem;border:1px solid #E4E4E4;border-radius:0.5rem;}
+.ticketBox .infoShow .num_edit_btn .i_reduce{border-right:1px solid #E4E4E4;width:1.1rem;height:1rem;}
+.ticketBox .infoShow .num_edit_btn .add_blank{width:1.03rem;height:1rem;line-height:1rem;text-align:center;}
+.ticketBox .infoShow .num_edit_btn .i_add{float:right;border-left:1px solid #E4E4E4;width:1.1rem;height:1rem;}
+.ticketlist .infoHide{padding:0.27rem;border-top:1px solid #E6E6E6;display:none;}
+.ticketlist .infoHide .priceG span{display:inline-block;margin-right:0.3rem;text-align:left;color:#666;font-size:12px;}
+[data-dpr="2"] .ticketlist .infoHide .priceG span{font-size:24px;}
+[data-dpr="3"] .ticketlist .infoHide .priceG span{font-size:36px;}
+.ticketlist .infoHide p.tips{font-size:12px;color:#999;margin-top:0.1rem;}
+[data-dpr="2"] .ticketlist .infoHide p.tips{font-size:24px;}
+[data-dpr="3"] .ticketlist .infoHide p.tips{font-size:36px;}
+.ticketlist .infoHide p.tips sup{color:#ff5844;}
+.ticketlist .infoHide .font_r{color:#ff5844;}
+.ticketlist .infoHide .BigPrice span{float:right;color:#999;margin-right:0;margin-left:0.3rem;}
+.ticketlist .infoHide .BigPrice span .font_r{font-size:18px;font-weight:bold;}
+[data-dpr="2"] .ticketlist .infoHide .BigPrice span .font_r{font-size:36px;}
+[data-dpr="3"] .ticketlist .infoHide .BigPrice span .font_r{font-size:54px;}
+footer{z-index:6;}
+.hasPList a{width:auto;}
+.hasPList .greyBg{background:#636261!important;color:#fff;}
+.hasPList .greyBg font{color:#fff;}
+.hasPList .next_step{width:3.733333rem;}
+.hasPList a.special_info{padding:0 0.3rem;text-align:left;}
+.btn_two .special_info .seeMX{float:right;color:#fff;text-decoration: none;background:url(../images/icon/15white.png) no-repeat center right;padding-right:0.5rem;}
+[data-dpr="2"] .btn_two .special_info .seeMX{font-size:24px;}
+[data-dpr="3"] .btn_two .special_info .seeMX{font-size:36px;} 
+.btn_two .special_info .seeMX.toTop{background:url(../images/icon/15whiteTop.png) no-repeat center right;} 
+.feeDetail{display:none;position:fixed;width:100%;box-sizing:border-box;bottom:1.3rem;padding:0 0.4rem;background:#f3f4f8;z-index:6;} 
+.feeDetail .tit{color:#999;padding:0.3rem 0; border-bottom:1px solid #CCC;position:relative;} 
+.feeDetail .feeItem p{color:#333;font-size:16px;padding-top:0.2rem;margin:0;}
+[data-dpr="2"] .feeDetail .feeItem p{font-size:28px;}
+[data-dpr="3"] .feeDetail .feeItem p{font-size:42px;} 
+.feeDetail .closeIcon{width:0.4rem;height:0.4rem;background:url(../images/icon/Gclose.png) no-repeat center center;background-size:100% 100%;position:absolute;right:0.4rem;top:50%;margin-top:-0.2rem;} 
+.btn_two .red{background:#FF5844;color:#fff;border-left:none;}
+.feeDetail .feeItem .feeList{display:table;width:100%;margin-bottom:0.2rem;} 
+.feeDetail .feeItem .feeList .feeL{display:table-cell;vertical-align:middle;}
+.feeDetail .feeItem .feeList .feeL .price{color:#999;}
+.feeDetail .feeItem .feeList .feeL .price span{color:#e84c3d;}
+.feeDetail .feeItem .feeList .feeR{display:table-cell;vertical-align:middle;text-align:right;}
+.feeDetail .feeItem .feeList .feeR p{color:#e84c3d;font-size:16px;} 
+[data-dpr="2"] .feeDetail .feeItem .feeList .feeR p{font-size:32px;}
+[data-dpr="3"] .feeDetail .feeItem .feeList .feeR p{font-size:48px;}
+.noData{background:#fff;padding:0.4rem 0;}
+.noData img{display:block;width:3.173333rem;height:3.44rem;margin:0 auto;}
+.noData p{text-align:center;color:#999;margin-top:0.4rem;}
+.noData a.reload{text-align:center;display:block;width:2.666667rem;height:1.1rem;margin:0.4rem auto;line-height:1.1rem;border:1px solid #E4E4E4;color:#2ebd59;font-size:16px;border-radius:0.08rem;}
+[data-dpr="2"] .noData a.reload{font-size:32px;}
+[data-dpr="3"] .noData a.reload{font-size:48px;} 
+
+/*出游人信息*/
+.peoInfoBox{padding:0.2rem;}
+.peoInfoBox .peoInfoInner{box-shadow: 0 0 0.2rem #ccc;}
+.peoInfoBox .peoInfoList{border-top: 1px solid #E6E6E6;padding-left:0.3rem;background:#fff;}    
+.peoInfoBox .peoInfoList .title{position:relative;color:#333;padding:0.4rem 0;background:url(../images/icon/i_login.png) no-repeat center left;background-size:0.5rem 0.5rem;font-size:16px;padding-left:0.6rem;} 
+[data-dpr="2"] .peoInfoBox .peoInfoList .title{font-size:32px;}
+[data-dpr="3"] .peoInfoBox .peoInfoList .title{font-size:48px;} 
+.peoInfoList .read_card{padding:0.4rem 0.4rem 0.4rem 0.6rem!important;}
+.peoInfoBox .edit_item_form{background:#fff;}
+.peoInfoBox .edit_item_form li{border-top:1px solid #E4E4E4;margin-left:4%;width:96%;}
+.peoInfoBox .edit_item_form .form_item_tit{background:none;border-bottom:none;padding:0.4rem 0.4rem 0.4rem 0;font-size:16px;color:#666;position:relative;}
+[data-dpr="2"] .peoInfoBox .edit_item_form .form_item_tit{font-size:32px;}
+[data-dpr="3"] .peoInfoBox .edit_item_form .form_item_tit{font-size:48px;} 
+.peoInfoBox .edit_item_form .form_item_edit{border-bottom:none;font-size:16px;}
+[data-dpr="2"] .peoInfoBox .edit_item_form .form_item_edit{font-size:32px;}
+[data-dpr="3"] .peoInfoBox .edit_item_form .form_item_edit{font-size:48px;} 
+.peoInfoBox .edit_item_form .form_item_edit input[type="text"], .peoInfoBox .edit_item_form .form_item_edit input[type="number"], .peoInfoBox .edit_item_form .form_item_edit select{font-size:16px;}
+[data-dpr="2"] .peoInfoBox .edit_item_form .form_item_edit input{font-size:32px;}
+[data-dpr="3"] .peoInfoBox .edit_item_form .form_item_edit input{font-size:48px;} 
+[data-dpr="2"] .peoInfoBox .edit_item_form .form_item_edit select{font-size:32px;}
+[data-dpr="3"] .peoInfoBox .edit_item_form .form_item_edit select{font-size:48px;}
+.peoInfoBox .edit_item_form .form_item_tit sup{color:#ff3c00;font-size:18px;position:absolute;top:50%;}
+[data-dpr="2"] .peoInfoBox .edit_item_form .form_item_tit sup{font-size:36px;}
+[data-dpr="3"] .peoInfoBox .edit_item_form .form_item_tit sup{font-size:54px;}
+.peoInfoBox .edit_item_form .card_type {background: url(../images/icon/i_Bot24.png) no-repeat center right 0.4rem;background-size:0.32rem 0.186667rem;}
+.peoInfoBox .read_card i{top:50%;margin-top:-0.19rem;}
+.peoInfoBox .form_item_edit input[type="checkbox"]{background: url(../images/icon/i_circle.png) no-repeat center center;background-size:100% 100%;height:0.426667rem;width:0.426667rem;border:none;outline:none;}
+.peoInfoBox .form_item_edit input[type="checkbox"]:checked{vertical-align: middle;background: url(../images/icon/icon_checked.png) no-repeat center center;background-size:100% 100%;}
+.form_item_edit input[type="radio"]{vertical-align: middle;-webkit-appearance: none;background: url(../images/icon/i_circle.png) no-repeat center center;background-size:100% 100%;height:0.426667rem;width:0.426667rem;border:none;outline:none;}
+.form_item_edit input[type="radio"]:checked{vertical-align: middle;background: url(../images/icon/icon_checked.png) no-repeat center center;background-size:100% 100%;}
+.peoInfoBox .edit_item_form .distance_info {background: url(../images/icon/arrowR.png) no-repeat center right 0.4rem;background-size: auto 0.36rem;}
+.peoInfoBox .edit_item_form .textBox{padding:0.2rem 0;} 
+.peoInfoBox .edit_item_form .textBox textarea{font-size:16px;width:100%;border:none;outline:none;height:1.5rem;}
+[data-dpr="2"] .peoInfoBox .edit_item_form .textBox textarea{font-size:32px;}
+[data-dpr="3"] .peoInfoBox .edit_item_form .textBox textarea{font-size:48px;}
+/*专车接送*/
+.busTab ul{width:100%;display:table;background:#fff;}
+.busTab ul li{display:table-cell;width:50%;text-align:center;font-size:16px;line-height:1rem;}
+[data-dpr="2"] .busTab ul li{font-size:32px;}
+[data-dpr="3"] .busTab ul li{font-size:48px;}
+.busTab ul li.cur span{color:#19c36b;border-bottom:0.066667rem solid #19c36b;display:inline-block;}
+.busBox .peoInfoBox .edit_item_form .form_item_edit select{width:95%;font-size:14px;white-space: initial;}
+[data-dpr="2"] .busBox .peoInfoBox .edit_item_form .form_item_edit select{font-size:28px;}
+[data-dpr="3"] .busBox .peoInfoBox .edit_item_form .form_item_edit select{font-size:42px;}
+.busBox .peoInfoList .useCheck{display:block;padding:0.4rem 0;font-size:14px;}
+[data-dpr="2"] .busBox .peoInfoList .useCheck{font-size:28px;}
+[data-dpr="3"] .busBox .peoInfoList .useCheck{font-size:42px;}
+.useCheck input[type="checkbox"]{vertical-align: middle;background: url(../images/icon/squre28.png) no-repeat center center;background-size:100% 100%;width:0.373333rem;height:0.373333rem;border:none;outline:none;-webkit-appearance: none;}
+.useCheck input[type="checkbox"]:checked{vertical-align: middle;background: url(../images/icon/squre28G.png) no-repeat center center;background-size:100% 100%;}
+.useCheck span{vertical-align:middle;margin-left:0.1rem;}
+#demo2 {width: 90%;font-size:14px;border-radius: 5px;margin: 0 auto;padding:0.066667rem;font-size:16px;}
+[data-dpr="2"] #demo2{font-size:28px;}
+[data-dpr="3"] #demo2{font-size:42px;}
+.hasPList a.squre_check{text-align:center;}
+.hasPList a.squre_check span{text-decoration:none;}
+.hasPList a.squre_check input[type="checkbox"] {background: url(../images/icon/squre28.png) no-repeat center center;background-size:100% 100%;width:0.373333rem;height:0.373333rem;}
+.hasPList a.squre_check input[type="checkbox"]:checked{vertical-align: middle;background: url(../images/icon/squre28G.png) no-repeat center center;background-size:100% 100%;}
+
+
+
+.ruleBox{padding:0.266667rem;}
+.ruleBox h2{font-size:16px;}
+[data-dpr="2"] .ruleBox h2{font-size:32px;}
+[data-dpr="3"] .ruleBox h2{font-size:48px;}
+.ruleBox .ruleItem{margin-top:0.533333rem;}
+.ruleBox .ruleItem{font-size:14px;}
+[data-dpr="2"] .ruleBox .ruleItem{font-size:28px;}
+[data-dpr="3"] .ruleBox .ruleItem{font-size:42px;}
+.ruleBox .ruleItem h3{color:#333;}
+.ruleBox .ruleItem p{color:#999;}

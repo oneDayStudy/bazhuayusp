@@ -1,0 +1,209 @@
+.main{
+        background:#f2f4f7;
+    }
+    .slider{
+        width:100%;
+        height:5rem;
+        position: relative;
+    }
+    .slider img{
+        width:100%;
+        height:5rem;
+    }
+    .slider i{
+        display: inline-block;
+        width:0.8rem;
+        height:0.8rem;
+        background: url(../../resource/images/icon-return.png) no-repeat center;
+        position: absolute;
+        left:0.5rem;
+        top:0.5rem;
+    }
+    .line-info{
+        color:#333;
+        padding:0.5rem 0.3rem 1.3rem;
+        background:#fff;
+        border-bottom: 1px solid #ddd;
+        border-top-left-radius:0.8em;
+        border-top-right-radius:0.8em;
+        border:1px solid #ddd;
+        position: relative;
+        z-index: 99;
+        margin-top: -14px;
+    }
+    .line-info .title{
+        font-size:32px;
+    }
+    .line-info .price{
+        color:#999;
+        float:right;
+        margin-top: 0.3rem;
+    }
+    .line-info .price i{
+        color:#e84c3d;
+        margin-left:5px;
+    }
+    .line-info .price em{
+        color:#e84c3d;
+        font-size:40px;
+        font-weight:bolder;
+        margin-right:7px;
+    }
+    .column-common{
+        border-top:1px solid #dcdcdc;
+        border-bottom:1px solid #dcdcdc;
+        padding:0.3rem;
+        background:#fff;
+        margin-top:0.24rem;
+    }
+    .column-common span{
+        font-size:32px;
+    }
+    .column-common em{
+        float:right;
+        position: relative;
+        right: 1rem;
+        top: 0.6rem;
+    }
+    .column-common em:after{
+        content:'';
+        width:0;
+        height:0;
+        border:0.27rem solid transparent;
+        border-left:0.27rem solid #ddd;
+        position: absolute;
+        left:0.7rem;
+        bottom:-2px;
+    }
+    .column-common em:before{
+        content:'';
+        width:0;
+        height:0;
+        border:0.27rem solid transparent;
+        border-left:0.27rem solid #fff;
+        position: absolute;
+        left:0.6rem;
+        z-index:1;
+        bottom:-2px;
+    }
+    .take-coupon i{
+        display: inline-block;
+        width:0.72rem;
+        height:0.72rem;
+        background: url(../../resource/images/icon-quan.png) no-repeat center;
+        background-size:contain;
+        vertical-align: -0.2rem;
+        margin-right: 0.3rem;
+    }
+    .line-data i{
+        display: inline-block;
+        width:0.45rem;
+        height:0.41rem;
+        background: url(../../resource/images/icon-data.png) no-repeat center;
+        background-size:contain;
+        vertical-align: -3px;
+        margin: 0 0.4rem 0 0.16rem;
+    }
+    .line-data em{
+        background:#fff;
+    }
+    .line-data ul{
+        display: inline-block;
+        color:#999;
+        vertical-align: text-bottom;
+        padding:0 0.8rem 0 1rem
+    }
+    .line-data ul li{
+         margin:0.1rem 0.2rem;
+         font-size:20px;
+         float:left;
+    }
+    .active{
+        color:#f88a00;
+    }
+    .tabactive{
+        color:#f88a00;
+    }
+    .tabactive span{
+        border-bottom: 4px solid #f88a00;
+    }
+    .route-detail{
+        display: flex;
+        display:-webkit-flex;
+        align-items: stretch;
+        padding: 0 0.3rem;
+    }
+    .route-detail .column-item{
+        flex-grow: 1;
+        text-align:center;
+        padding:0.3rem 0;
+    }
+    .column-item span{
+        padding:0.3rem 0.1rem;
+    }
+    .route-wrap{
+        padding:0.1rem 0.3rem;
+    }
+    .route-day{
+        display: table;
+    }
+    .route-day .day span{
+        width:0.9rem;
+        height:0.4rem;
+        display: inline-block;
+        line-height: 0.4rem;
+        border-radius:0.16rem;
+        background: #f88a00;
+        text-align:center;
+        color:#fff;
+        font-size:24px;
+    }
+    .day,.day-detail{
+        display: table-cell;
+    }
+    .day-detail{
+        padding-left:0.2rem;
+        color:#999;
+    }
+    .day-detail h3{
+        font-size:28px;
+        color:#333;
+        padding-bottom: 0.2rem;
+    }
+    .day-detail p{
+        padding:0.05rem 0;
+    }
+    .none{
+        display: none;
+    }
+    .footer{
+        width:100%;
+        height:1.5rem;
+        line-height:1.5rem;
+        display: flex;
+        align-items: stretch;
+        position: fixed;
+        bottom: 0;
+    }
+    .footer span{
+        flex-grow: 1;
+        text-align: center;
+        font-size:36px;
+        color:#fff;
+    }
+    .call-ask{
+        background: #77818c;
+        position: relative;
+    }
+    .call-ask i{
+        display: inline-block;
+        width:0.5rem;
+        height:0.5rem;
+        background: url(../../resource/images/icon/icon_telephone.png) no-repeat center;
+        position: absolute;
+        left: 1rem;
+        top:0.5rem;
+    }
+    .order{
+        background: #e84c3d;
+    }

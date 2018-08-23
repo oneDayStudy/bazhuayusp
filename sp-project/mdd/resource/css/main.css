@@ -1,0 +1,75 @@
+/*
+* @description: 公共样式
+* @author: Wang xiao ping
+* @update: name (2017-04-25 13:00)
+*/
+body{width:7.5rem;margin:0 auto;}
+.device .swiper-container{width:7.5rem;height:3.84rem;margin:0 auto;}
+.device .swiper-slide_con{position:relative;width: 100%;height:3.84rem;}
+.hotMdd{background:#fff;}
+.hotBox{border-top:1px solid #E4E4E4;background:#fff;}
+.hotBox .title{padding:0.35rem;line-height:0.4rem;}
+.hotBox .title .hotTit{background:url(../images/i_hot.png) no-repeat left center;background-size:0.36rem 0.36rem;padding-left:0.42rem;font-size:0.30rem;color:#333;font-weight:bold;}
+.hotBox .title .more{float:right;color:#999;font-size:0.28rem;} 
+.hotBox .title .more i.fa{color:#E0E0E0;margin-left:0.1rem;}
+.hotBox .swiper-container{width:7.5rem;height:2.5rem;margin:0 auto;padding:0 0.35rem;box-sizing:border-box;}
+.hotBox .swiper-slide{width:3rem;height:2.1rem;margin-right:0.15rem;}
+.hotBox .swiper-slide_con{position:relative;width:3rem;height:2.1rem;display:block;color:#fff;border-radius:0.1rem;}
+.hotBox .swiper-slide_con .blackBg{position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.3);top:0;left:0;border-radius:0.1rem;}
+.hotBox .swiper-slide_con h2{position:absolute;width:100%;padding:0 0.3rem;font-size:0.4rem;left:0;bottom:0.6rem;}
+.hotBox .swiper-slide_con p{position:absolute;width:100%;padding:0 0.3rem;font-size:0.24rem;left:0;bottom:0.25rem;}
+.hotTags{padding:0.15rem 0.3rem 0.3rem 0.15rem;border-bottom:1px solid #E4E4E4;}
+.hotTags a{display:inline-block;margin:0.15rem 0 0 0.15rem;font-size:0.28rem;color:#666;border:1px solid #FEA2AA;padding:0.1rem 0.33rem;border-radius:0.33rem;}
+.themeBox{background:#fff;border-top:1px solid #E4E4E4;border-bottom:1px solid #E4E4E4;}
+.themeBox .title{padding:0.35rem;line-height:0.4rem;}
+.themeBox .title .themeTit{background:url(../images/i_theme.png) no-repeat left center;background-size:0.36rem 0.36rem;padding-left:0.42rem;font-size:0.30rem;color:#333;font-weight:bold;}
+.themeBox .swiper-container{width:7.5rem;height:3rem;margin:0 auto;padding:0 0.35rem;box-sizing:border-box;}
+.themeBox .swiper-slide{width:2rem;height:2.6rem;margin-right:0.15rem;}
+.themeBox .swiper-slide_con{position:relative;width:2rem;height:2.6rem;display:block;}
+.lineBox{border-top:1px solid #E4E4E4;background:#fff;}
+.titSwiper .swiper-container{width:7.5rem;height:1rem;margin:0 auto;padding:0 0.35rem;box-sizing:border-box;}
+.titSwiper .swiper-slide{width:33.33%;height:1rem;text-align:center;line-height:1rem;}
+.titSwiper .swiper-slide.active a{color:#FF4858;}
+.titSwiper .swiper-slide.active .bottLine{display:block;}
+.titSwiper .swiper-slide a{display:inline-block;width:100%;font-size:0.32rem;color:#576b7d;}
+.titSwiper .bottLine{display:none;width:70%;height:0.04rem;background:#FF4858;border-radius:0.02rem;position:absolute;left:50%;margin-left:-35%;bottom:0;}
+.hotSwiper{padding:0.15rem 0 0 0.15rem;}
+.hotSwiper .swiper-slide{width:auto;text-align:center;}
+.hotSwiper .swiper-slide a{float:left;display:inline-block;margin:0.15rem 0 0 0.15rem;font-size:0.28rem;color:#666;border:1px solid #FEA2AA;padding:0.1rem 0.33rem;border-radius:0.33rem;}
+.hotSwiper .swiper-slide.active a{color:#fff;border:1px solid #ff4858; background: #ff4858;}
+.lineList .lineItem{display:table;width:100%;padding:0.2rem;border-bottom:1px solid #E4E4E4;}
+.lineList .lineItem .PhotoBox{display:table-cell;width:2rem;}
+.lineList .lineItem .photo{width:2rem;height:2rem;position:relative;border-radius:0.05rem;} 
+.lineList .lineItem .lineNum{position:absolute;width:100%;height:0.4rem;color:#fff;left:0;bottom:0;font-size:0.24rem;text-align:center;line-height:0.4rem;padding:0 0.05rem;background:rgba(0,0,0,0.3);} 
+.lineList .lineItem .lineInfo{display:table-cell;vertical-align:top;padding-left:0.2rem;position:relative;}
+.lineList .lineItem .lineInfo h2{font-size:0.30rem;font-weight:bold;color:#333;line-height: 1.3;}
+.lineList .lineItem .lineInfo p.date{color:#999;font-size:0.24rem;}
+.lineList .lineItem .lineInfo p.price{font-size:0.24rem;color:#666;position:absolute;left:0.2rem;}
+.lineList .lineItem .lineInfo p.price i{color:#ff5844;margin:0 0.05rem;} 
+.lineList .lineItem .lineInfo p.price em{font-weight:bold;color:#ff4858;font-size:0.42rem;}
+.lineList .lineItem .lineInfo p.price .zhuan{margin-left:0.1rem;}
+/*热门目的地*/
+.hotBanner{width:7.5rem;height:4.22rem;margin:0 auto;position:relative;z-index:1;}
+.hotBanner img{display:block;width:7.5rem;height:4.22rem;}
+.themeInfo{background:#fff;width:7.0rem;margin:-1.35rem auto 0 auto;padding:0.3rem;border-radius:0.08rem;position:relative;z-index:2;}
+.themeInfo h2{font-size:0.44rem;color:#333;}
+.themeInfo p.EN_Name{color:#999;font-size:0.24rem;}
+.themeInfo p.detail{color:#666;font-size:0.28rem;margin-top:0.25rem;}
+.hotList{border-top:1px solid #E4E4E4;border-bottom:1px solid #E4E4E4;background:#fff;}
+.hotList .title{padding:0.35rem;line-height:0.4rem;}
+.hotList .title .saleTit{background:url(../images/i_sale.png) no-repeat left center;background-size:0.36rem 0.36rem;padding-left:0.42rem;font-size:0.38rem;color:#333;}
+.hotList .title .gtTit{background:url(../images/i_gt.png) no-repeat left center;background-size:0.36rem 0.36rem;padding-left:0.42rem;font-size:0.38rem;color:#333;}
+.hotList .title .zyxTit{background:url(../images/i_zy.png) no-repeat left center;background-size:0.36rem 0.36rem;padding-left:0.42rem;font-size:0.38rem;color:#333;}
+.hotList .title .more{float:right;color:#999;font-size:0.28rem;} 
+.hotList .title .more i.fa{color:#E0E0E0;margin-left:0.1rem;}
+.hotList .swiper-container{width:7.5rem;margin:0 auto;padding:0 0.35rem;box-sizing:border-box;}
+.hotList .swiper-slide{width:3.1rem;margin-right:0.2rem;margin-bottom:0.5rem;}
+.hotList .hotLine{position:relative;width:3.1rem;display:block;border:1px solid #E4E4E4;}
+.hotList .hotLine .hotPic{height:2.4rem;width:100%;position:relative;}
+.hotList .hotLine .hotPic .zhuanTag{min-width:1.1rem;height:0.36rem;padding:0 0.1rem;line-height:0.36rem;background: linear-gradient(to right, #f4ac00 , #f17808);position:absolute;left:0;bottom:-0.1rem;font-size:0.24rem;color:#fff;}
+.hotList .hotLine .hotPic .zhuanTag .right{position:absolute;top:0;right:-0.1rem;display:inline-block;width:0.1rem;height:0.36rem;background:url(../images/z_right.png) no-repeat center center;background-size:0.1rem 0.36rem;}
+.hotList .hotLineInfo{padding:0.15rem 0.15rem 0 0.15rem;}
+.hotList .hotLineInfo h2{color:#3d4c59;font-weight:normal;font-size:0.28rem;overflow:hidden;}
+.hotList .hotLineInfo .price{color:#99a8b5;font-size:0.24rem;padding:0.06rem 0;}
+.hotList .hotLineInfo .price i{font-weight:bold;margin-right:0.03rem;}
+.hotList .hotLineInfo .price em{font-size:0.4rem;}

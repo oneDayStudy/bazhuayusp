@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/login.css">
+    <title>接送信息</title>
+</head>
+<body>
+    <div class="page  g_content">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>接送信息</p>
+            </div>
+            <a href="travel_info.html" class="log_out save">保存</a>
+        </header>    
+        <div class="container gary_content">
+            <div class="news_center tabs">
+                <ul>
+                    <li class="cur">班车接送</li>
+                    <li>专车上门</li>
+                </ul>
+            </div> 
+            <div class="tabs_show">          
+                <div class="travel_peo_info">
+                    <!--copy begin-->
+                    <div class="peo_info_edit">
+                        <div class="info_edit_tit">
+                            <span>去程</span>
+                            <label class="squre_check"><input type="checkbox"><font>应用到所有人</font></label>            
+                        </div>
+                        <div class="location_group">
+                            <span>
+                                <select>
+                                    <option>太仓市政府（上海虹桥浦东）¥432/人</option>
+                                    <option>太仓市政府（上海虹桥浦东）¥200/人</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <!--copy end-->
+                    <div class="peo_info_edit">
+                        <div class="info_edit_tit">
+                            <span>回程</span>
+                            <label class="squre_check"><input type="checkbox"><font>应用到所有人</font></label>                  
+                        </div>
+                        <div class="location_group">
+                            <span>
+                                <select>
+                                    <option>太仓市政府（上海虹桥浦东）¥432/人</option>
+                                    <option>太仓市政府（上海虹桥浦东）¥200/人</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            <div class="tabs_show"  style="display:none;">          
+                <div class="travel_peo_info">
+                    <!--copy begin-->
+                    <div class="peo_info_edit">
+                        <div class="info_edit_tit">
+                            <span>去程</span>
+                            <label class="squre_check"><input type="checkbox"><font>应用到所有人</font></label>              
+                        </div>
+                        <div class="location_col_two">
+                            <div class="location_group">
+                                <span>
+                                    <select>
+                                        <option>昆山市</option>
+                                        <option>苏州市</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="location_group">
+                                <span>
+                                    <select>
+                                        <option>周庄镇</option>
+                                        <option>甪直</option>
+                                    </select>
+                                </span>
+                            </div>                            
+                        </div>
+                        <div class="location_group">
+                            <span>
+                                <select>
+                                    <option>太仓市政府（上海虹桥浦东）¥432/人</option>
+                                    <option>太仓市政府（上海虹桥浦东）¥200/人</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="location_group location_detail">
+                            <span>
+                                <input type="text">
+                            </span>
+                        </div>                        
+                    </div>
+                    <!--copy end-->
+                    <div class="peo_info_edit">
+                        <div class="info_edit_tit">
+                            <span>回程</span>
+                            <label class="squre_check"><input type="checkbox"><font>应用到所有人</font></label>                  
+                        </div>
+                        <div class="location_col_two">
+                            <div class="location_group">
+                                <span>
+                                    <select>
+                                        <option>昆山市</option>
+                                        <option>苏州市</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="location_group">
+                                <span>
+                                    <select>
+                                        <option>周庄镇</option>
+                                        <option>甪直</option>
+                                    </select>
+                                </span>
+                            </div>                            
+                        </div>
+                        <div class="location_group">
+                            <span>
+                                <select>
+                                    <option>太仓市政府（上海虹桥浦东）¥432/人</option>
+                                    <option>太仓市政府（上海虹桥浦东）¥200/人</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="location_group location_detail">
+                            <span>
+                                <input type="text">
+                            </span>
+                        </div> 
+                    </div>           
+                </div>
+            </div>                          
+        </div>
+    </div>    
+  <script type="text/javascript" src="../../../resource/javascript/jquery.min.js"></script>
+    <script type="text/javascript">
+    //切换
+    $(".tabs li").click(function () { 
+    var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+    $(this).addClass('cur').siblings().removeClass('cur');
+    var content_obj = $(".tabs_show") //内容节点 
+    content_obj.hide(); 
+    content_obj.eq(index_tab).show(); 
+    });  
+  </script>
+</body>
+</html>

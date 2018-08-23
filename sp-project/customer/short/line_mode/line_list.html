@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../../../resource/css/common.css">
+	<link type="text/css" rel="stylesheet" href="../../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/main.css">
+    <title>线路列表</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header" style="z-index:10;">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="search_box lineSearch">
+              <input type="text" class="searchBox" placeholder="输入目的地">
+              <i class="searchIcon"></i>
+            </div>
+            <a href="javascript:;" title="首页" class="go_home">首页</a>
+        </header>
+        <div class="container">
+              <div class="list_tab" style="z-index:10;">
+                <div id="arrow"></div>
+                <ul>
+                    <li class="cur">
+                        <span>组团方式</span>
+                        <div class="line_list_layer">
+                            <div class="l_list_item">
+                                <a href="javascript:;" class="active"><i>全部线路</i></a>
+                                <a href="javascript:;"><i>目的地参团</i></a>
+                                <a href="javascript:;"><i>出发地参团</i></a>
+                                <a href="javascript:;"><i>邮轮产品</i></a>
+                            </div>
+                        </div>                       
+                    </li>
+                    <li>
+                        <span>线路类型</span>
+                        <div class="line_list_layer">
+                            <div class="l_list_item">
+                                <a href="javascript:;" class="active"><i>全部线路</i></a>
+                                <a href="javascript:;"><i>即时确认</i></a>
+                                <a href="javascript:;"><i>日结优惠</i></a>
+                            </div>
+                        </div>                     
+                    </li>
+                    <li>
+                        <span>筛选</span>
+                        <div class="line_list_layer">
+                            <div class="l_list_item">
+                                <a href="javascript:;" class="active"><i>默认排序</i></a>
+                                <a href="javascript:;"><i>价格从高到低</i></a>
+                                <a href="javascript:;"><i>利润从高到低</i></a>
+                            </div>
+                        </div>                     
+                    </li>
+                    <li>
+                        <span>排序</span>
+                        <div class="line_list_layer">
+                            <div class="fliter_con">
+                              <div class="fliter_item">
+                                <div class="fliter_tit">日期区间</div>
+                                <div class="fliter_date">
+                                    <div class="date_con"><input type="text"></div>
+                                    <div class="date_c">至</div>
+                                    <div class="date_con"><input type="text"></div>
+                                </div>                              
+                              </div>
+                              <div class="fliter_item">
+                                <div class="fliter_tit">天数</div>
+                                <div class="fliter_list">
+                                    <a href="javascript:;" class="select"><i>不限</i></a>
+                                    <a href="javascript:;"><i>3天</i></a>
+                                    <a href="javascript:;"><i>4天</i></a>
+                                    <a href="javascript:;"><i>5天</i></a>
+                                    <a href="javascript:;"><i>6天</i></a>
+                                    <a href="javascript:;"><i>7天</i></a>
+                                    <a href="javascript:;"><i>8天</i></a>
+                                    <a href="javascript:;"><i>8天以上</i></a>
+                                </div>                              
+                              </div>
+                              <div class="fliter_item">
+                                <div class="fliter_tit">价格区间</div>
+                                <div class="fliter_list">
+                                    <a href="javascript:;"><i>不限</i></a>
+                                    <a href="javascript:;"><i>300以下</i></a>
+                                    <a href="javascript:;"><i>301-500</i></a>
+                                    <a href="javascript:;"><i>501-1000</i></a>
+                                    <a href="javascript:;"><i>1001-3000</i></a>
+                                    <a href="javascript:;"><i>3001-5000</i></a>
+                                    <a href="javascript:;"><i>5001-1万</i></a>
+                                    <a href="javascript:;"><i>大于1万</i></a>
+                                </div>                             
+                              </div> 
+                              <div class="fliter_item">
+                                <button type="button" class="reset_btn">重置</button>
+                                <button type="button" class="submit">确定</button>
+                              </div>                                                           
+                            </div>
+                        </div>                     
+                    </li>
+                </ul>
+              </div>         
+            <div class="line-item_list">
+                <ul>
+                    <li class="flag" onclick="window.location.href='line_details.html'">
+                        <div class="figure flag-item">
+                          <a href="javascript:;" style="background-image:url(../../../resource/images/products/line_one.png);" >
+                          <div class="line-tips">上海出发</div>
+                          </a>
+                          <div class="icon_line line-t_1"></div>
+                        </div>
+                        <div class="figcaption flag-item">
+                            <div class="flag-title"><a href="javascript:;" title="">三亚双飞5日跟团游</a></div>
+                            <div class="flag-date">团期：04-25 04-27 04-28 05-01 05-15 </div>
+                            <div class="c_flag_price">免息:<span>￥<i>269</i><font class="stages">*12期</font></span>起</div>
+                        </div>
+                    </li>
+                    <li class="flag" onclick="window.location.href='line_details.html'">
+                        <div class="figure flag-item">
+                          <a href="javascript:;" style="background-image:url(../../../resource/images/products/line_two.png);" >
+                          <div class="line-tips">不含大交通</div>
+                          </a>
+                          <div class="icon_line line-t_2"></div>
+                          
+                        </div>
+                        <div class="figcaption flag-item">
+                            <div class="flag-title"><a href="javascript:;" title="">三亚双飞5日跟团游<情侣专线 全程海景大床房 花瓣香浴 烛光晚餐>三亚双飞5日跟团游三亚双飞5日跟团游</a></div>
+                            <div class="flag-date">团期：04-25 04-27 04-28 05-01 05-15 </div>
+                            <div class="c_flag_price"><span>￥<i>269</i></span>起</div>
+                        </div>
+                    </li> 
+                    <li class="flag" onclick="window.location.href='line_details.html'">
+                        <div class="figure flag-item">
+                          <a href="javascript:;" style="background-image:url(../../../resource/images/products/line_one.png);" >
+                          <div class="line-tips">上海出发</div>
+                          </a>
+                          <div class="icon_line line-t_1"></div>
+                          
+                        </div>
+                        <div class="figcaption flag-item">
+                            <div class="flag-title"><a href="javascript:;" title="">三亚双飞5日跟团游<情侣专线 全程海景大床房 花瓣香浴 烛光晚餐>三亚双飞5日跟团游三亚双飞5日跟团游</a></div>
+                            <div class="flag-date">团期：04-25 04-27 04-28 05-01 05-15 </div>
+                            <div class="c_flag_price"><span>￥<i>269</i></span>起</div>
+                        </div>
+                    </li>
+                    <li class="flag" onclick="window.location.href='line_details.html'">
+                        <div class="figure flag-item">
+                          <a href="javascript:;" style="background-image:url(../../../resource/images/products/line_two.png);" >
+                          <div class="line-tips">不含大交通</div>
+                          </a>
+                          <div class="icon_line line-t_2"></div>
+                          
+                        </div>
+                        <div class="figcaption flag-item">
+                            <div class="flag-title"><a href="javascript:;" title="">三亚双飞5日跟团游<情侣专线 全程海景大床房 花瓣香浴 烛光晚餐>三亚双飞5日跟团游三亚双飞5日跟团游</a></div>
+                            <div class="flag-date">团期：04-25 04-27 04-28 05-01 05-15 </div>
+                            <div class="c_flag_price"><span>￥<i>269</i></span>起</div>
+                        </div>
+                    </li> 
+                   <li class="flag" onclick="window.location.href='line_details.html'">
+                        <div class="figure flag-item">
+                          <a href="javascript:;" style="background-image:url(../../../resource/images/products/line_one.png);" >
+                          <div class="line-tips">上海出发</div>
+                          </a>
+                          <div class="icon_line line-t_1"></div>
+                          
+                        </div>
+                        <div class="figcaption flag-item">
+                            <div class="flag-title"><a href="javascript:;" title="">三亚双飞5日跟团游<情侣专线 全程海景大床房 花瓣香浴 烛光晚餐>三亚双飞5日跟团游三亚双飞5日跟团游</a></div>
+                            <div class="flag-date">团期：04-25 04-27 04-28 05-01 05-15 </div>
+                            <div class="c_flag_price"><span>￥<i>269</i></span>起</div>
+                        </div>
+                    </li>
+                    <li class="flag" onclick="window.location.href='line_details.html'">
+                        <div class="figure flag-item">
+                          <a href="javascript:;" style="background-image:url(../../../resource/images/products/line_two.png);" >
+                          <div class="line-tips">不含大交通</div>
+                          </a>
+                          <div class="icon_line line-t_2"></div>
+                          
+                        </div>
+                        <div class="figcaption flag-item">
+                            <div class="flag-title"><a href="javascript:;" title="">三亚双飞5日跟团游<情侣专线 全程海景大床房 花瓣香浴 烛光晚餐>三亚双飞5日跟团游三亚双飞5日跟团游</a></div>
+                            <div class="flag-date">团期：04-25 04-27 04-28 05-01 05-15 </div>
+                            <div class="c_flag_price"><span>￥<i>269</i></span>起</div>
+                        </div>
+                    </li>                           
+                </ul>
+            </div>
+        </div>
+        <!--弹出层 begin-->
+        <div class="pop_layer_bg" style="z-index:1;display:none;" ></div>
+        <!--弹出层 end-->        
+        <!--
+        <footer>
+          <ul class="clearfix">
+            <li class="home"><a href="javascript:;">首页</a></li>
+            <li class="wallet"><a href="javascript:;">钱包</a></li>
+            <li class="orders"><a href="javascript:;">订单</a></li>
+            <li class="my"><a href="javascript:;">我的</a></li>
+          </ul>
+        </footer>
+        -->
+    </div>
+	<script type="text/javascript" src="../../../resource/javascript/jquery.min.js"></script>
+    <script type="text/javascript">    
+        $('.pop_layer_bg').click(function(){
+            $(this).hide();
+            $('.list_tab .line_list_layer').hide();
+            $('body').removeClass('hide');
+            $('#arrow').hide();
+        });
+        
+        $('.list_tab li span').click(function(){console.log()
+            $('.list_tab .line_list_layer').hide();
+            $(this).siblings('.line_list_layer').show();
+            $('.pop_layer_bg').css("top","2.5rem");
+            $('.pop_layer_bg').show();
+            $('body').addClass('hide');
+            //箭头移动
+            $('#arrow').css('left', ($(this).parent().index() * 25 + 10) + '%' ).show();
+        });
+    </script>  
+</body>
+</html>

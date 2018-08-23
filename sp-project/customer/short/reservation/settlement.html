@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/login.css">
+    <title>结算金额确认</title>
+    <style>
+        .plane_go{
+            /*border:1px solid #000000;*/
+        }
+        .ticketCol{
+            /*border:1px solid #000000;*/
+            padding:0.3rem;
+        }
+        .ticketCol p span{
+            padding:0 0.03rem 0 0.03rem;
+        }
+        [data-dpr="2"] .ticketCol p span{font-size:26px;}
+        [data-dpr="3"] .ticketCol p span{font-size:39px;}
+
+        [data-dpr="2"] .ticketCol p.line span{font-size:24px;}
+        [data-dpr="3"] .ticketCol p.line span{font-size:36px;}
+
+        .ticketCol p span.quIcon {
+            vertical-align: middle;
+            display: inline-block;
+            width: 0.45rem;
+            height: 0.45rem;
+            background: url(../../../resource/images/qu.png) no-repeat center left;
+            background-size: 0.45rem 0.45rem;
+        }
+        .ticketCol p span.fanIcon {
+            vertical-align: middle;
+            display: inline-block;
+            width: 0.45rem;
+            height: 0.45rem;
+            background: url(../../../resource/images/fan.png) no-repeat center left;
+            background-size: 0.45rem 0.45rem;
+        }
+        .ticket_number{
+            color:#fdbd65;
+        }
+        .airDetail{
+            /*border:1px solid #000000;*/
+            display: table;
+            width: 100%;
+            margin-top: 0.4rem;
+        }
+        .ticketCol .airDetail p {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .ticketCol .airDetail p.airCol span {
+            display: block;
+        }
+        .ticketCol .airDetail p.airCol span.time {
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #333;
+            position: relative;
+        }
+        .ticketCol .airDetail p.airCol span.address {
+            font-size: 0.28rem;
+            color: #666;
+        }
+        .ticketCol .airDetail p {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .ticketCol .airDetail p.line img {
+            width:2rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .line span{
+            color:#999;
+        }
+        [data-dpr="2"] .ticketCol .airDetail p.airCol span{font-size:28px;}
+        [data-dpr="3"] .ticketCol .airDetail p.airCol span{font-size:42px;}
+
+        .tipInfo {
+            text-align: center;
+            padding: 0.3rem;
+        }
+        .tipInfo .tips {
+            color: #999;
+            font-size: 0.24rem;
+            text-align: left;
+        }
+        .tipInfo .tips span {
+            background: url(../../../resource/images/i_info.png) no-repeat center left;
+            background-size: 0.4rem 0.4rem;
+            padding-left: 0.5rem;
+        }
+        [data-dpr="2"] .tipInfo .tips span{font-size:24px;}
+        [data-dpr="3"] .tipInfo .tips span{font-size:36px;}
+    </style>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>结算金额确认</p>
+            </div>
+        </header>    
+        <div class="container">
+            <div class="bc_con">
+                <div class="bc_line_info">
+                    <h2>日本九州3日3夜自由行，宿温泉酒店，纯玩无购物，一天滑雪一天滑...</h2>
+                    <p><span>出团日期：2016-09-07</span><span>人数：2人</span></p>
+                </div>
+
+                <!--飞机去返-->
+                <div class="peo_info_edit">
+                    <div class="plane_go">
+                        <div class="ticketCol">
+                            <div class="colTop">
+                                <p>
+                                    <span class="quIcon"></span>
+                                    <span>05-22</span><span>|</span>
+                                    <span>nullMU5101</span><span>|</span>
+                                    <span>经济舱</span>
+                                    <span class="ticket_number">大于9</span>
+                                </p>
+                            </div>
+                            <div class="airDetail">
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海虹桥国际机场</span>
+                                </p>
+                                <p class="line">
+                                    <span>2时15分</span>
+                                    <img src="../../../resource/images/line.png">
+                                    <span>直达</span>
+                                </p>
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海虹桥国际机场</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ticketCol">
+                            <div class="colTop">
+                                <p>
+                                    <span class="fanIcon"></span>
+                                    <span>05-22</span><span>|</span>
+                                    <span>nullMU5101</span><span>|</span>
+                                    <span>经济舱</span>
+                                    <span class="ticket_number">大于9</span>
+                                </p>
+                            </div>
+                            <div class="airDetail">
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海虹桥国际机场</span>
+                                </p>
+                                <p class="line">
+                                    <span>2时15分</span>
+                                    <img src="../../../resource/images/line.png">
+                                    <span>直达</span>
+                                </p>
+                                <p class="airCol">
+                                    <span class="time">21：00</span>
+                                    <span class="address">上海虹桥国际机场</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tipInfo">
+                        <p class="tips"><span>因机票价格存在实时浮动，请尽快提交订单</span></p>
+                    </div>
+                </div>
+
+
+
+                <!--copy begin-->
+                <div class="peo_info_edit">                                
+                    <div class="travel_info_show">
+                        <dl>
+                            <dd>
+                            	<h1>旅游费</h1>
+                            	<div class="price_item">
+                            		<span>成<font class="one_word"></font>人：￥3801<i>X</i>1人</span>
+                            		<span class="total_price">￥4000</span>
+                            	</div>
+                            	<div class="price_item">
+                            		<span>补房差：¥3801<i>X</i>1人</span>
+                            		<span class="total_price">￥380</span>
+                            	</div>                              	
+                            </dd>
+                            <dd>
+                            	<h1>接送费</h1>
+                            	<div class="price_item">
+                            		<span>去<font class="one_word"></font>程：￥120<i>X</i>2人</span>
+                            		<span class="total_price">￥240</span>
+                            	</div> 
+                                <div class="price_item">
+                                    <span>回<font class="one_word"></font>程：￥120<i>X</i>2人</span>
+                                    <span class="total_price">￥240</span>
+                                </div>                                                            	
+                            </dd>  
+                            <style>
+                                .price_item .useTit{color:#666!important;font-size:16px;}
+                                [data-dpr="2"] .price_item .useTit{font-size:32px;}
+                                [data-dpr="3"] .price_item .useTit{font-size:48px;}                                
+                            </style>
+                            <dd>
+                                <div class="price_item">
+                                    <span class="useTit">使用立减券</span>
+                                    <span class="total_price">-￥100</span>
+                                </div>                                                              
+                            </dd>                                                                                   
+                            <dd>
+                            	<div class="price_item">
+                            		<span class="total_tit">合计结算金额</span>
+                            		<span class="total_price">￥2400</span>
+                            	</div>
+								<p>（门市价￥5860&nbsp;&nbsp;&nbsp;预计利润￥1000）</p>                            	
+                            </dd>                                                        
+                        </dl>
+                    </div>                    
+                </div>
+                <!--copy end--> 
+                <div class="peo_info_edit nopadding">
+                    <a href="javascript:;">
+                        <div class="CouponItem">
+                            <div class="CouponInfo giftBox">
+                            <span>送蛋糕券一张</span>
+                            <i class="rightArr"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>                                                                        
+            </div>
+        </div>
+    </div>  
+  <footer>
+      <div class="btn_two">
+          <a href="javascript:;" class="special_info">结算总价：<font>￥8180</font></a>
+          <a href="success.html" class="orange next_step">立即支付</a>
+      </div>
+  </footer>         
+  <script type="text/javascript" src="../../../resource/javascript/jquery.min.js"></script>  
+</body>
+</html>

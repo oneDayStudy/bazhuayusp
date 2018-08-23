@@ -1,0 +1,158 @@
+.greenBg{
+    background-color: #fff;
+    color:#333;
+}
+header .back{
+    background: url("../images/t_back.png") no-repeat center ;
+    background-size: 0.37rem 0.3rem;
+}
+header .title{
+    color:#000;
+}
+
+.info_edit_tit{
+    padding:0.2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.peo_info_edit,.peo_info_edit{
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+}
+.tit_header{
+    background: url("../images/people.png") no-repeat;
+    background-position:0.3rem 0;
+    background-size:contain;
+    font-size:0.32rem;
+}
+.travel_info>li,.travel_info2>li{
+    margin-left: 0.3rem;
+    padding-top: 0.2rem;
+    font-size:32px;
+    line-height: 0.9rem;
+    color:#333;
+    border-bottom:1px solid #e0e0e0;
+}
+
+.fir_tra{
+    overflow: hidden;
+    line-height:0.9rem;
+}
+.zh_Sa,.zh_Boy{
+    float: left;
+    display: inline-block;
+    color:#333;
+    font-size:0.32rem;
+    padding-right: 0.8rem;
+    background: url("../images/girls.png") no-repeat right ;
+    background-size: 0.25rem 0.35rem;
+}
+.zh_Boy{
+    background: url("../images/boys.png") no-repeat right ;
+    background-size: 0.3rem 0.3rem;
+}
+.zh_pros{
+    display: inline-block;
+    padding-right: 0.3rem;
+    float: right;
+
+}
+.zh_pros>img{
+    display: inline-block;
+    width:0.25rem;
+    height:0.15rem;
+    vertical-align: middle;
+}
+.tra_card{
+    width:100%;
+    display:none;
+    padding-bottom: 0.1rem;
+}
+
+.card_row{
+    line-height: 0.6rem;
+}
+.card_row>span{
+    display: inline-block;
+    font-size: 0.28rem;
+}
+.card_row>span:first-child{
+    min-width:1.8rem;
+    color:#999;
+}
+.card_row>span:nth-child(2)
+{
+    padding-left: 0.1rem;
+}
+.travel_info>li>span.sex_boy{
+    background: url("../images/boys.png") no-repeat right ;
+}
+.tra_tips{
+    color:#999;
+    background: url("../images/wawa.png") no-repeat top left;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0.3rem 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.tra_tips>p{
+    font-size: 0.24rem;
+    padding-left:1rem;
+    padding-right: 0.2rem;
+}
+[data-dpr="2"] .tra_tips>p{font-size:0.24rem;}
+[data-dpr="3"] .tra_tips>p{font-size:0.36rem;}
+
+.email_address{
+    background: url("../images/cir_o.png") no-repeat;
+    background-position:0.3rem 0;
+    background-size:contain;
+    font-size:0.32rem;
+}
+.info_tra2>span:first-child,.travel_info2>li>span:first-child{
+    display: inline-block;
+    min-width: 2rem;
+    color:#666;
+    font-size:0.32rem;
+}
+.info_tra2>span:first-child>i,.travel_info2>li>span:first-child>i{
+    color:#ff3c00;
+    font-size:0.32rem;
+}
+.info_tra2>span:nth-child(2)>i{
+    padding-right: 0.1rem;
+}
+.travel_info2>li>span:nth-child(2)>input{
+    border:0;
+}
+.travel_info2>li>span:nth-child(2)>input::-webkit-input-placeholder { /* WebKit
+browsers */
+    color: #ccc;
+}
+.tra_t2{
+    background: url("../images/greywa.png") no-repeat top left;
+    background-position: 0.3rem 0.2rem;
+    background-size: 0.4rem 0.4rem;
+}
+.info_tra2{
+    overflow: hidden;
+}
+.holo{
+    min-height: 0.3rem;
+    background: url("../images/bottom_x.png") no-repeat right;
+    background-size: 0.25rem 0.15rem;
+    background-position: center right 0.2rem;
+}
+.travel_info>li, .travel_info2>li{
+    font-size: 0.32rem;
+    padding-top: 0;
+}
+.value{
+    font-size: 0.32rem;
+}
+.awe{
+    font-size: 0.32rem;
+}
+[data-dpr="2"] .gearArea{
+    font-size: 0.22rem;
+}

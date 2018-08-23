@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/main.css">
+	<link type="text/css" rel="stylesheet" href="../../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/login.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/Buy.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/LArea.css">
+    <title>出游人信息</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>出游人信息</p>
+            </div>
+        </header>    
+        <div class="container">
+            <div class="peoInfoBox">
+                <!--copy begin-->
+                <div class="peoInfoInner">
+                    <div class="peoInfoList">
+                        <div class="title read_card" >成人1<i></i></div>
+                    </div>
+                    <ul class="edit_item_form">
+                        <li>
+                            <span class="form_item_tit">姓名<sup>*</sup></span>
+                            <span class="form_item_edit"><input type="text" placeholder="请填写游客姓名"></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">性别</span>
+                            <span class="form_item_edit">
+                                <label><input type="radio" name="1"><span>男</span></label>
+                                <label><input type="radio" name="1"><span>女</span></label>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">证件类型</span>
+                            <span class="form_item_edit card_type">
+                                <div id="demo2" class="demo" type="text" readonly="" placeholder="城市选择特效" /></div>
+                                <input id="value2" class="value" type="hidden" />
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">证件号</span>
+                            <span class="form_item_edit "><input type="text" placeholder="请输入正确的证件号码"></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">手机号<sup>*</sup></span>
+                            <span class="form_item_edit"><input type="text" placeholder="请填写游客手机号码"></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">接送信息<sup>*</sup></span>
+                            <span class="form_item_edit distance_info" onclick="window.location.href='board_location.html'">
+                                <p>去程：接送信息接送信息接送信息接送信息接送信息接送信息</p>
+                                <p>回程：接送信息接送信息</p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">备注</span>
+                            <span class="form_item_edit"><input type="text" placeholder="非必填"></span>
+                        </li> 
+                        <li>
+                            <span class="form_item_tit">补房差</span>
+                            <span class="form_item_edit">
+                                <label><input type="checkbox"><span>勾选房差</span></label>
+                            </span>
+                        </li>                                                                                                               
+                    </ul>
+                </div>
+                <div class="blank_15"></div>
+                <!--copy end-->
+                <!--copy begin-->
+                <div class="peoInfoInner">
+                    <div class="peoInfoList">
+                        <div class="title">成人2</div>
+                    </div>
+                    <ul class="edit_item_form">
+                        <li>
+                            <span class="form_item_tit">姓名<sup>*</sup></span>
+                            <span class="form_item_edit"><input type="text" placeholder="请填写游客姓名"></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">性别</span>
+                            <span class="form_item_edit">
+                                <label><input type="radio" name="1"><span>男</span></label>
+                                <label><input type="radio" name="1"><span>女</span></label>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">证件类型</span>
+                            <span class="form_item_edit card_type">
+                                <select>
+                                    <option>请选择</option>
+                                    <option>身份证</option>
+                                    <option>护照</option>
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">证件号</span>
+                            <span class="form_item_edit read_card"><input type="text" placeholder="请输入正确的证件号码"><i></i></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">手机号<sup>*</sup></span>
+                            <span class="form_item_edit"><input type="text" placeholder="请填写游客手机号码"></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">接送信息<sup>*</sup></span>
+                            <span class="form_item_edit distance_info" onclick="window.location.href='board_location.html'">
+                                <p>去程：接送信息接送信息接送信息接送信息接送信息接送信息</p>
+                                <p>回程：接送信息接送信息</p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">备注</span>
+                            <span class="form_item_edit"><input type="text" placeholder="非必填"></span>
+                        </li> 
+                        <li>
+                            <span class="form_item_tit">补房差</span>
+                            <span class="form_item_edit">
+                                <label><input type="checkbox"><span>勾选房差</span></label>
+                            </span>
+                        </li>                                                                                                               
+                    </ul>
+                </div>
+                <div class="blank_15"></div>
+                <!--copy end-->
+                <!--copy begin-->
+                <div class="peoInfoInner">
+                    <div class="peoInfoList">
+                        <div class="title">成人3</div>
+                    </div>
+                    <ul class="edit_item_form">
+                        <li>
+                            <span class="form_item_tit">姓名<sup>*</sup></span>
+                            <span class="form_item_edit"><input type="text" placeholder="请填写游客姓名"></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">性别</span>
+                            <span class="form_item_edit">
+                                <label><input type="radio" name="1"><span>男</span></label>
+                                <label><input type="radio" name="1"><span>女</span></label>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">证件类型</span>
+                            <span class="form_item_edit card_type">
+                                <select>
+                                    <option>请选择</option>
+                                    <option>身份证</option>
+                                    <option>身份证</option>
+                                    <option>请选择</option>
+                                    <option>身份证</option>
+                                    <option>身份证</option>
+                                    <option>请选择</option>
+                                    <option>身份证</option>
+                                    <option>身份证</option>                                                                        
+                                </select>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">证件号</span>
+                            <span class="form_item_edit read_card"><input type="text" placeholder="请输入正确的证件号码"><i></i></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">手机号<sup>*</sup></span>
+                            <span class="form_item_edit"><input type="text" placeholder="请填写游客手机号码"></span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">接送信息<sup>*</sup></span>
+                            <span class="form_item_edit distance_info" onclick="window.location.href='board_location.html'">
+                                <p>去程：接送信息接送信息接送信息接送信息接送信息接送信息</p>
+                                <p>回程：接送信息接送信息</p>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="form_item_tit">备注</span>
+                            <span class="form_item_edit"><input type="text" placeholder="非必填"></span>
+                        </li> 
+                        <li>
+                            <span class="form_item_tit">补房差</span>
+                            <span class="form_item_edit">
+                                <label><input type="checkbox"><span>勾选房差</span></label>
+                            </span>
+                        </li>                                                                                                               
+                    </ul>
+                </div>
+                <div class="blank_15"></div>                
+                <!--copy end-->
+            </div>
+        </div>
+    </div>  
+	<footer>
+	<div class="btn_two">
+	<a href="success.html" class="orange next_step">保存</a>
+	</div>
+	</footer>	
+  <script type="text/javascript" src="../../../resource/javascript/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../../../resource/javascript/area/LAreaData2.js"></script>
+    <script type="text/javascript" src="../../../resource/javascript/area/LArea.js"></script>  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        var area2 = new LArea();
+        area2.init({
+            'trigger': '.demo',
+            'valueTo': '.value',
+            'keys': {
+                id: 'value',
+                name: 'text'
+            },
+            'type': 2,
+            'data': [provs_data, citys_data, dists_data]
+        });        
+        $('html,body').css('background','#F2F4F7');
+    });
+  </script>
+</body>
+</html>

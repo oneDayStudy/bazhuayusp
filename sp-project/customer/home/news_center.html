@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">
+    <title>消息中心</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+                <a href="javascript:history.go(-1);" title="返回" class="back">返回</a> 
+                <div class="one_title">
+                  <p>消息中心</p>
+                </div>                            
+        </header>
+        <div class="container">
+            <div class="news_center tabs">
+                <ul>
+                    <li class="cur">游客</li>
+                    <li>平台公告</li>
+                    <li>系统通知</li>
+                </ul>
+            </div>
+            <div class="news_item_list tabs_show">
+                <ul>
+                    <li>
+                        <div class="news_detail i_tz">
+                            <span class="news_num">99+</span>
+                            <h2>平台通知</h2>
+                            <p>成长值返现</p>
+                        </div>
+                        <div class="news_date">15:50</div>
+                    </li>
+                    <li>
+                        <div class="news_detail i_h_order">
+                            <span class="news_num">99+</span>
+                            <h2>待处理订单</h2>
+                            <p>订单编号02033344411    法意日韩</p>
+                        </div>
+                        <div class="news_date">15:50</div>
+                    </li>
+                    <li>
+                        <div class="news_detail i_gw">
+                            <span class="news_num">99+</span>
+                            <h2>销售顾问</h2>
+                            <p>最新返利政策及营销方案</p>
+                        </div>
+                        <div class="news_date">15:50</div>
+                    </li>
+                    <li>
+                        <div class="news_detail i_yk">
+                            <span class="news_num">99+</span>
+                            <h2>周盈中</h2>
+                            <p>我预订的那个什么线路能不能便宜点？？</p>
+                        </div>
+                        <div class="news_date">15:50</div>
+                    </li>                                        
+                </ul>
+            </div>
+            <div class="news_item_list tabs_show" style="display:none;">
+                <ul>
+                    <li>
+                        <div class="news_detail i_gw">
+                            <span class="news_num">99+</span>
+                            <h2>销售顾问</h2>
+                            <p>最新返利政策及营销方案</p>
+                        </div>
+                        <div class="news_date">15:50</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="news_item_list tabs_show" style="display:none;">
+                <ul>
+                    <li>
+                        <div class="news_detail i_yk">
+                            <span class="news_num">99+</span>
+                            <h2>周盈中</h2>
+                            <p>我预订的那个什么线路能不能便宜点？？</p>
+                        </div>
+                        <div class="news_date">15:50</div>
+                    </li>   
+                </ul>
+            </div>                        
+        </div>
+    </div>
+    <!--
+    <footer>
+      <ul class="clearfix">
+        <li class="home active"><a href="javascript:;">首页</a></li>
+        <li class="wallet"><a href="javascript:;">钱包</a></li>
+        <li class="orders"><a href="javascript:;">订单</a></li>
+        <li class="my"><a href="javascript:;">我的店</a></li>
+      </ul>
+    </footer>
+    -->    
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    //切换
+    $(".tabs li").click(function () { 
+    var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+    $(this).addClass('cur').siblings().removeClass('cur');
+    var content_obj = $(".tabs_show") //内容节点 
+    content_obj.hide(); 
+    content_obj.eq(index_tab).show(); 
+    });  
+  </script>  
+</body>
+</html>

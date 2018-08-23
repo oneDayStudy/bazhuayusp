@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">      
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/order.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/orderDetail.css">
+    <link type="text/css" rel="stylesheet" href="resource/css/popLayer.css">
+    <script type="text/javascript" src="resource/js/global.js"></script>    
+    <title>合并支付</title>
+</head>
+<body>
+<div class="wrap flex flex-v">
+    <header class="header whiteBg" style="top:0;">
+        <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+        <div class="title">合并支付</div>
+    </header>
+    <div class="main flex-1">
+        <div class="totalPrice">
+            <p class="tit">本次支付总额：</p>
+            <p class="price">￥2400</p>
+        </div>
+        <div class="blank_10"></div>
+        <div class="mainOuter">
+            <div class="orderBox Shadow">
+                <div class="payItem">
+                    <div class="payLeft">
+                        <h2>日本九州3日3夜自由行，宿温泉酒店，旅游纯玩无购物，一天滑雪一天滑冰一天吃好玩刺身</h2>
+                        <p>预付款<span class="djs">00 : 29 : 32</span><span class="price editPriceBtn">￥<em>800</em><i class="editIcon"></i></span></p>
+                    </div>
+                    <div class="payRight">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="blank_10"></div>
+            <div class="orderBox Shadow">
+                <div class="payItem">
+                    <div class="payLeft">
+                        <div class="tripItem">
+                            <h2><span>上海浦东</span><i class="airIcon"></i><span>厦门高崎</span></h2>
+                            <p><span>01-14</span><span>|</span><span>南方航空CZ6738</span><span>|</span><span>经济舱</span></p>
+                        </div>
+                        <div class="tripItem">
+                            <h2><span>上海浦东</span><i class="airIcon"></i><span>厦门高崎</span></h2>
+                            <p><span>01-14</span><span>|</span><span>南方航空CZ6738</span><span>|</span><span>经济舱</span></p>
+                        </div>                        
+                        <p>预付款<span class="djs">00 : 29 : 32</span><span class="price editPriceBtn">￥<em>800</em><i class="editIcon"></i></span></p>
+                    </div>
+                    <div class="payRight">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div> 
+            <div class="blank_10"></div>
+            <div class="orderBox Shadow">
+                <div class="payItem">
+                    <div class="payLeft">
+                        <div class="tripItem">
+                            <h2><span>上海浦东</span><i class="trainIcon"></i><span>厦门高崎</span></h2>
+                            <p><span>01-14</span><span>|</span><span>南方航空CZ6738</span><span>|</span><span>经济舱</span></p>
+                        </div>
+                        <p>预付款<span class="djs">00 : 29 : 32</span><span class="price editPriceBtn">￥<em>800</em><i class="editIcon"></i></span></p>
+                    </div>
+                    <div class="payRight">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="blank_10"></div>                                 
+        </div>
+    </div> 
+    <footer class="footer" style="bottom:0;">
+        <div class="singleFoot"><a href="javascript:;">去支付</a></div>
+    </footer>    
+</div>
+<div class="layerBlack" id="layerBlack"></div>
+<!--编辑价格开始-->
+<div class="editPrice none" id="editPrice">
+    <div class="title">编辑金额<a href="javascript:;" class="closed">关闭</a></div>
+    <div class="editCon">
+        <input typs="number">
+        <a href="javascript:;" class="subEdit">确定</a>
+    </div>
+</div>
+<!--编辑价格结束-->
+<script type="text/javascript" src="resource/js/jquery.min.js"></script>
+<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+<script type="text/javascript">
+$('html,body').css("background","#f2f4f7");
+//编辑价格
+$(".editPriceBtn").click(function () {
+  $('#layerBlack').show();
+  $('#editPrice').removeClass('none');
+});    
+$("#layerBlack").click(function () {
+  $('#layerBlack').hide();
+  $('#editPrice').addClass('none');
+}); 
+$(".editPrice .closed").click(function () {
+  $('#layerBlack').hide();
+  $('#editPrice').addClass('none');
+}); 
+</script>	
+</body>
+</html>

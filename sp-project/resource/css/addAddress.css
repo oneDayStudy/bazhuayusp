@@ -1,0 +1,229 @@
+[data-dpr="2"] .info_edit_tit span{font-size:32px;}
+[data-dpr="3"] .info_edit_tit span{font-size:48px;}
+
+[data-dpr="2"] .fir_tra span{font-size:32px;}
+[data-dpr="3"] .fir_tra span{font-size:48px;}
+
+[data-dpr="2"] .card_row span{font-size:28px;}
+[data-dpr="3"] .card_row span{font-size:42px;}
+
+[data-dpr="2"] .info_tra2 span{font-size:28px;}
+[data-dpr="3"] .info_tra2 span{font-size:42px;}
+
+[data-dpr="2"] .travel_info2 li span{font-size:28px;}
+[data-dpr="3"] .travel_info2 li span{font-size:42px;}
+
+[data-dpr="2"] .tra_tip p{font-size:24px;}
+[data-dpr="3"] .tra_tip p{font-size:36px;}
+
+.bc_con{
+    padding-bottom: 1.3rem;
+}
+.peo_info_edit,.peo_info_edit{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+}
+.tit_header{
+    background: url("../images/icon/people.png") no-repeat;
+    background-position:0.3rem 0;
+    background-size:contain;
+    font-size: 32px;
+}
+.travel_info>li,.travel_info2>li{
+    margin-left: 0.3rem;
+    padding-top: 0.2rem;
+    font-size:32px;
+    line-height: 0.9rem;
+    color:#333;
+    border-bottom:1px solid #e0e0e0;
+}
+
+.fir_tra{
+    overflow: hidden;
+}
+.zh_Sa,.zh_Boy{
+    float: left;
+    display: inline-block;
+    color:#333;
+    font-size: 32px;
+    padding-right: 0.8rem;
+    background: url("../images/icon/girls.png") no-repeat right ;
+}
+.zh_Boy{
+    background: url("../images/icon/boys.png") no-repeat right ;
+}
+.zh_pros{
+    display: inline-block;
+    padding-right: 0.3rem;
+    float: right;
+}
+.tra_card{
+    width:100%;
+    display:none;
+    padding-bottom: 0.4rem;
+}
+
+.card_row>span{
+    display: inline-block;
+    font-size: 28px;
+}
+.card_row>span:first-child{
+    min-width:1.8rem;
+    color:#999;
+}
+.card_row>span:nth-child(2)
+{
+    padding-left: 0.1rem;
+}
+.travel_info>li>span.sex_boy{
+    background: url("../images/icon/boys.png") no-repeat right ;
+}
+.tra_tips{
+    color:#999;
+    background: url("../images/icon/wawa.png") no-repeat top left;
+    background-position: 0.3rem 0.3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.tra_tips>p{
+    padding-left:1rem;
+    padding-right: 0.2rem;
+}
+.email_address{
+    background: url("../images/icon/cir_o.png") no-repeat;
+    background-position:0.3rem 0;
+    background-size:contain;
+    font-size: 32px;
+}
+.info_tra2>span:first-child,.travel_info2>li>span:first-child{
+    display: inline-block;
+    min-width: 2.5rem;
+    color:#666;
+}
+.info_tra2>span:first-child>i,.travel_info2>li>span:first-child>i{
+    color:#ff3c00;
+    font-size: 32px;
+}
+.info_tra2>span:nth-child(2)>i{
+    padding-right: 0.1rem;
+}
+.travel_info2>li>span:nth-child(2)>input{
+    border:0;
+}
+.travel_info2>li>span:nth-child(2)>input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+}
+.tra_t2{
+    background: url("../images/icon/greywa.png") no-repeat top left;
+    background-position: 0.3rem 0.3rem;
+}
+.info_tra2{
+    overflow: hidden;
+}
+.holo{
+
+    background: url("../images/icon/bottom_x.png") no-repeat right;
+    background-position: center right 0.2rem;
+}
+
+.tra_cons{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    /*background: url("../images/tra_bg.png") no-repeat center center;*/
+    /*background-size: 100%;*/
+    z-index: 9;
+}
+.isd{
+    position: absolute;
+    width:85%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0.2rem #ccc;
+    top: 50%;
+    margin-top: -40%;
+    left:50%;
+    margin-left: -4.25rem;
+}
+.der{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.cae{
+    line-height: 1.3rem;
+    width:100%;
+    display: table;
+
+}
+.cae>a{
+    border:1px solid #ccc;
+    width:50%;
+    display: table-cell;
+    text-align: center;
+}
+[data-dpr="2"] .tra_cancel{font-size:32px;}
+[data-dpr="3"] .tra_cancel{font-size:48px;}
+.tra_cancel{
+    font-size: 32px;
+    color:#666;
+}
+.tra_ok{
+    color:#FF4858;
+    font-size: 32px;
+}
+[data-dpr="2"] .tra_ok{font-size:32px;}
+[data-dpr="3"] .tra_ok{font-size:48px;}
+
+.der>p{
+    font-size:28px;
+}
+.sfz{
+    display: table;
+    color:#333;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    line-height: 0.5rem;
+    width:90%;
+}
+.gou{
+    width:0.5rem;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 0.2rem;
+}
+.gou>input{
+    -webkit-appearance: none;
+    background: url("../images/icon/ooo.png") no-repeat center center;
+    background-size: 100%;
+    width:0.5rem;
+    height:0.5rem;
+    border: none;
+    outline: none;
+}
+.gou>input:checked{
+    background: url("../images/icon/yesyes.png") no-repeat center center;
+    background-size: 100%;
+}
+.sfz>span{
+    display: table-cell;
+}
+.der>p:first-child{
+    padding:0.2rem 0.5rem;
+    color: #666;
+}
+[data-dpr="2"] .der p{font-size:28px;}
+[data-dpr="3"] .der p{font-size:42px;}
+
+[data-dpr="2"] .hol{font-size:28px;}
+[data-dpr="3"] .hol{font-size:42px;}
+
+.awe{
+    display: inline-block;
+    min-width:6.5rem;
+}
+.awe>input{
+    width:100%;
+}

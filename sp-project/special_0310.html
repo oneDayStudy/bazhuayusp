@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="resource/lib-flexible-master/build/flexible.js"></script> 
+
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="resource/css/animate.css">
+    <title>3.15~3.25限时特惠放价到底</title>
+	<style>
+	html,body{background:#9cd752;height:auto;}
+	.specialBox .banner{width:100%;position:relative;}
+	.specialBox .banner .bannerPic{display:block;width:100%;}
+	.banner .roatePic{display:block;position:absolute;top:0.533333rem;width:8.333333rem;left:50%;margin-left:-4.166667rem;height:5.773333rem;}
+	
+	.djsBox{position:relative;width:8.706667rem;height:3.226667rem;margin:0 auto;}
+	.djsBox img{display:block;width:8.706667rem;height:3.226667rem;}
+	.djsBox .djsCon{position:absolute;color:#fff066;font-weight:bold;text-shadow:1px 1px 3px #666;width:100%;text-align:center;font-size:14px;top:1rem;}
+	.djsBox .djsCon span{font-size:28px;margin-left:0.2rem;}
+	.djsBox .djsCon span i{margin:0 0.06rem;}
+	[data-dpr="2"] .djsBox .djsCon{font-size:28px;top:1rem;}
+	[data-dpr="3"] .djsBox .djsCon{font-size:42px;top:1rem;}	
+	[data-dpr="2"] .djsBox .djsCon span{font-size:56px;}
+	[data-dpr="3"] .djsBox .djsCon span{font-size:84px;}	
+	.specialItem{position:relative;margin-bottom:0.1rem;padding:0.266667rem 0;background:url(resource/images/special/0310/GBg.png) no-repeat center center;background-size:100% 100%;}
+	.specialItem .itemBg{display:block;width:10rem;height:5.306667rem;}
+	.top{margin-top:-0.8rem;}
+	/*.specialItem .itemCon{background:#fff;width:9.333333rem;border-radius:0.133333rem;position:absolute;top:0.266667rem;left:50%;margin-left:-4.67rem;}*/
+	.specialItem .itemCon{background:#fff;width:9.333333rem;border-radius:0.133333rem;margin:0 auto;}
+	.conTop {display:table;width:100%;padding:0.293333rem 0;}
+	.conTop .conPic{display:table-cell;padding:0 0.293333rem;width:2.666667rem;height:2.666667rem;vertical-align: top;}
+	.conTop .conPic .PicBox{position:relative;width:2.666667rem;height:2.666667rem;}
+	.conTop .conPic .PicBox img{display:block;width:2.666667rem;height:2.666667rem;border-radius:0.133333rem;}
+	.conTop .conPic .PicBox .blackBg{position:absolute;left:0;bottom:0;width:2.666667rem;height:0.533333rem;text-align:center;color:#fff;line-height:0.533333rem;overflow: hidden;white-space:nowrap;text-overflow: ellipsis;font-size:11px;background:rgba(0,0,0,0.5);border-radius:0 0 0.133333rem 0.133333rem; }
+	[data-dpr="2"] .conTop .conPic .blackBg{font-size:22px;}
+	[data-dpr="3"] .conTop .conPic .blackBg{font-size:33px;}
+	.conTop .conInfo{display:table-cell;border-bottom:1px solid #DCDCDC;position:relative;vertical-align: top;padding-bottom:0.293333rem;}
+	.conTop .conInfo h2{font-size:14px;color:#333;margin-bottom:0.1rem;}
+	[data-dpr="2"] .conTop .conInfo h2{font-size:28px;}
+	[data-dpr="3"] .conTop .conInfo h2{font-size:42px;}	
+	.conTop .conInfo p.gery{font-size:11px;color:#666;}
+	[data-dpr="2"] .conTop .conInfo p.gery{font-size:22px;}
+	[data-dpr="3"] .conTop .conInfo p.gery{font-size:33px;}	
+	.conTop .conInfo .lineThrough{text-decoration: line-through;margin-top:0.1rem;}
+	.conTop .conInfo .tags{overflow:hidden;zoom:1;margin:0.15rem 0;}
+	.conTop .conInfo .tags span{display:block;float:left;height:0.4rem;line-height:0.49rem;padding:0 0.133333rem;border-radius:0.2rem;font-size:9px;margin:0 0.2rem 0.02rem 0.01rem;}
+	[data-dpr="2"] .conTop .conInfo .tags span{font-size:18px;line-height:0.4rem;}
+	[data-dpr="3"] .conTop .conInfo .tags span{font-size:27px;line-height:0.4rem;}	
+	.conInfo .tags span.red{border:1px solid #ff4545;color:#ff4545;} 
+	.conInfo .tags span.deepred{border:1px solid #ff45a1;color:#ff45a1;}
+	.conInfo .seeMore{text-align:right;position:absolute;right:0.293333rem;bottom:0.293333rem;}
+	.conInfo .seeMore .price{font-size:11px;color:#666;}
+	[data-dpr="2"] .conInfo .seeMore .price{font-size:22px;}
+	[data-dpr="3"] .conInfo .seeMore .price{font-size:33px;}
+	.conInfo .seeMore .price span{color:#ff4545;}
+	.conInfo .seeMore .price span i{font-size:17px;}	
+	[data-dpr="2"] .conInfo .seeMore .price span i{font-size:34px;}
+	[data-dpr="3"] .conInfo .seeMore .price span i{font-size:51px;}		
+	.conInfo .seeMore a{display:block;width:1.693333rem;height:0.613333rem;border-radius:0.08rem;background:#ff4545;color:#fff;text-align:center;line-height:0.68rem;float:right;margin-top:0.1rem;font-size:11px;}
+	[data-dpr="2"] .conInfo .seeMore a{font-size:22px;line-height:0.613333rem;}
+	[data-dpr="3"] .conInfo .seeMore a{font-size:33px;line-height:0.613333rem;}	
+	.itemCon .conBott{padding:0 0.293333rem 0.143333rem 0.293333rem;}
+	.itemCon .conBott p{color:#999;width:100%;box-sizing:border-box;font-size:11px;padding-left:0.5rem;line-height:0.426667rem;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;margin-bottom:0.15rem;}
+	[data-dpr="2"] .itemCon .conBott p{font-size:22px;}
+	[data-dpr="3"] .itemCon .conBott p{font-size:33px;}	
+	.itemCon .conBott p.room{background:url(resource/images/special/0310/tag_1.png) no-repeat center left;background-size:0.426667rem 0.426667rem;}
+	.itemCon .conBott p.sTags{background:url(resource/images/special/0310/tag_2.png) no-repeat center left;background-size:0.426667rem 0.426667rem;}	
+	</style>
+</head>
+<body>
+	<div class="specialBox">
+		<div class="banner">
+			<img class="bannerPic" src="resource/images/special/0310/banner.png">
+			<img class="roatePic" id="roatePic" src="resource/images/special/0310/pop.png">
+		</div>
+		<div class="djsBox top">
+			<img src="resource/images/special/0310/djsBg.png"/>
+			<div class="djsCon">距离结束仅剩<span>23<i>:</i>45<i>:</i>32</span></div>
+		</div>
+		<!--copy begin-->
+		<div class="specialItem ">
+			<!--<img class="itemBg" src="resource/images/special/0310/GBg.png">-->
+			<div class="itemCon">
+				<div class="conTop">
+					<div class="conPic">
+						<div class="PicBox">
+							<img src="resource/images/special/0310/line/1.png">
+							<div class="blackBg">L00224577</div>
+						</div>	
+					</div>
+					<div class="conInfo">
+						<h2>新品新马泰9晚10天飞</h2>
+						<p class="gery">班期：4-6月</p>
+						<!--<p class="tags"><span class="red">立减400</span><span class="deepred">利润800</span></p>-->
+						<p class="gery lineThrough">门市价:￥3599</p>
+						<p class="gery lineThrough">结算价:￥3199</p>
+						<div class="seeMore">
+							<p class="price">限时价:<span>￥<i>7?49</i></span></p>
+							<a href="javascript:;">去看看</a>
+						</div>
+					</div>
+				</div>
+				<div class="conBott">
+					<p class="room">当地3-4星酒店</p>
+					<p class="sTags">含全餐，适合父母游览，保证一晚温泉酒店</p>
+				</div>
+			</div>
+		</div>
+		<!--copy end-->
+		<!--copy begin-->
+		<div class="specialItem">
+			<!--<img class="itemBg" src="resource/images/special/0310/GBg.png">-->
+			<div class="itemCon">
+				<div class="conTop">
+					<div class="conPic">
+						<div class="PicBox">
+							<img src="resource/images/special/0310/line/1.png">
+							<div class="blackBg">L00224577</div>
+						</div>	
+					</div>
+					<div class="conInfo">
+						<h2>新品新马泰9晚10天飞</h2>
+						<p class="gery">班期：4-6月</p>
+						<p class="tags"><span class="red">立减400</span><span class="deepred">利润800</span></p>
+						<p class="gery lineThrough">门市价:￥3599</p>
+						<p class="gery lineThrough">结算价:￥3199</p>
+						<div class="seeMore">
+							<p class="price">限时价:<span>￥<i>7049</i></span></p>
+							<a href="javascript:;">去看看</a>
+						</div>
+					</div>
+				</div>
+				<div class="conBott">
+					<p class="room">当地3-4星酒店</p>
+					<p class="sTags">含全餐，适合父母游览，保证一晚温泉酒店</p>
+				</div>
+			</div>
+		</div>
+		<!--copy end-->
+		<!--copy begin-->
+		<div class="specialItem">
+			<!--<img class="itemBg" src="resource/images/special/0310/GBg.png">-->
+			<div class="itemCon">
+				<div class="conTop">
+					<div class="conPic">
+						<div class="PicBox">
+							<img src="resource/images/special/0310/line/1.png">
+							<div class="blackBg">L00224577</div>
+						</div>	
+					</div>
+					<div class="conInfo">
+						<h2>新品新马泰9晚10天飞</h2>
+						<p class="gery">班期：4-6月</p>
+						<p class="tags"><span class="red">立减400</span><span class="deepred">利润800</span></p>
+						<p class="gery lineThrough">门市价:￥3599</p>
+						<p class="gery lineThrough">结算价:￥3199</p>
+						<div class="seeMore">
+							<p class="price">限时价:<span>￥<i>7049</i></span></p>
+							<a href="javascript:;">去看看</a>
+						</div>
+					</div>
+				</div>
+				<div class="conBott">
+					<p class="room">当地3-4星酒店</p>
+					<p class="sTags">含全餐，适合父母游览，保证一晚温泉酒店</p>
+				</div>
+			</div>
+		</div>
+		<!--copy end-->
+		<!--copy begin-->
+		<div class="specialItem">
+			<!--<img class="itemBg" src="resource/images/special/0310/GBg.png">-->
+			<div class="itemCon">
+				<div class="conTop">
+					<div class="conPic">
+						<div class="PicBox">
+							<img src="resource/images/special/0310/line/1.png">
+							<div class="blackBg">L00224577</div>
+						</div>	
+					</div>
+					<div class="conInfo">
+						<h2>新品新马泰9晚10天飞</h2>
+						<p class="gery">班期：4-6月</p>
+						<p class="tags"><span class="red">立减400</span><span class="deepred">利润800</span></p>
+						<p class="gery lineThrough">门市价:￥3599</p>
+						<p class="gery lineThrough">结算价:￥3199</p>
+						<div class="seeMore">
+							<p class="price">限时价:<span>￥<i>7049</i></span></p>
+							<a href="javascript:;">去看看</a>
+						</div>
+					</div>
+				</div>
+				<div class="conBott">
+					<p class="room">当地3-4星酒店</p>
+					<p class="sTags">含全餐，适合父母游览，保证一晚温泉酒店</p>
+				</div>
+			</div>
+		</div>
+		<!--copy end-->						
+	</div>
+  <script type="text/javascript" src="resource/javascript/jquery.min.js"></script> 
+	<script type="text/javascript" src="resource/javascript/jquery.timeline.js"></script>  
+  <script type="text/javascript">
+	  $(document).ready(function(){
+		$('.roatePic').bounceInDown();
+		
+		});
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <title>我的店铺</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <div class="my_header">
+                <a href="../home/news_center.html" class="news" alt="消息"><span class="news_data">99+</span></a> 
+                <a href="set.html" class="set_text">设置</a>            
+            </div>
+        </header>
+        <div class="container">
+            <div class="my_con">
+                <div class="my_detail" onclick="window.location.href='personal.html'">
+                    <div class="my_photo"><div class="photo" style="background-image:url(../resource/images/default.png);"></div></div>
+                    <div class="my_info">
+                        <div class="my_name">苏州青年旅行社沧浪营业部苏州青年旅行社沧浪营业部苏州青年旅行社沧浪营业部s</div>
+                        <div class="my_level"><span>LV.100</span></div>
+                        <div class="my_shop_info">
+                            <span class="linkman">王大宝</span>
+                            <span class="linkphone">1850597421</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="my_shop_tabs tabs">
+	                <ul>
+	                	<li class="cur">                	
+		                	<a href="javascript:;" >
+		                		<div class="icon i_shop"></div>
+		                		<span>我的店铺</span>
+		                	</a>
+	                	</li>
+	                	<li>                	
+		                	<a href="javascript:;">
+		                		<div class="icon i_data"></div>
+		                		<span>我的数据</span>
+		                	</a>
+	                	</li>
+	                	<li>                	
+	                	<a href="javascript:;">
+	                		<div class="icon i_zx"></div>
+	                		<span>我的装修</span>
+	                	</a>
+	                	</li>                	                	
+	                </ul>
+                </div> 
+                <div class="tabs_show">                             
+	                <div class="set_list">
+	                    <a href="my_member.html"><span>我的员工</span><span class="set_list_tips">员工账号管理</span></a>
+	                    <a href="my_fxdr.html"><span>我的分销达人</span><span class="set_list_tips">分销人员账户管理</span></a>
+	                     <a href="my_client.html"><span>我的客户</span><span class="set_list_tips">管理我的顾客</span></a>
+	                </div>
+	                <div class="set_list">
+	                    <a href="shelves.html"><span>我的货架</span><span class="set_list_tips">产品定价及下架管理</span></a>
+	                    <a href="my_collect.html"><span>我的收藏</span><span class="set_list_tips">线路、供应商收藏</span></a>
+	                </div>
+	                <div class="set_list">
+                        <a href="../wallet/wallet.html"><span>我的钱包</span></a>
+	                    <a href="store_coupons.html"><span>店铺优惠券</span></a>
+	                    <a href="bill_settle.html"><span>账单结算</span></a>
+	                    <a href="invoice_list.html"><span>账单发票</span></a>
+	                </div> 
+                </div> 
+                <div class="tabs_show" style="display:none;">                             
+	                <div class="set_list">
+                        <a href="order_data.html"><span>旅行社总数据</span></a>
+                        <a href="order_data.html"><span>我的员工数据</span></a>
+	                    <a href="fxdr_data.html"><span>我的达人数据</span></a>
+	                </div>
+                </div> 
+                <div class="tabs_show" style="display:none;">                             
+	                <div class="set_list">
+	                    <a href="javascript:;"><span class="m_member">店铺装修</span></a>
+	                </div>
+                </div>                                                              
+            </div>           
+        </div>
+    </div>
+    <footer>
+      <ul class="clearfix">
+        <li class="home"><a href="../home/home.html">首页</a></li>
+        <li class="wallet"><a href="../wallet/wallet.html">钱包</a></li>
+        <li class="orders"><a href="../order/order_center.html">订单</a></li>
+        <li class="my active"><a href="../my/my.html">我的店</a></li>
+      </ul>
+    </footer>    
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    //切换
+    $(".tabs li").click(function () { 
+    var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+    $(this).addClass('cur').siblings().removeClass('cur');
+    var content_obj = $(".tabs_show") //内容节点 
+    content_obj.hide(); 
+    content_obj.eq(index_tab).show(); 
+    });  
+  </script>
+</body>
+</html>

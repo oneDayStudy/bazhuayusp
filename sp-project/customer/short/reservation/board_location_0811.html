@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../../../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../../../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/login.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/LArea.css">
+    <link type="text/css" rel="stylesheet" href="../../../resource/css/Buy.css">
+    <title>接送信息</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>接送信息</p>
+            </div>
+            <a href="travel_info.html" class="log_out save" style="color:#FF4858;">保存</a>
+        </header>    
+        <div class="container">
+            <div class="busTab tabs">
+                 <ul>
+                    <li class="cur"><span>班车接送</span></li>
+                    <li><span>专车上门</span></li>
+                </ul>               
+            </div>
+            <div class="busBox tabs_show">
+                <div class="peoInfoBox">
+                    <!--copy begin-->
+                    <div class="peoInfoInner">
+                        <div class="peoInfoList">
+                            <label class="useCheck"><input type="checkbox"><span>应用到所有人</span></label>
+                        </div>
+                        <ul class="edit_item_form">
+                            <li>
+                                <span class="form_item_tit">去程</span>
+                                <span class="form_item_edit card_type">
+                                    <select>
+                                        <optgroup>
+                                            <option>旅客自行前往火车站/机场集合/旅客自行前往火车站￥0/人</option>
+                                            <option>2旅客自行前往火车站/机场集合/旅客自行前往火车站￥0/人</option>
+                                        </optgroup>
+                                    </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="form_item_tit">回程</span>
+                                <span class="form_item_edit card_type">
+                                    <select>
+                                        <optgroup>
+                                            <option>旅客自行前往火车站/机场集合/旅客自行前往火车站￥0/人</option>
+                                            <option>2旅客自行前往火车站/机场集合/旅客自行前往火车站￥0/人</option>
+                                        </optgroup>
+                                    </select>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blank_15"></div>
+                    <!--copy end-->
+                </div>
+            </div>
+            <div class="busBox tabs_show" style="display:none;">
+                <div class="peoInfoBox">
+                    <!--copy begin-->
+                    <div class="peoInfoInner">
+                        <div class="peoInfoList">
+                            <label class="useCheck"><input type="checkbox"><span>应用到所有人</span></label>
+                        </div>
+                        <ul class="edit_item_form">
+                            <li>
+                                <span class="form_item_tit">去程</span>
+                                <span class="form_item_edit">
+                                    <label><input type="checkbox"><span>是否自行前往</span></label>
+                                </span>
+                            </li>                        
+                            <li>
+                                <span class="form_item_tit">所在区域</span>
+                                <span class="form_item_edit card_type">
+                                    <div id="demo2" type="text" readonly="" placeholder="城市选择特效" /></div>
+                                    <input id="value2" type="hidden" />
+                                </span>
+                            </li>
+                            <li>
+                                <div class="textBox">
+                                    <textarea placeholder="详细地址"></textarea>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="form_item_tit">专车类型</span>
+                                <span class="form_item_edit card_type">
+                                    <select>
+                                        <option>例如：豪华7座SUV</option>
+                                    </select>
+                                </span>
+                            </li>                             
+                            <li>
+                                <span class="form_item_tit">回程</span>
+                                <span class="form_item_edit">
+                                    <label><input type="checkbox"><span>是否自行前往</span></label>
+                                </span>
+                            </li>                                                         
+                        </ul>
+                    </div>
+                    <div class="blank_15"></div>
+                    <!--copy end-->
+                </div>                
+            </div>                                     
+        </div>
+    </div>    
+    <script type="text/javascript" src="../../../resource/javascript/jquery.min.js"></script>
+    <script src="../../../resource/javascript/area/LAreaData1.js"></script>
+    <script src="../../../resource/javascript/area/LAreaData2.js"></script>
+    <script src="../../../resource/javascript/area/LArea.js"></script>
+    <script>
+    var area2 = new LArea();
+    area2.init({
+        'trigger': '#demo2',
+        'valueTo': '#value2',
+        'keys': {
+            id: 'value',
+            name: 'text'
+        },
+        'type': 2,
+        'data': [provs_data, citys_data, dists_data]
+    });
+    </script>
+    <script type="text/javascript">
+    $('html,body').css('background','#F2F4F7');
+    //切换
+    $(".tabs li").click(function () { 
+    var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+    $(this).addClass('cur').siblings().removeClass('cur');
+    var content_obj = $(".tabs_show") //内容节点 
+    content_obj.hide(); 
+    content_obj.eq(index_tab).show(); 
+    });  
+  </script>
+</body>
+</html>

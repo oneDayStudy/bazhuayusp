@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--引用开始-->
+    <link href="resource/layer_mobile/skin/layer.css" rel="stylesheet" />
+	 <script src="resource/javascript/jquery.min.js"></script>
+    <script src="resource/layer_mobile/layer.js"></script>
+    <!--引用结束-->
+    <title>弹出层</title>
+	<style type="text/css">
+	html,body,h1,h2,h3,h4,h5,p,div,ul,ol,li,pre,code,button{margin:0; padding:0;}
+html, body{overflow-x:hidden;}
+img{border:0}
+body{ font-family: 'seanfont', "microsoft yahei"; font-size: 14px; line-height:22px; color:#333;}
+h1{font-size:30px;}
+ol{margin-left:20px;}
+code{ margin: 0 2px; padding: 0 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8; border-radius: 3px; font-size:14px;}
+pre{white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;}
+h2{font-size:20px; margin:15px 0 10px; font-weight:400;}
+a{text-decoration: none; color:#0099cc}
+
+html{background-color:#F3F3F3;}
+.main{position:relative; max-width:640px; margin:0 auto; padding:0 10px; }
+header{background-color:#0099CC; margin-bottom:20px; color:#fff;}
+header .main{height:120px;}
+.main p{padding-bottom:5px;}
+.main strong{font-weight:400;}
+header h1{position:absolute; top:30px; left:20px;}
+header h1 code{position:relative; top:-15px; margin-left: 8px; background:none;}
+header nav{ position:absolute; bottom:15px; right:0; padding:0 10px;}
+header nav a{display:inline-block; vertical-align:top; margin:0 10px; height:30px; line-height:30px; border:1px solid #AAEAFF; border-radius:3px; padding:0 20px; color:#fff;}
+header nav a:hover{border:1px solid #fff;}
+
+.demo{margin:10px auto;width:500px;}
+.demo a, .button{display:inline-block; vertical-align:top; margin:0 5px 10px 0; height:36px; line-height:36px; border-radius:3px; padding:0 30px; background-color:#FF4351; color:#fff; border:none;}
+.demo a:active, .button:active{background-color:#FEAE1B;}
+pre{padding:15px 15px 5px; margin-bottom:10px; font-size:12px; border:1px solid #ddd; border-left-width: 6px; border-radius:4px; background-color:#f2f2f2; font-family: Courier New; overflow:auto;}
+
+.api div{margin-bottom:15px;}
+.api strong{color: #4FB2E2}
+	</style>
+</head>
+<body>
+<p class="demo" id="trys" style="margin-top: 20px;">
+    <a href="javascript:;" id="btnTips1">信息框</a>
+    <a href="javascript:;" id="btnTips2">提示</a>
+    <a href="javascript:;" id="btnTips3">询问框</a>
+    <a href="javascript:;" id="btnTips4">底部对话框</a>
+    <a href="javascript:;" id="btnTips5">底部提示</a>
+    <a href="javascript:;" id="btnTips6">自定义标题风格</a>
+    <a href="javascript:;" id="btnTips7">页面层</a>
+    <a href="javascript:;" id="btnTips8">loading层</a>
+    <a href="javascript:;" id="btnTips9">loading带文字</a>
+	<a href="javascript:;" id="btnTips10">一个在底部弹出的完整对话框</a>
+	<a href="javascript:;" id="btnTips11">设置3秒自动关闭</a>
+	<a href="javascript:;" id="btnTips12">设置不允许点遮罩关闭</a>
+	<a href="javascript:;" id="btnTips13">自定义一个全屏的页面层</a>
+	<a href="javascript:;" id="btnTips14">tips上</a>
+	<a href="javascript:;" id="btnTips15">tips右</a>
+	<a href="javascript:;" id="btnTips16">tips下</a>
+	<a href="javascript:;" id="btnTips17">tips左</a>
+	<a href="javascript:;" id="btnTips18">tips不销毁之前的</a>
+  </p>
+<p style="text-align:center;">请参考：<a href="http://layer.layui.com">http://layer.layui.com</a></p>
+<script type="text/javascript">
+    var PageUI = {
+        Init: function () {
+            $("#btnTips1").click(function () {
+				  //信息框
+				  layer.open({
+					content: '移动版和PC版不能同时存在同一页面'
+					,btn: '我知道了'
+				  });
+            });
+            $("#btnTips2").click(function () {
+				  //提示
+					layer.msg('玩命提示中');
+            });
+            $("#btnTips3").click(function () {
+				  //询问框
+				  layer.open({
+					content: '您确定要刷新一下本页面吗？'
+					,btn: ['刷新', '不要']
+					,yes: function(index){
+					  location.reload();
+					  layer.close(index);
+					}
+				  });
+            });
+            $("#btnTips4").click(function () {
+				  //底部对话框
+				  layer.open({
+					content: '这是一个底部弹出的询问提示'
+					,btn: ['删除', '取消']
+					,skin: 'footer'
+					,yes: function(index){
+					  layer.open({content: '执行删除操作'})
+					}
+				  });
+            });
+            $("#btnTips5").click(function () {
+				  //底部提示
+				  layer.open({
+					content: '一个没有任何按钮的底部提示'
+					,skin: 'footer'
+				  });
+            });
+            $("#btnTips6").click(function () {
+				  //自定义标题风格
+				  layer.open({
+					title: [
+					  '我是标题',
+					  'background-color: #FF4351; color:#fff;'
+					]
+					,content: '标题风格任你定义。'
+				  });
+            });
+            $("#btnTips7").click(function () {
+			  //页面层
+			  layer.open({
+				type: 1
+				,content: '可传入任何内容，支持html。一般用于手机页面中'
+				,anim: 'up'
+				,style: 'position:fixed; bottom:0; left:0; width: 100%; height: 200px; padding:10px 0; border:none;'
+			  });
+            });
+            $("#btnTips8").click(function () {
+			  //loading层
+			  layer.open({type: 2});
+			  
+
+            });
+            $("#btnTips9").click(function () {
+			  //loading带文字
+			  layer.open({
+				type: 2
+				,content: '加载中'
+			  });
+            });	
+            $("#btnTips10").click(function () {
+			//一个在底部弹出的完整对话框
+				layer.open({
+				  title: [
+					'我是标题',
+					'background-color:#8DCE16; color:#fff;'
+				  ]
+				  ,anim: 'up'
+				  ,content: '展现的是全部结构'
+				  ,btn: ['确认', '取消']
+				});
+            });		
+            $("#btnTips11").click(function () {
+			//设置3秒自动关闭
+				layer.open({
+				  content: '通过style设置你想要的样式'
+				  ,style: 'background-color:#09C1FF; color:#fff; border:none;' //自定风格
+				  ,time: 3
+				});
+            });	
+            $("#btnTips12").click(function () {
+			//设置不允许点遮罩关闭
+				layer.open({
+				  content: '不允许点击遮罩关闭',
+				  btn: '我知道了',
+				  shadeClose: false,
+				  yes: function(){
+					layer.open({
+					  content: '好的'
+					  ,time: 2
+					  ,skin: 'msg'
+					});
+				  }
+				});
+            });	
+            $("#btnTips13").click(function () {
+			//自定义一个全屏的页面层
+				var pageii = layer.open({
+				  type: 1
+				  ,content: alert.html
+				  ,anim: 'up'
+				  ,style: 'position:fixed; left:0; top:0; width:100%; height:100%; border: none; -webkit-animation-duration: .5s; animation-duration: .5s;'
+				});
+            });	           
+			$("#btnTips14").click(function () {
+				//tips层-上
+				layer.tips('上', '#btnTips14', {
+				  tips: [1, '#00c46c'] //还可配置颜色
+				});
+            });	
+			$("#btnTips15").click(function () {
+				//tips层-右
+				layer.tips('默认就是向右的', '#btnTips15');
+				tips: [2, '#00c46c']
+            });	
+			$("#btnTips16").click(function () {
+				//tips层-下
+				layer.tips('下', '#btnTips16', {
+				 tips: [3, '#00c46c']
+				});
+            });	
+			$("#btnTips17").click(function () {
+				//tips层-左
+				layer.tips('左边么么哒', '#btnTips17', {
+				  tips: [4, '#00c46c']
+				});
+            });	
+			$("#btnTips18").click(function () {
+				//tips层-不销毁之前的
+				layer.tips('不销毁之前的', '#btnTips18', {
+				  tipsMore: true
+				});	
+            });				
+
+
+
+
+		
+        }
+    };
+    PageUI.Init();
+</script>
+</body>
+</html>

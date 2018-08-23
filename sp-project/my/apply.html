@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/login.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <title>开票申请</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <div class="g_header">
+                <a href="javascript:history.go(-1);" title="返回" class="back w_back">返回</a> 
+                <div class="one_title">
+                  <p>开票申请</p>
+                </div>                             
+            </div>
+        </header>
+        <div class="container visa_o_detail">
+            <div class="v_o_item">
+                <div class="v_o_intro">
+                    <p><em>账单编号：</em>FB00065112</p>
+                    <p class="red"><em>账单总金额：</em>￥450</p>
+                    <p class="red"><em>未开票总金额：</em>￥450</p>
+                    <p class="red"><em>订单数：</em>6</p>
+                    <div class="add_peo">
+                        <div class="t_total_p">发票数：</div>
+                        <div class="num_edit_btn">
+                            <div class="i_reduce"></div>
+                            <div class="add_blank"><input type="text" placeholder="1"></div>
+                            <div class="i_add"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="v_o_item">
+                <div class="title red">*发票信息</div>
+                <div class="f_o_items">
+                <ul>
+                    <li>
+                        <div class="o_item_tit">序号：1</div>
+                        <div class="o_item_detail">
+                            <div class="a_form_con">
+                                <div class="a_form_list">
+                                    <div class="f_list_tit">开票项目：</div>
+                                    <div class="f_list_con f_con_outer has_bg">
+                                        <select>
+                                            <option>旅游费1</option>
+                                            <option>旅游费2</option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                <div class="a_form_list">
+                                    <div class="f_list_tit">发票抬头：</div>
+                                    <div class="f_list_con">测试分销商门店</div>
+                                </div>  
+                                <div class="a_form_list">
+                                    <div class="f_list_tit">金额：</div>
+                                    <div class="f_list_con f_con_outer"><input type="text"></div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o_item_tit">序号：2</div>
+                        <div class="o_item_detail">
+                            <div class="a_form_con">
+                                <div class="a_form_list">
+                                    <div class="f_list_tit">开票项目：</div>
+                                    <div class="f_list_con f_con_outer has_bg">
+                                        <select>
+                                            <option>旅游费1</option>
+                                            <option>旅游费2</option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                <div class="a_form_list">
+                                    <div class="f_list_tit">发票抬头：</div>
+                                    <div class="f_list_con">测试分销商门店</div>
+                                </div>  
+                                <div class="a_form_list">
+                                    <div class="f_list_tit">金额：</div>
+                                    <div class="f_list_con f_con_outer"><input type="text"></div>
+                                </div>
+                            </div>  
+                        </div>
+                    </li>                                                           
+                </ul>
+                 </div>                                   
+            </div> 
+            <div class="v_o_item">
+                <div class="v_o_intro a_form_con">
+                    <div class="a_form_list">
+                        <div class="f_list_tit">备注：</div>
+                        <div class="f_list_con f_con_outer"><input type="text"></div>
+                    </div>
+                </div>
+            </div>                                 
+        </div>
+        <div class="my_btn"><button class="submit_btn" type="submit">提&nbsp;&nbsp;交</button></div>
+    </div>   
+    <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script> 
+    <script type="text/javascript">
+        $(".o_item_tit").toggle(
+            function(){
+                $(this).addClass('more');
+                $(this).next('.o_item_detail').slideDown();
+            },
+            function(){
+                $(this).removeClass('more');
+                $(this).next('.o_item_detail').slideUp();
+            }
+        )     
+    </script>
+</body>
+</html>

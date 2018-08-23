@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <title>我的优惠券</title>
+</head>
+<body>
+    <div class="my_coupons">
+		<header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a> 
+            <div class="one_title">
+              <p>我的优惠券</p>
+            </div>                            
+        </header>
+        <div class="coupons_tab">
+			<span class="active">未使用</span>
+			<span>已使用</span>
+			<span>已过期</span>
+        </div>
+        <div class="coupons_wrap coupons_wei" data-index="0">
+			<div class="coupons bg_yello">
+				<div class="coupons_content coupons_left">
+					<p><em>¥</em>50</p>
+				</div>
+				<div class="coupons_content coupons_right">
+					<h2>苏州青旅优惠券</h2>
+					<p class="con_xz">使用期限:</p>
+					<p class="con_date">2018-05-05至2019-05-05</p>
+				</div>
+        	</div>
+	        <div class="coupons bg_red">
+				<div class="coupons_content coupons_left">
+					<p><em>¥</em>50</p>
+				</div>
+				<div class="coupons_content coupons_right">
+					<h2>苏州青旅优惠券</h2>
+					<p class="con_xz">使用期限:</p>
+					<p class="con_date">2018-05-05至2019-05-05</p>
+				</div>
+	        </div>
+	        <div class="coupons bg_blue">
+				<div class="coupons_content coupons_left">
+					<p><em>¥</em>50</p>
+				</div>
+				<div class="coupons_content coupons_right">
+					<h2>苏州青旅优惠券</h2>
+					<p class="con_xz">使用期限:</p>
+					<p class="con_date">2018-05-05至2019-05-05</p>
+				</div>
+	        </div>
+	        <div class="coupons bg_green">
+				<div class="coupons_content coupons_left">
+					<p><em>¥</em>50</p>
+				</div>
+				<div class="coupons_content coupons_right">
+					<h2>苏州青旅优惠券</h2>
+					<p class="con_xz">使用期限:</p>
+					<p class="con_date">2018-05-05至2019-05-05</p>
+				</div>
+	        </div>
+	        <div class="coupons bg_org">
+				<div class="coupons_content coupons_left">
+					<p><em>¥</em>50</p>
+				</div>
+				<div class="coupons_content coupons_right">
+					<h2>苏州青旅优惠券</h2>
+					<p class="con_xz">使用期限:</p>
+					<p class="con_date">2018-05-05至2019-05-05</p>
+				</div>
+	        </div>
+	        <div class="bg_white"></div>
+        </div>
+        <div class="coupons_wrap coupons_yi none" data-index="1">
+        	<div class="coupons bg_yello">
+				<div class="coupons_content coupons_left">
+					<p><em>¥</em>50</p>
+				</div>
+				<div class="coupons_content coupons_right">
+					<h2>苏州青旅优惠券</h2>
+					<p class="con_xz">使用期限:</p>
+					<p class="con_date">2018-05-05至2019-05-05</p>
+				</div>
+				<div class="icon_taked used"></div>
+	        </div>
+	        <div class="bg_white"></div>
+        </div>
+        <div class="coupons_wrap coupons_guoqi none" data-index="2">
+			<div class="coupons bg_grey">
+				<div class="coupons_content coupons_left">
+					<p><em>¥</em>50</p>
+				</div>
+				<div class="coupons_content coupons_right">
+					<h2>苏州青旅优惠券</h2>
+					<p class="con_xz">使用期限:</p>
+					<p class="con_date">2018-05-05至2019-05-05</p>
+				</div>
+	        </div>
+	        <div class="bg_white"></div>
+        </div>
+    </div>
+    
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+  	$(".coupons_tab span").click(function(){
+  		$(this).addClass("active").siblings("span").removeClass("active");
+  		$('.coupons_wrap[data-index='+$(this).index()+']').removeClass("none")
+  		.siblings(".coupons_wrap").addClass("none");
+  	})
+  </script>  
+</body>
+</html>

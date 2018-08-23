@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/login.css">
+    <title>充值</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>充值</p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="wallet_list">
+                <ul>
+                    <li>
+                        <div class="wallet_tit">账户</div>
+                        <div class="wallet_con">1001661100对私基本户</div>
+                    </li>
+                    <li>
+                        <div class="wallet_tit">余额</div>
+                        <div class="wallet_con red">￥98051.00</div>
+                    </li>
+                </ul>
+            </div> 
+            <div class="wallet_list">
+                <ul>
+                    <li>
+                        <div class="wallet_tit big">金额</div>
+                        <div class="wallet_con"><input type="text" placeholder="请输入充值金额"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="confirm_btn">
+                <button class="submit_btn confirm" type="submit">确认充值</button>
+            </div>                                        
+        </div>           
+    </div>    
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(".wallet_con input[type=text]").focusin(function(){
+        $(".submit_btn").removeClass('confirm');
+    });
+    $(".wallet_con input[type=text]").focusout(function(){
+        $(".submit_btn").addClass('confirm');
+    });       
+  </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/order070810.css">
+	<title>订单填写</title>
+</head>
+<body>
+	<header class="header" style="z-index:10;">
+		<a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+		<div class="one_title">
+		  <p>订单填写</p>
+		</div>
+	</header>
+	<div class="content">
+		<div class="common-item line-title">
+			<p>日本九州3日3夜自由行，宿温泉酒店，旅游纯玩无购物，一天滑雪一天滑冰一天吃好玩刺身</p>
+			<div class="color-grey line-date"><i></i><span>出团日期：2017-05-25</span><span class="number">人数：<em>1</em>人</span></div>
+		</div>
+		<ul class="common-item tourist">
+			<li><i class="icon-tourist"></i>全部出游人信息<span class="color-grey edit">详情编辑、非必填<em></em></li>
+			<li class="input-item contact">联系人<i class='star'>*</i> <input type="text"></li>
+			<li class="input-item">手机号码<i class='star'>*</i><input type="text"></li>
+			<li class="pickup">
+				接送<i class='star'>*</i>
+				<span class="select active" data-car='0'><em class='select-item'></em>班车</span>
+				<span class="select no-select" data-car='1'><em class='select-item'></em>专车</span>
+			</li>
+		</ul>
+		<ul class="goselect-wrap gobacksele" data-car='0'>
+			<li class="route go route-after">
+				<span>去程</span>
+				<select>
+					<optgroup>
+						<option>旅客自行前往火车站/机场集合￥0/人</option>
+						<option>旅客自行前往火车站/机场集合￥1/人</option>
+						<option>旅客自行前往火车站/机场集合机场集合￥2￥2/人</option>
+					</optgroup>
+				</select>
+			</li>
+			<li class="route route-after">
+				<span>回程</span>
+				<select>
+					<option>旅客自行前往火车站/机场集合￥0/人</option>
+					<option>旅客自行前往火车站/机场集合￥1/人</option>
+					<option>旅客自行前往火车站/机场集合￥2/人</option>
+				</select>
+			</li>
+		</ul>
+		<ul class="goselect-wrap gobacksele none" data-car='1'>
+			<li class="route">
+				<span class="show">请至详情编辑完善专车信息！</span>
+			</li>
+		</ul>
+		<ul class="goselect-wrap gobackshow none">
+			<li class="route go">
+				<span>去程</span>
+				<span class="show">旅客自行前往火车站/机场集合￥0/人</span>
+			</li>
+			<li class="route">
+				<span>回程</span>
+				<span class="show">旅客自行前往火车站/机场集合￥0/人</span>
+			</li>
+		</ul>
+		<ul class="common-item remark">
+			<li><i></i>备注信息</li>
+			<li>旅客备注 <input type="text" placeholder="请输入游客备注信息"></li>
+			<li>同行备注 <input type="text" placeholder="请输入游客备注信息"></li>
+		</ul>
+		<div class="peo_info_edit">
+		    <a href="javascript:;">
+		        <div class="CouponItem">
+		            <div class="CouponInfo giftBox">
+		            <span>福利：下单即可获得蛋糕券一张</span>
+		            <i class="rightArr"></i>
+		            </div>
+		        </div>
+		    </a>
+		    <a href="javascript:;">
+		        <div class="CouponItem">
+		            <div class="CouponInfo CouponIcon">
+		            <span>使用优惠券</span>
+		            <span class="choiceNum">已选择一张</span>
+		            <i class="rightArr"></i>
+		            </div>
+		        </div>
+		    </a>	    
+		</div>		
+	</div>
+	<footer>
+      <div class="btn_two hasPList ">
+          <a href="javascript:;" class="special_info greyBg">总价：<font><i class="renmb">￥</i>8180</font><span class="seeMX">查看明细</span></a>
+          <a href="settlement.html" class="red next_step">下一步</a>
+      </div>
+  </footer>
+  <div class="pop_layer_bg" ></div>
+  <div class="feeDetail">
+    <div class="tit">费用明细<i class="closeIcon"></i></div>
+    <div class="feeItem">
+		<div class="feeTitle"><i></i>旅游费</div>
+        <div class="feeList">
+            <div class="feeL">
+                <p>成人票价</p>
+                <p class="price"><span>￥2100</span> x 2</p>
+            </div>
+            <div class="feeR">
+                <p>￥4794</p>
+            </div>
+		</div>
+		<div class="feeTitle"><i></i>机票（含基建费+燃油费用）</div>
+        <div class="feeList">
+            <div class="feeL">
+                <p>基建+燃油</p>
+                <p class="price"><span>￥2100</span> x 2</p>
+            </div>
+            <div class="feeR">
+                <p>￥4794</p>
+            </div>
+		</div>
+		<div class="feeTitle"><i></i>保险</div>
+        <div class="feeList">
+            <div class="feeL">
+                <p>保险费用</p>
+                <p class="price"><span>￥2100</span> x 2</p>
+            </div>
+            <div class="feeR">
+                <p>￥4794</p>
+            </div>
+        </div>                
+    </div>
+  <div>
+<script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('html,body').css('background','#EDEFF2');
+		$(".select").click(function(){
+			$(this).removeClass('no-select').addClass("active");
+			$(this).siblings(".select").removeClass('active').addClass("no-select");
+			var indexcar = $(this).data("car");
+			$(".gobacksele[data-car="+indexcar+"]").removeClass("none").siblings(".gobacksele").addClass("none");
+		})
+		/*底部*/
+		$('.special_info .seeMX').click(function(){
+            $('.pop_layer_bg').show();
+            $('.feeDetail').show();
+        });
+        $('.pop_layer_bg').click(function(){
+            $('.pop_layer_bg').hide();
+            $('.feeDetail').hide();
+        });   
+        $('.feeDetail .closeIcon').click(function(){
+            $('.pop_layer_bg').hide();
+            $('.feeDetail').hide();
+        }); 
+	})
+</script>
+</body>
+</html>

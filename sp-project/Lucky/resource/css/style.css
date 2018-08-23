@@ -1,0 +1,60 @@
+.wrap{background:#f89e29;}
+.topMain{background:#353788; }
+.drawBanner img{display:block;width:100%;}
+.draw {
+	width: 7.5rem;
+	height: 9.77rem;
+	margin: -1.85rem auto 0 auto;
+	background: url(../images/prizeBg.gif) no-repeat center center;
+	background-size: 100%;
+	position:relative;
+}
+.draw .item {
+	display:table;
+	position:absolute;
+	width:2.52rem;
+	height:2.52rem;
+	background: url(../images/boxBg.png) no-repeat center center;
+	background-size:2.1rem 2.1rem;
+	
+}
+.draw .item.active {	
+	background: url(../images/boxActive.png) no-repeat center center;
+	background-size:2.52rem 2.52rem;
+}
+.draw .itemInfo {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.draw .itemInfo img{display:block;width:1.4rem;height:1.4rem;margin:0 auto;}
+.draw .itemInfo span.name{display:block;color:#d75700;font-size:0.24rem;width:2.1rem;margin:0 auto;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.draw .item_1{top:0.3rem;left:0.35rem;}
+.draw .item_2{top:0.3rem;left:2.48rem;}
+.draw .item_3{top:0.3rem;left:4.61rem;}
+.draw .item_4{top:2.43rem;left:0.35rem;}
+.draw .item_5{top:2.43rem;left:2.48rem;}
+.draw .item_6{top:2.43rem;left:4.61rem;}
+.draw .item_7{top:4.55rem;left:0.35rem;}
+.draw .item_8{top:4.55rem;left:2.48rem;}
+.draw .item_9{top:4.55rem;left:4.61rem;}
+.draw .item_5.draw-btn {background: url(../images/beginBtn.png) no-repeat center center;background-size:2.1rem 2.1rem;}
+.draw .item_5.draw-btn .itemInfo{vertical-align: bottom;}
+.draw .item_5.draw-btn .itemInfo span.name{padding-bottom:0.35rem;color:#aa2800;}
+.draw .item_5.draw-btn .itemInfo span.name em{color:#ffee2e;}
+.ruleBtn{position:absolute;bottom:1.55rem;left:0.98rem;width:2.56rem;height:0.83rem;background: url(../images/ruleBtn.png) no-repeat center center;background-size:100% 100%;}
+.ruleBtn:active{background: url(../images/ruleBtn_active.png) no-repeat center center;background-size:100% 100%;}
+.prizeBtn{position:absolute;bottom:1.55rem;right:0.98rem;width:2.56rem;height:0.83rem;background: url(../images/prizeBtn.png) no-repeat center center;background-size:100% 100%;}
+.prizeBtn:active{background: url(../images/prizeBtn_active.png) no-repeat center center;background-size:100% 100%;}
+.prizeInfo{position:absolute;width:7.3rem;height:0.4rem;left:0.2rem;bottom:0.45rem;overflow:hidden;font-size:0.3rem;background: url(../images/voiceIcon.png) no-repeat center left;background-size:0.47rem 0.42rem;}
+.prizeInfo .list{width:7.5rem;position:absolute;top:0;left:0;}
+.prizeInfo .list li{padding-left:0.6rem;color:#9d2f00;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;}		
+.prizeInfo .list li span{margin:0 0.1rem;}
+.introOuter{background:#f27500;width:100%;}
+.introBox{background:#f89e29;border-radius:0.3rem 0.3rem 0 0;}
+.introBox .title{padding:0.4rem 0 0.3rem 0;}
+.introBox .title img{display:block;width:7.16rem;height:0.83rem;margin:0 auto;}
+.introBox .introAD{padding:0 0.06rem;display:table;width:100%;box-sizing:border-box;}
+.introAD .left{display:table-cell;vertical-align:top;text-align:center;padding-left:0.1rem;}
+.introBox .introAD span{display:block;width:7.16rem;margin:0 auto;}
+.introBox .introAD span img{display:block;width:100%;margin-bottom:0.1rem;}

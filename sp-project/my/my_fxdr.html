@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <title>我的分销达人</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>我的分销达人</p>
+            </div>
+            <a href="javascript:;" class="log_out i_edit">编辑</a>
+        </header>
+        <div class="container">
+            <div class="my_fxdr">
+                <ul>
+                    <li>
+                        <div class="i_check"><input type="checkbox" name="checkboxItem"/></div>
+                        <div class="fxdr_info">
+                            <div class="fxdr_photo" style="background-image:url(../resource/images/default.png);background-size:cover;"></div>
+                            <div class="fxdr_intro">
+                                <h2>王导</h2>
+                                <a href="tel:18501597421"><p>18501597421</p></a>
+                            </div>
+                        </div>
+                        <div class="fun_status">
+                            <h2 class="enable">已启用</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="i_check"><input type="checkbox" name="checkboxItem"/></div>
+                        <div class="fxdr_info">
+                            <div class="fxdr_photo" style="background-image:url(../resource/images/products/line_two.png);background-size:cover;"></div>
+                            <div class="fxdr_intro">
+                                <h2>园区小李</h2>
+                                <a href="tel:18501597421"><p>18501597421</p></a>
+                            </div>
+                        </div>
+                        <div class="fun_status">
+                            <h2 class="disable">禁用</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="i_check"><input type="checkbox" name="checkboxItem"/></div>
+                        <div class="fxdr_info">
+                            <div class="fxdr_photo" style="background-image:url(../resource/images/default.png);background-size:cover;"></div>
+                            <div class="fxdr_intro">
+                                <h2>拓展小王</h2>
+                                <a href="tel:18501597421"><p>18501597421</p></a>
+                            </div>
+                        </div>
+                        <div class="fun_status">
+                            <h2 class="enable">已启用</h2>
+                            <p>分销大师</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="i_check"><input type="checkbox" name="checkboxItem"/></div>
+                        <div class="fxdr_info">
+                            <div class="fxdr_photo" style="background-image:url(../resource/images/products/line_two.png);background-size:cover;"></div>
+                            <div class="fxdr_intro">
+                                <h2>导游小张</h2>
+                                <a href="tel:18501597421"><p>18501597421</p></a>
+                            </div>
+                        </div>
+                        <div class="fun_status">
+                            <h2 class="disable">禁用</h2>
+                            <p>分销达人</p>
+                        </div>
+                    </li>                                        
+                </ul>
+            </div>
+        </div>          
+    </div>
+    <footer>
+        <div class="btn_group btn_group_one">
+            <a href="yqdr.html"><span class="i_invite">邀请达人</span></a>
+        </div>
+        <div class=" btn_group btn_group_thr" style="display:none;">
+            <a href="javascript:;"><span class="i_disable">禁用账号</span><!--<span class="i_enable">恢复账号</span>--></a>
+            <a href="javascript:;"><span class="i_delete">删除账号</span></a>
+            <a href="javascript:;"><span class="i_hide">隐藏结算价</span><!--<span class="i_show">隐藏结算价</span>--></a>
+        </div>
+    </footer>    
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".i_edit").toggle(
+          function () {
+            $(this).html('完成');
+            $('.i_check').css('display','table-cell');
+            $('.btn_group_one').hide();
+            $('.btn_group_thr').show();
+          },
+          function () {
+            $(this).html('编辑');
+            $('.i_check').css('display','none');
+            $('.btn_group_one').show();
+            $('.btn_group_thr').hide();
+          }
+        );
+    });
+    </script>
+</body>
+</html>

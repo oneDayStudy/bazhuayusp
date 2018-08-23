@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/swiper.min.css">
+    <title>日本个人旅游签证</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header" style="z-index:10;">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>日本个人旅游签证</p>
+            </div>
+            <a href="javascript:;" title="分享" class="share">分享</a>
+        </header>
+        <div class="container">
+            <div class="visa_reserve_top">
+                <div class="visa_top_con">
+                    <div class="visa_c_flag" style="background:url(../resource/images/f_japan.png) no-repeat center center;background-size:cover;"></div>
+                    <div class="visa_intro">
+                        <p>所属领区：上海、苏州</p>
+                        <p>是否面试：无需</p>
+                        <p>签证类别：旅游签证</p>
+                    </div>
+                </div>
+                <style>
+                    .visa_reserve_top{padding-bottom:1rem;}
+
+                </style>
+                <div class="visa_price">结算价 <i>￥</i><span>820</span> 起</div>
+                <div class="visa_price2">市场价 <i>￥</i><span>550</span> 起</div>
+            </div>
+            <div class="line_detail_intro">
+                <div class="line_detail_tit tabs">
+                    <ul>
+                        <li class="cur"><span></span>基本信息</li>
+                        <li><span></span>专家提示</li>
+                    </ul>
+                </div> 
+                <div class="visa_detail_info tabs_show">
+                  <div class="title"><span class="i_sxcl">所需材料</span></div>
+                  <dl class="list_items">
+                    <a href="javascript:;"><dt><span class="list_item_tit">在职人员</span></dt></a>
+                    <a href="javascript:;"><dt><span class="list_item_tit">自由职业者</span></dt></a>
+                    <a href="javascript:;"><dt><span class="list_item_tit">退休人员</span></dt></a>
+                    <a href="javascript:;"><dt><span class="list_item_tit">在校学生</span></dt></a>
+                    <a href="javascript:;"><dt><span class="list_item_tit">学龄前儿童</span></dt></a>
+                  </dl>                    
+                </div> 
+                <div class="visa_detail_info tabs_show" style="display:none;">
+                    <div class="title"><span class="i_zjts">专家提示</span></div>
+                    <div class="text-panel">
+                      <p>1、在办理签证期间，我司可能会根据您的材料情况要求增补其他材料、担保金或予以劝退；领馆也可能会针对您的实际情况，要求增补其他材料，或延长签证受理时间（此情况由领馆决定，我司无法干预）。领馆也可能因内部原因导致延迟出签，本网相关的受理时间信息仅供参考。</p>
+                      <p>2、请您理解提供完整材料并不能作为获得签证的保证，最终签证结果将由申请国领馆决定。</p> 
+                      <p>3、请根据您出行的主要目的正确选择签证类型，请注意选择错误的签证类型会增加拒签风险。</p> 
+                      <p>4、此签证类型是由我司代送签，工作人员会前往领馆领取护照，并由我司配送给您或您前往我司领取护照。</p> 
+                    </div>
+                </div> 
+            </div>                    
+        </div>      
+    </div>
+  <footer>
+      <div class="btn_thr">
+          <!--<a href="javascript:;"><span class="i_sc"></span><p>收藏</p></a>-->
+          <!--<a href="javascript:;"><span class="i_tel"></span><p>电话客服</p></a>-->
+          <a href="../reservation/line_reserve.html" class="orange ljyd" style="width: 100%;">立即预订</a>
+
+      </div>
+  </footer>    
+	<script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript" src="../resource/javascript/swiper.min.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function() {
+          var swiper = new Swiper('.swiper-container', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true,
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: 2500,
+          autoplayDisableOnInteraction: false
+          });
+           //切换
+          $(".tabs li").click(function () { 
+          var index_tab = $(this).parent().children().index($(this)); //选项卡的索引值 
+          $(this).addClass('cur').siblings().removeClass('cur');
+          var content_obj = $(".tabs_show") //内容节点 
+          content_obj.hide(); 
+          content_obj.eq(index_tab).show(); 
+          });         
+        });       
+    </script>  
+</body>
+</html>

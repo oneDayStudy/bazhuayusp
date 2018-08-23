@@ -1,0 +1,44 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins,sup,sub, kbd, p, samp,
+small, strong, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,hgroup, menu, nav, section, menu,
+time, mark, audio, video{margin:0; padding:0; border:0; outline:0; }
+body{font-family: Helvetica, "Microsoft Yahei", "Heiti SC", "Droid Sans", "Droidsansfallback", SimSun, sans-serif;}
+article, aside, figure, footer, header,hgroup, nav, section{display:block;}
+nav ul,ul,li{list-style:none;}
+blockquote, p{quotes:none;}
+blockquote:before, blockquote:after, p:before, p:after{content:''; content:none;}
+a{margin:0; padding:0; vertical-align:top; text-decoration:none;color:inherit;}
+a:link,a:visited,a:hover,a:active{text-decoration:none}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input, select{vertical-align:middle;-webkit-appearance:none;border:none;outline:none;background:transparent;}
+ins{background-color:#ff9; color:#000; text-decoration:none;}
+mark{background-color:#ff9; color:#000; font-style:italic; font-weight:bold;}
+del{ text-decoration: line-through; }
+abbr[title], dfn[title] {border-bottom:1px dotted #000; cursor:help;}
+/* tables still need cellspacing="0" in the markup */
+table{border-collapse:collapse; border-spacing:0;}
+em,i{font-style:normal;}
+hr{display:block; height:1px; border:0; border-top:1px solid #e0e0e0; }
+select{-webkit-appearance:none;background:rgba(0,0,0,0);}
+.clearfix:after{content: "."; display: block;height: 0;clear: both;visibility: hidden;}
+*{box-sizing:border-box;padding: 0;margin: 0;}
+/*flex begin*/
+html,body{height: 100%}
+body{font-size:32px;font-size:.32rem;max-width:1080px;margin:0 auto;background:#fff;font-family:'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+.wrap{width:7.5rem;margin:0 auto;height: 100%;position:relative;}
+.header{height:0.9rem;line-height:0.9rem;background-color:#D8D8D8;width:100%;left:0;box-shadow: 0px 0 12px rgba(0,67,109,0.1);}
+.footer{height:1.1rem;background-color:#636261;width:100%;left:0;}
+.main{overflow:auto;-webkit-overflow-scrolling: touch;}
+.flex{display:-webkit-flex;display:flex;display: -webkit-box;display: -moz-box;display: -ms-flexbox;}
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+.flex-1{-webkit-flex:1;-ms-flex:1;flex:1;-webkit-box-flex:1;-moz-box-flex: 1;}
+/*flex end*/
+
+

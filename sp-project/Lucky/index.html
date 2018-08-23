@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">     
+    <link type="text/css" rel="stylesheet" href="resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="resource/css/style.css">
+	<link type="text/css" rel="stylesheet" href="resource/css/prize.css">
+    <script type="text/javascript" src="resource/js/global.js"></script>
+    <title>抽奖页面</title>
+</head>
+<body>
+<div class="wrap flex flex-v ">
+    <div class="main flex-1">
+    	<div class="topMain">
+	    	<div class="drawBanner"><img src="resource/images/banner.png"></div>
+			<div class="draw" id="lottery">
+				<a class="item item_1 lottery-unit lottery-unit-0">
+					<div class="itemInfo">
+						<img src="resource/images/prize_0.png" alt="Remee雷米眼罩">
+						<span class="name">Remee雷米眼罩</span>
+					</div>
+				</a>
+				<a class="item item_2 lottery-unit lottery-unit-1 ">
+					<div class="itemInfo">
+						<img src="resource/images/prize_1.png" alt="IphoneX">
+						<span class="name">IphoneX 1部</span>
+					</div>
+				</a>
+				<a class="item item_3 lottery-unit lottery-unit-2">
+					<div class="itemInfo">
+						<img src="resource/images/prize_2.png" alt="境外机票">
+						<span class="name">境外机票两张</span>
+					</div>
+				</a>
+				<a class="item item_4 lottery-unit lottery-unit-7">
+					<div class="itemInfo">
+						<img src="resource/images/prize_3.png" alt="Beats耳机">
+						<span class="name">Beats耳机1副</span>
+					</div>
+				</a>
+				<a class="item item_6 lottery-unit lottery-unit-3">
+					<div class="itemInfo">
+						<img src="resource/images/prize_4.png" alt="">
+						<span class="name">无线蓝牙音箱</span>
+					</div>	
+				</a>
+				<a class="item item_7 lottery-unit lottery-unit-6">
+					<div class="itemInfo">
+						<img src="resource/images/prize_5.png" alt="">
+						<span class="name">Ipad 1部</span>						
+					</div>
+				</a>
+				<a class="item item_8 lottery-unit lottery-unit-5">
+					<div class="itemInfo">
+						<img src="resource/images/prize_6.png" alt="">
+						<span class="name">北京自由行</span>						
+					</div>
+				</a>
+				<a class="item item_9 lottery-unit lottery-unit-4">
+					<div class="itemInfo">
+						<img src="resource/images/prize_7.png" alt="">
+						<span class="name">五十元现金</span>
+					</div>
+				</a>
+				<a class="item item_5 draw-btn">
+					<div class="itemInfo">
+						<span class="name">您有<em>2</em>局游戏机会</span>
+					</div>
+				</a>
+				<a href="javascript:;" class="ruleBtn"></a>
+				<a href="javascript:;" class="prizeBtn"></a>
+				<div class="prizeInfo">
+					<ul class="list">
+						<li>恭喜<span>苏州三三旅游社有限公司</span>抽中iPhone一部</li>
+						<li>恭喜<span>苏州三三3旅游社有限公司</span>抽中iPhone一部</li>
+						<li>恭喜<span>苏州三三4旅游社有限公司</span>抽中iPhone一部</li>
+						<li>恭喜<span>苏州三三5旅游社有限公司</span>抽中iPhone一部</li>
+						<li>恭喜<span>苏州三三6旅游社有限公司</span>抽中iPhone一部</li>
+						<li>恭喜<span>苏州三三7旅游社有限公司</span>抽中iPhone一部</li>
+					</ul>		
+				</div>							
+			</div>
+		</div>
+		<div class="introOuter">
+			<div class="introBox">
+				<div class="title"><img src="resource/images/title.png"></div>
+				<div class="introAD clearfix">
+					<span class="adrh"><img src="resource/images/ad_rh.png"></span>
+					<span class="adhd"><img src="resource/images/ad_hd.png"></span>
+					<span class="adyl"><img src="resource/images/ad_yl.png"></span>
+				</div>
+			</div>
+		</div>	
+    </div>
+</div>
+
+<!--以下弹层-->
+<!--抽中奖品-->
+<div class="yes">
+	<div class="gx">
+		<div class="bingo">
+			<div class="gx-ip">
+				<p class="gift">获得iPhone X 一部</p>
+				<img src="resource/images/iPhoneX.png" class="gift_pic"/>
+			</div>
+			<p class="tip">温馨提示：若抽中实物奖品，我们客服会主动联系您</p>
+		</div>
+	</div>
+	<a href="#" class="close"></a>
+</div>
+
+<!--没有抽中奖品-->
+<div class="no">
+	<div class="gx_no">
+		<p>很遗憾没有抽中，再接再厉</p>
+	</div>
+	<a href="#" class="close"></a>
+</div>
+
+<!--活动规则-->
+<div class="activity-rule">
+	<div class="gx_rule">
+		<div class="rule_detail">
+			<p class="">一.活动说明</p>
+			<p class="sm"><span class="number">1.</span><span class="disc">说明说明说明说</span></p>
+			<p class="sm"><span class="number">2.</span><span class="disc">说明说明说明说明说明说明说明说明说明说明说明</span></p>
+			<p class="sm"><span class="number">3.</span><span class="disc">说明说明说明说明说明说明说明说明说明说明说明</span></p>
+			<p class="sm"><span class="number">4.</span><span class="disc">说明说明说明说明说明说明说明说明说明说明说明</span></p>
+			<p class="sm"><span class="number">5.</span><span class="disc">说明说明说明说明说明说明说明说明说明说明说明</span></p>
+			<p class="sm"><span class="number">6.</span><span class="disc">说明说明说明说明说明说明说明说明说明说明说明</span></p>
+			<p class="sm"><span class="number">7.</span><span class="disc">说明说明说明说明说明说明说明说明说明说明说明</span></p>
+			<p class="sm"><span class="number">8.</span><span class="disc">说明说明说明说明说明说明说明说明说明说明说明</span></p>
+		</div>
+	</div>
+	<a href="#" class="close rule_close"></a>
+</div>
+
+<!--抽中的奖品详情-->
+<div class="detail-yes">
+	<div class="gx_yes">
+		<div class="gx-ip-yes">
+			<div class="prize_list">
+				<div class="hx">
+					<img src="resource/images/prize.png" class="prize_pic"/>
+				</div>
+				<div class="detail">
+					<span class="detail_name">iPhone X 一部</span>
+					<span class="detail_time">2017-12-31 17:00</span>
+				</div>
+			</div>
+			<div class="prize_list">
+				<div class="hx">
+					<img src="resource/images/prize.png" class="prize_pic"/>
+				</div>
+				<div class="detail">
+					<span class="detail_name">iPhone X 一部</span>
+					<span class="detail_time">2017-12-31 17:00</span>
+				</div>
+			</div>
+			<div class="prize_list">
+				<div class="hx">
+					<img src="resource/images/prize.png" class="prize_pic"/>
+				</div>
+				<div class="detail">
+					<span class="detail_name">iPhone X 一部</span>
+					<span class="detail_time">2017-12-31 17:00</span>
+				</div>
+			</div>
+		</div>
+		<!--抽中的奖品详情（没有）-->
+		<div class="gx-ip-no">
+			<div class="package">
+				<img src="resource/images/red.png"/>
+			</div>
+			<p>亲，您还没有中过奖品哦！</p>
+		</div>
+	</div>
+	<a href="#" class="close yes_close"></a>
+</div>
+
+
+
+<script type="text/javascript" src="resource/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+	document.body.addEventListener('touchstart', function () { });
+	var lottery = {
+		index: -1, //当前转动到哪个位置，起点位置
+		count: 0, //总共有多少个位置
+		timer: 0, //setTimeout的ID，用clearTimeout清除
+		speed: 20, //初始转动速度
+		times: 0, //转动次数
+		cycle: 50, //转动基本次数：即至少需要转动多少次再进入抽奖环节
+		prize: -1, //中奖位置
+		init: function(id) {
+			if($('#' + id).find('.lottery-unit').length > 0) {
+				$lottery = $('#' + id);
+				$units = $lottery.find('.lottery-unit');
+				this.obj = $lottery;
+				this.count = $units.length;
+				$lottery.find('.lottery-unit.lottery-unit-' + this.index).addClass('active');
+			};
+		},
+		roll: function() {
+			var index = this.index;
+			var count = this.count;
+			var lottery = this.obj;
+			$(lottery).find('.lottery-unit.lottery-unit-' + index).removeClass('active');
+			index += 1;
+			if(index > count - 1) {
+				index = 0;
+			};
+			$(lottery).find('.lottery-unit.lottery-unit-' + index).addClass('active');
+			this.index = index;
+			return false;
+		},
+		stop: function(index) {
+			this.prize = index;
+			return false;
+		}
+	};
+
+	function roll() {
+		lottery.times += 1;
+		lottery.roll(); //转动过程调用的是lottery的roll方法，这里是第一次调用初始化
+
+		if(lottery.times > lottery.cycle + 10 && lottery.prize == lottery.index) {
+			clearTimeout(lottery.timer);
+			alert("恭喜您中奖了！！！");
+
+			lottery.prize = 1;
+			lottery.times = 0;
+			click = false;
+		} else {
+			if(lottery.times < lottery.cycle) {
+				lottery.speed -= 10;
+			} else if(lottery.times == lottery.cycle) {
+				var index = Math.random() * (lottery.count) | 0; //静态演示，随机产生一个奖品序号，实际需请求接口产生
+				lottery.prize = index;
+			} else {
+				if(lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
+					lottery.speed += 110;
+				} else {
+					lottery.speed += 20;
+				}
+			}
+			if(lottery.speed < 40) {
+				lottery.speed = 40;
+			};
+			lottery.timer = setTimeout(roll, lottery.speed); //循环调用
+		}
+		return false;
+	}
+
+	var click = false;
+
+	window.onload = function() {
+		lottery.init('lottery');
+		$('.draw-btn').click(function() {
+			if(click) { //click控制一次抽奖过程中不能重复点击抽奖按钮，后面的点击不响应
+				return false;
+
+			} else {
+				lottery.speed = 100;
+				roll(); //转圈过程不响应click事件，会将click置为false
+				click = true; //一次抽奖完成后，设置click为true，可继续抽奖		
+				return false;
+			}
+		});
+	};
+//	$(function(){
+//		var t;
+//		$(".prizeInfo").hover(function(){
+//			 clearInterval(t);
+//		},function(){
+//			 t = setInterval(function(){
+//					var ul = $(".list");
+//					var liHeight = ul.find("li:last").height();
+//					ul.animate({marginTop : -liHeight +"px"},1000,function(){
+//						ul.find("li:last").prependTo(ul);
+//						ul.find("li:first").hide();
+//						ul.css({marginTop:0});
+//						ul.find("li:first").fadeIn(800);
+//					});
+//			},3000);
+//		 }).trigger("mouseleave");
+
+	$(function(){
+		var doscroll = function(){
+			var $parent = $('.list');
+			var $first = $parent.find('li:first');
+			var height = $first.height();
+			$first.animate({
+				height: 0   //或者改成： marginTop: -height + 'px'
+			}, 500, function() {// 动画结束后，把它插到最后，形成无缝
+				$first.css('height', height).appendTo($parent);
+			});
+		};
+		setInterval(function(){doscroll()}, 2000);
+		});
+
+
+		//点击活动规则按钮显示弹层
+		$(".ruleBtn").click(function () {
+			$('.activity-rule').css('display','block');
+			$('.rule_close').click(function () {
+				$('.activity-rule').css('display','none');
+			});
+		});
+
+		//点击我的奖品显示弹层
+		$(".prizeBtn").click(function () {
+			$('.detail-yes').css('display','block');
+			$('.yes_close').click(function () {
+				$('.detail-yes').css('display','none');
+			});
+		});
+
+
+
+</script>
+</body>
+</html>

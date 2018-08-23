@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../resource/lib-flexible-master/build/flexible_css.js"></script>
+    <script src="../resource/lib-flexible-master/build/flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href="../resource/css/global.css">
+	<link type="text/css" rel="stylesheet" href="../resource/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/main.css">	
+	<link type="text/css" rel="stylesheet" href="../resource/css/my.css">
+    <link type="text/css" rel="stylesheet" href="../resource/css/login.css">
+    <title>提现</title>
+</head>
+<body>
+    <div class="page gary_content">
+        <header class="header">
+            <a href="javascript:history.go(-1);" title="返回" class="back">返回</a>
+            <div class="one_title">
+              <p>提现</p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="choice_card">
+                <div class="card_info"><span class="card">选择一张银行卡</span></div>
+            </div>
+            <div class="tx_con">
+                <div class="tx_num">
+                    <h1>提现金额</h1>
+                    <div class="tx_edit">
+                        <span>￥</span>
+                        <span><input type="text" placeholder="1000"></span>
+                    </div>
+                </div>
+                <div class="total_money">
+                    <span>当前余额:1350元</span>
+                    <span class="tq_all"><a href="javascript:;">全部提现</a></span>
+                </div>
+            </div>
+            <div class="wallet_list">
+                <ul>
+                    <li>
+                        <div class="wallet_tit">支付密码</div>
+                        <div class="wallet_con"><input type="password" placeholder="请输入支付密码"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="confirm_btn">
+                <button class="submit_btn confirm" type="submit">确认提交</button>
+            </div>                                        
+        </div>           
+    </div>    
+  <script type="text/javascript" src="../resource/javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(".wallet_con input").focusin(function(){
+        $(".submit_btn").removeClass('confirm');
+    });
+    $(".wallet_con input").focusout(function(){
+        $(".submit_btn").addClass('confirm');
+    });       
+  </script>
+</body>
+</html>
